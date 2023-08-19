@@ -1,0 +1,22 @@
+.Services h1{
+    font-size: 30px;
+    width: max-content;
+    border-bottom:2px solid  #FE2D2D;
+
+    ;
+}
+
+.ServiceText h4{
+    font-size: 47px;
+}
+
+.ServiceText{
+    width: 45%;
+}
+
+.Services{
+    padding: 100px;
+    /* display:flex;
+    align-items: center;
+    justify-content: space-between; */
+}

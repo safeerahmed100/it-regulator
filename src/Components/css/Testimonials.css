@@ -1,0 +1,49 @@
+.Testimonials{
+    background: url(./Rectangle\ 2152.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 60px;
+}
+
+.Testimonials h1{
+    font-size: 30px;
+    width: max-content;
+    border-bottom: 2px solid #FE2D2D;
+}
+
+.hoverContainer{
+    width: 80px;
+    height: 400px;
+border-radius: 5px;
+background-color: red;
+transition: all 0.5s ease-in-out;
+
+
+}
+
+.second{
+    width: 80px;
+    height: 480px;
+}
+.middle{
+    width: 80px;
+    height: 560px;
+}
+.hoverContainer p{
+    display: none;
+}
+.hoverContainer:hover{
+    width: 400px;
+    height: 560px;
+}
+.hoverContainer:hover p{
+    display: block;
+}
+.TestimonialsSlider{
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
