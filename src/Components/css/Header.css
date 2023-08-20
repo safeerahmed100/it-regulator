@@ -2,14 +2,12 @@
     background-image: url('./Rectangle\ 1.png');
     background-position: center center;
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 150px 100px;
    
 }
 .banner{
     display: flex;
+    padding: 200px 100px;
+
     align-items: center;
     justify-content: space-between;
 }
@@ -27,6 +25,8 @@
 
 
 .headerImg img{
+    position: relative;
+    z-index: 3;
     width: 300px;
     height: 200px
 }
@@ -34,27 +34,36 @@
 
 
 .btn{
-    margin-top: 40px;
+    
     background: linear-gradient(0deg, #509BF4, #509BF4),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
 color: white;
 padding: 10px 20px;
 border-radius: 10px;
 border: none;
-box-shadow: 0 0 52px 10px #509bf4;
-
+transition: all 0.5s ease-in-out;
 }
 
+.btn:hover{
+    box-shadow: 0 0 52px 10px #509bf4;
+}
 
 .headerOverlay{
-    position: absolute;
-    width: 100%;
-    height: 59%;
-    top: 0;
-left: 0;
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
 background:url(Rectangle\ 14.png);
 
+}
+
+.headerImgBlur{
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(131deg, rgb(68 68 68 / 2.03%), rgb(68 68 68));
+    position: absolute;
+    top: 100px;
+    filter: blur(10px);
+    z-index: 2;
+    right: 79px;
+    
 }

@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 60px;
+
 }
 
 .Testimonials h1{
@@ -12,33 +13,49 @@
     border-bottom: 2px solid #FE2D2D;
 }
 
-.hoverContainer{
+.hoverContainer, .hoverBgBlur{
     width: 80px;
     height: 400px;
 border-radius: 5px;
-background-color: red;
-transition: all 0.5s ease-in-out;
+
+transition: all 0.5s ease;
 
 
 }
 
-.second{
+.second  {
     width: 80px;
     height: 480px;
 }
-.middle{
+.middle {
     width: 80px;
     height: 560px;
 }
 .hoverContainer p{
     display: none;
+    color: white;
 }
-.hoverContainer:hover{
+
+.hoverContainer span{
+    display: none;
+}
+.hoverContainer:hover, .hoverBgBlur:hover {
     width: 400px;
     height: 560px;
 }
 .hoverContainer:hover p{
     display: block;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    z-index: 9;
+}
+
+.hoverContainer:hover span{
+    display: block;
+    position: relative;
+    z-index: 9;
 }
 .TestimonialsSlider{
     padding: 100px 60px;
@@ -47,3 +64,76 @@ transition: all 0.5s ease-in-out;
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* .firstCont{
+    background-image: url(./attractive-european-girl-with-charming-smile-keeps-arms-folded-wears-round-spectacles-min.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.secondCont{
+    background-image: url(./business-woman-black-jacket-looking-camera-min.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.thirdCont{
+    background-image: url(./happy-beautiful-young-woman-standing-posing-co-working-coffee-shop-interior-looking-camera-smiling-min.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.fourthCont{
+    background-image: url(./happy-businessman-smiling-camera-min.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.fifthCont{
+    background-image: url(./portrait-young-confident-businessman-wearing-glasses-min.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.sixthCont{
+    background-image: url(./portrait-young-smiling-woman-looking-camera-min.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.seventhCont{
+    background-image: url(./attractive-european-girl-with-charming-smile-keeps-arms-folded-wears-round-spectacles-min.jpg);
+    background-position: center center;
+    background-size: cover;
+} */
+
+
+.hoverContainer h2{
+    position: relative;
+    top: 50%;
+    font-size: 52px;
+    color: white;
+    font-weight: bolder;
+    word-spacing: 40px;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+
+.hoverContainer span{
+    position: relative;
+    top: 58%;
+    left: 10%;
+    color: white;
+}
+
+.hoverContainer:hover h2{
+    top: 58%;
+    left: 10%;
+    transform: rotate(0deg);
+    color: white;
+    text-align: left;
+}
+
+.hoverBgBlur{
+    background-color: black;
+    opacity: 100%;
+    position: absolute;
+  
+}
+

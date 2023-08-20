@@ -9,8 +9,11 @@ import Newsletter from './Components/Newsletter'
 import Partners from './Components/Partners'
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+// import ContactPopUp from './Components/ContactPopUp';
+
 
 function App() {
+  
   return (
    <>
 <Navbar />
@@ -21,9 +24,11 @@ function App() {
 <Testimonials />
 <Newsletter />
 <Partners />
-<Contact />
+ <Contact />
 <Footer />
-
+<div className='FooterBanner'>
+    <h6>Design and developed by CREATECHZ</h6>
+  </div>
 </>
   );
 }

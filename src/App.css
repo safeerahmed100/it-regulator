@@ -4,3 +4,9 @@
     box-sizing: border-box;
     font-family: poppins;
 }
+.FooterBanner{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}

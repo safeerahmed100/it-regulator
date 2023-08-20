@@ -1,0 +1,37 @@
+.Footer{
+    background-image: url(.//Rectangle\ 2153.png);
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 150px 60px;
+}
+
+.Info,.services,.comp,.Navigations,.staffing{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 18%;
+}
+
+.Footer h1{
+
+font-size: 17px;
+font-weight: 700;
+
+
+}
+
+
+.services{}
+
+.comp{
+
+}
+
+.staffing{
+
+}
+
+.Navigations{
+
+}

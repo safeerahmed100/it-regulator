@@ -3,8 +3,13 @@ import Vid from '../Assets/Group 4355.png'
 import './css/About.css'
 
 function About() {
+
   return (
-    <div className='About'>
+
+
+  
+  <div className='About'>
+    
 <div className='AboutText'>
       <h1>ABOUT US</h1>
       <h4>why ITregulators</h4>
@@ -16,6 +21,9 @@ At ITRegulators, we understand that one-size-fits-all solutions are not effectiv
     <img src={Vid} alt='src' />
     </div>
     </div>
+  
+    
+ 
   )
 }
 
