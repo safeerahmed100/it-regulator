@@ -5,10 +5,11 @@ import './css/Contact.css'
 function Contact() {
   return (
     <div className='Contact'>
-
+      <div className='ContactContainer'>
+      <div className='ContactText'>
       <h1>NEED IT HELP NOW?</h1>
       <h3>Fill in the the form and we’ll get back to you as soon as possible</h3>
-
+      </div>
       <div className='ContactForm'>
         <form >
         <select placeholder='Service'>
@@ -35,6 +36,9 @@ function Contact() {
 
         {/* {showPopup && <ContactPopUp setShowPopup={setShowPopup}/>} */}
       </div>
+      </div>
+      <div className='HeaderBlur'></div>
+
     </div>
 
   )

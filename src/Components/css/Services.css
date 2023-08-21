@@ -32,12 +32,16 @@
 }
 
 .ss2{
-    background-image: url(./serviceImg2.jpg);
+    background-image: url(./serviceImg1.jpg);
    
 }
 .ss3{
-    background-image: url(./serviceImg3.jpg);
+    background-image: url(./serviceImg2.jpg);
 
+}
+
+.ss4{
+    background-image: url(./serviceImg3.jpg);
 }
 
 .ServiceContainer{

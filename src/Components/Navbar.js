@@ -1,10 +1,13 @@
 import React from 'react'
 import Logo from '../Assets/logo.png'
 import './css/Navbar.css'
+import { Slide } from "react-awesome-reveal";
+
 
 function Navbar() {
   return (
     <div className='Navbar'>
+      <Slide>
       <div className='logoSide'>
     <img src={Logo} alt='logo'/>
       </div>
@@ -24,7 +27,7 @@ function Navbar() {
       </div>
 
 
-
+      </Slide>
     </div>
   )
 }

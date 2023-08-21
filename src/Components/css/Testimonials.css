@@ -46,7 +46,7 @@ transition: all 0.5s ease;
 .hoverContainer:hover p{
     display: block;
     position: relative;
-    top: 20%;
+    top: 40%;
     left: 10%;
     width: 80%;
     z-index: 9;
@@ -65,43 +65,43 @@ transition: all 0.5s ease;
     justify-content: space-evenly;
 }
 
-/* .firstCont{
-    background-image: url(./attractive-european-girl-with-charming-smile-keeps-arms-folded-wears-round-spectacles-min.jpg);
+ .firstCont{
+    background-image: url(./first.png);
     background-position: center center;
     background-size: cover;
 }
 .secondCont{
-    background-image: url(./business-woman-black-jacket-looking-camera-min.jpg);
+    background-image: url(./second.png);
     background-position: center center;
     background-size: cover;
 }
 .thirdCont{
-    background-image: url(./happy-beautiful-young-woman-standing-posing-co-working-coffee-shop-interior-looking-camera-smiling-min.jpg);
+    background-image: url(./third.png);
     background-position: center center;
     background-size: cover;
 }
 .fourthCont{
-    background-image: url(./happy-businessman-smiling-camera-min.jpg);
+    background-image: url(./fourth.png);
     background-position: center center;
     background-size: cover;
 }
 
 .fifthCont{
-    background-image: url(./portrait-young-confident-businessman-wearing-glasses-min.jpg);
+    background-image: url(./fifth.png);
     background-position: center center;
     background-size: cover;
 }
 
 .sixthCont{
-    background-image: url(./portrait-young-smiling-woman-looking-camera-min.jpg);
+    background-image: url(./sixth.png);
     background-position: center center;
     background-size: cover;
 }
 .seventhCont{
-    background-image: url(./attractive-european-girl-with-charming-smile-keeps-arms-folded-wears-round-spectacles-min.jpg);
+    background-image: url(./seventh.png);
     background-position: center center;
     background-size: cover;
-} */
+} 
 
 
 .hoverContainer h2{
@@ -131,7 +131,8 @@ transition: all 0.5s ease;
 }
 
 .hoverBgBlur{
-    background-color: black;
+    background: linear-gradient(130.76deg,black,transparent);
+
     opacity: 100%;
     position: absolute;
   

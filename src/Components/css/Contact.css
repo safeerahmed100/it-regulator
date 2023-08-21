@@ -3,6 +3,7 @@
     background: url(./contact.png);
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
    
 }
@@ -65,7 +66,38 @@ select{
     border-radius: 10px;
 }
 
+.Contact .HeaderBlur{
+    width: 100%;
+    height: 81%;
+    background: black;
+    opacity: 70%;
+    left: 0;
+    z-index: 34;
+    top: 4172px;
+}
+
+
+.ContactContainer{
+    position: relative;
+  z-index: 35;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 300px;}
 
 
 
+  @media (max-width:1280px) {
 
+    .ContactContainer{
+        padding: 0;
+    }
+
+    .Contact .HeaderBlur{
+        height: 100%;
+        top: 4300px;
+    }
+    
+  }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './css/Testimonials.css'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 
 function Testimonials() {
@@ -7,12 +8,16 @@ function Testimonials() {
    
 
   return (
+    
     <div className='Testimonials'>
+      <Slide duration={1000}>
     <h1>WHAT OUR CLIENT'S SAY</h1>
+    </Slide>
 
    
 
     <div className='TestimonialsSlider'>
+      <Fade cascade damping={0.3}>
      
       <div className='hoverContainer firstCont'>
         <div className='hoverBgBlur first'>
@@ -65,6 +70,7 @@ function Testimonials() {
         <h2>RAYAN</h2>
         <span>CPA Partner, Benford Brown & Associates</span>
         </div></div>
+        </Fade>
    
     </div>
    

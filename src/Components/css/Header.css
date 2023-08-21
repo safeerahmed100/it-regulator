@@ -7,7 +7,6 @@
 .banner{
     display: flex;
     padding: 200px 100px;
-
     align-items: center;
     justify-content: space-between;
 }
@@ -48,13 +47,9 @@ transition: all 0.5s ease-in-out;
     box-shadow: 0 0 52px 10px #509bf4;
 }
 
-.headerOverlay{
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-background:url(Rectangle\ 14.png);
 
-}
+
+
 
 .headerImgBlur{
     width: 350px;
@@ -66,4 +61,27 @@ background:url(Rectangle\ 14.png);
     z-index: 2;
     right: 79px;
     
+}
+
+.swiper-button-next{
+
+    rotate: 90deg;
+    right: 230px!important;
+    top: 470px!important;
+}
+
+.swiper-button-prev{
+    top: 70px!important;
+    left: 1000px!important;
+   
+    rotate: 90deg;
+    pointer-events: none;
+}
+
+.HeaderBlur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 70%;
 }

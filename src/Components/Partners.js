@@ -8,12 +8,14 @@ import mozy from '../Assets/logo-mozy-by-Dell-1.png'
 import trend from '../Assets/logo-Trend-1.png'
 import vmware from '../Assets/logo-VMware-1.png'
 import microsoft from '../Assets/Microsoft-Logo-1.png'
+import { Slide } from 'react-awesome-reveal'
 
 function Partners() {
   return (
     <div className='Partners'>
       <h1>Partners & Affiliations</h1>
       <div className='PartnersIcon'>
+        <Slide Fade cascade damping={0.1}>
       <a href='https://www.trendmicro.com/en_us/business.html' rel='noreferrer' target="_blank"> <img src={mozy}  className='hover:animate-bounce'  alt='log' /></a>
 <a href='https://www.trendmicro.com/en_us/business.html' rel='noreferrer' target="_blank"><img src={trend} className='hover:animate-bounce'  alt='log' /></a>
 <a href='https://www.vmware.com/sg.html' rel='noreferrer' target='_blank' ><img src={vmware}  className='hover:animate-bounce' alt='log' /> </a>
@@ -22,7 +24,7 @@ function Partners() {
 <a href='https://meraki.cisco.com/' rel='noreferrer' target="_blank"><img src={cisco}  className='hover:animate-bounce' alt='log' /></a>
 <a href='https://www.dell.com/' rel='noreferrer' target="_blank"> <img src={dell} className='hover:animate-bounce'  alt='log' /></a>
 <a href='https://www.hp.com/' rel='noreferrer' target="_blank"><img src={hp}  className='hover:animate-bounce' alt='log' /> </a>
-
+</Slide>
       </div>
 
 
