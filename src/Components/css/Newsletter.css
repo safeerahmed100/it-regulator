@@ -4,7 +4,7 @@
     background-color: black;
     text-align: center;
     border-radius: 30px;
-    padding: 10px 60px;
+    padding: 45px 60px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
 .Form form{
 display: flex;
     flex-wrap: wrap;
-    padding: 10px 5px;
+    padding: 4px 60px;
     align-items: center;
     justify-content: center;
 }

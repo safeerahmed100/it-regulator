@@ -26,30 +26,9 @@
 .headerImg img{
     position: relative;
     z-index: 3;
-    width: 300px;
-    height: 200px
+    width: 400px;
+    height: 250px
 }
-
-
-
-.btn{
-    
-    background: linear-gradient(0deg, #509BF4, #509BF4),
-linear-gradient(0deg, #FFFFFF, #FFFFFF);
-color: white;
-padding: 10px 20px;
-border-radius: 10px;
-border: none;
-transition: all 0.5s ease-in-out;
-}
-
-.btn:hover{
-    box-shadow: 0 0 52px 10px #509bf4;
-}
-
-
-
-
 
 .headerImgBlur{
     width: 350px;
@@ -64,18 +43,26 @@ transition: all 0.5s ease-in-out;
 }
 
 .swiper-button-next{
-
-    rotate: 90deg;
-    right: 230px!important;
+    right: 279px!important;
     top: 470px!important;
+
+}
+.swiper-button-next::after,.swiper-button-prev::after{
+    font-size: 20px!important;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: white!important;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 50px;
+    rotate: 90deg;
+    
 }
 
 .swiper-button-prev{
     top: 70px!important;
-    left: 1000px!important;
-   
-    rotate: 90deg;
-    pointer-events: none;
+    left: 1600px!important;
+ cursor: pointer;
 }
 
 .HeaderBlur{
@@ -84,4 +71,18 @@ transition: all 0.5s ease-in-out;
     height: 100%;
     background: black;
     opacity: 70%;
+}
+
+.Header .btn{
+    background: linear-gradient(0deg, #509BF4, #509BF4),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);;
+}
+
+@media (max-width:1280px){
+    .swiper-button-prev{
+        left: 953px!important;
+    }
+    .swiper-button-next{
+        right: 266px!important;
+    }
 }

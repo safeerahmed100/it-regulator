@@ -55,3 +55,65 @@
    width: 400px;
    height: 500px;
 }
+.Services .btn{
+    background: linear-gradient(0deg, #509BF4, #509BF4),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+.swiper-pagination-bullet{
+    top: 14px;
+    position: relative;
+    cursor: pointer;
+}
+.ServiceSlideText{
+    
+    position: relative;
+    top: 30%;
+    left: 10%;
+    color: white;
+    width: 80%;
+    transition: all 0.5s ease-in;
+}
+
+.ServiceSlideText h2{
+    padding-bottom: 15px;
+    font-size: 22px;
+}
+
+.swiper-slide .ServiceSlideText{
+    display: none;
+}
+
+.ServiceSlideText p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.ServiceSlideText a{
+text-decoration: underline;
+}
+.swiper-slide-active .ServiceSlideText{
+    display: block;
+    position: relative;
+    z-index: 99!important;
+}
+
+.ServiceSlideOverlay{
+    z-index: 2!important;
+    position: absolute;
+    background: black;
+    width: 87%;
+    height: 94%;
+    opacity: 70%;
+    top: 10px;
+    left: 12px;
+}
+
+
+
+
+@media(max-width:1280px){
+
+    .ServiceSlideOverlay{
+        width: 139%;
+    }
+}

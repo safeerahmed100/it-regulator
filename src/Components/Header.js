@@ -9,7 +9,6 @@ import { Fade} from 'react-awesome-reveal';
 
 function Header() {
   return (
-    
        <Swiper
         grabCursor={true}
         effect={'creative'}
@@ -26,12 +25,10 @@ function Header() {
         modules={[EffectCreative,Navigation]}
         className="mySwiper"
       >
-        
-    {content.map((content)=>(
-      
-<SwiperSlide key={content.id} >
-< div className='Header'  >
-<div className='HeaderBlur' ></div>
+      {content.map((content)=>(
+      <SwiperSlide key={content.id} >
+      < div className='Header'  >
+      <div className='HeaderBlur' ></div>
       <div className='banner'  >
         <div className='headerText'>
           <Fade cascade damping={0.9}>
@@ -42,23 +39,15 @@ function Header() {
           </div>
           <Fade cascade damping={0.9}>
           <div className='headerImg'>
-           
             <img src={content.pic} alt={content.id} className='animate-bounce' />
-            
          <div className='headerImgBlur'> </div>
           </div>
           </Fade>
-
       </div>
       </div>
          </SwiperSlide>
     ))}
  </Swiper>
- 
-
-
-
   )
 }
-
 export default Header
