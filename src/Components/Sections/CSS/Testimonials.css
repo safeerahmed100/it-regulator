@@ -1,0 +1,148 @@
+.Testimonials{
+    background: url(./Assets/Rectangle\ 2152.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 60px;
+
+}
+
+.Testimonials h1{
+    font-size: 30px;
+    width: max-content;
+    border-bottom: 2px solid #FE2D2D;
+}
+
+.hoverContainer, .hoverBgBlur{
+    width: 80px;
+    height: 400px;
+border-radius: 5px;
+
+transition: all 0.5s ease;
+
+
+}
+
+.second  {
+    width: 80px;
+    height: 480px;
+}
+.middle {
+    width: 80px;
+    height: 560px;
+}
+.hoverContainer p{
+    display: none;
+    color: white;
+}
+
+.hoverContainer span{
+    display: none;
+}
+.hoverContainer:hover, .hoverBgBlur:hover {
+    width: 400px;
+    height: 560px;
+}
+.hoverContainer:hover p{
+    display: block;
+    position: relative;
+    top: 40%;
+    left: 10%;
+    width: 80%;
+    z-index: 9;
+}
+
+.hoverContainer:hover span{
+    display: block;
+    position: relative;
+    z-index: 9;
+}
+.TestimonialsSlider{
+    padding: 100px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ .firstCont{
+    background-image: url(./Assets//first.png);
+    background-position: center center;
+    background-size: cover;
+}
+.secondCont{
+    background-image: url(./Assets/second.png);
+    background-position: center center;
+    background-size: cover;
+}
+.thirdCont{
+    background-image: url(./Assets//third.png);
+    background-position: center center;
+    background-size: cover;
+}
+.fourthCont{
+    background-image: url(./Assets/fourth.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.fifthCont{
+    background-image: url(./Assets/fifth.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.sixthCont{
+    background-image: url(./Assets/sixth.png);
+    background-position: center center;
+    background-size: cover;
+}
+.seventhCont{
+    background-image: url(./Assets/seventh.png);
+    background-position: center center;
+    background-size: cover;
+} 
+
+
+.hoverContainer h2{
+    position: relative;
+    top: 50%;
+    font-size: 52px;
+    color: white;
+    font-weight: bolder;
+    word-spacing: 40px;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+
+.hoverContainer span{
+    position: relative;
+    top: 58%;
+    left: 10%;
+    color: white;
+}
+
+.hoverContainer:hover h2{
+    top: 58%;
+    left: 10%;
+    transform: rotate(0deg);
+    color: white;
+    text-align: left;
+}
+
+.hoverBgBlur{
+    background: linear-gradient(130.76deg,black,transparent);
+
+    opacity: 100%;
+    position: absolute;
+  
+}
+
+.Testimonials .HeaderBlur{
+    left: 0;
+    top: 2163px;
+    height: 118%!important;
+    background: #93bbe8;
+    opacity: 50%;
+}
+

@@ -1,0 +1,13 @@
+.ServicesHeader{
+    background-image: url(./Assets/ServicesHeaderImg.png);
+    background-position: right center;
+    background-size:cover;
+    position: relative;
+}
+
+.ServicesHeader p{
+    color: white;
+    width: 80%;
+}
+
+

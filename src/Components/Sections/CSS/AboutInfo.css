@@ -1,0 +1,43 @@
+.AboutInfo{
+    position: relative;
+    z-index: 44;
+    padding: 100px 60px;
+}
+.AboutInfoText{
+    flex-direction: column;
+    display: flex;   
+    align-items: center;
+    width: 60%;
+}
+
+.AboutInfoContainer{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;   
+}
+.AboutInfoContainer img{
+    width: 38%;
+}
+
+.AboutInfoText .btn{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 25px;
+    right: 39%;
+}
+
+
+.AboutInfoContainer2{
+    flex-direction: row-reverse;
+}
+
+.AboutInfo h1{
+    border-bottom: 2px solid red;
+    width: fit-content;
+    font-size: 40px;
+    top: 160px;
+    position: relative;
+    
+}
+

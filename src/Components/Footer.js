@@ -16,7 +16,7 @@ function Footer() {
         <h1>MAIN OFFICE:440 W. Boughton Rd. Ste. C1Bolingbrook Illinois. 60640</h1>
         <h2>888-792-8151</h2>
         <h2>Info@itregulators.com</h2>
-        <h2>PublicRelations@itregulators.com</h2>
+        <p>PublicRelations@itregulators.com</p>
         
         </Fade>
         </Slide>

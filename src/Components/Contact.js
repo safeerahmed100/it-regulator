@@ -37,7 +37,6 @@ function Contact() {
         {/* {showPopup && <ContactPopUp setShowPopup={setShowPopup}/>} */}
       </div>
       </div>
-      <div className='HeaderBlur'></div>
 
     </div>
 

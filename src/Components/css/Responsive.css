@@ -1,0 +1,70 @@
+.Navbar i{
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+
+@media (max-width:768px){
+   .Navbar .NavLinks{
+    display: none;
+   }
+
+.Navbar .buttons{
+    display: none;
+}
+
+.Navbar .mobile{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: -57px;
+    right: -239px;
+    z-index: 9999;
+    text-align: center;
+    width: 384px;
+}
+
+.Navbar .NavLinks a{
+    
+        font-size: 20px;
+        color: white;
+        margin: 48px 0;
+        text-align: center;
+}
+
+.Navbar i{
+    display: block;
+    color: black;
+    font-size: 40px;
+}
+.Header .headerText h1{
+    font-size: 30px;
+}
+.Header .banner img{
+    width: 300px;
+    height: 200px;
+}
+
+.Header .banner .headerImgBlur{
+    display: none;
+}
+
+.Header .banner{
+    justify-content: space-between;
+}
+
+.banner .swiper-button-prev{
+    rotate: 0deg;
+    top: 469px!important;
+    left: 383px!important;
+
+}
+
+.Contact form {
+    padding: 100px 0;
+
+}
+}

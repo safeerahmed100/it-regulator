@@ -1,0 +1,10 @@
+.AboutHeader{
+    background-image: url(./Assets/AboutPageHeaderImg.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    }
+
+    .AboutHeader .HeaderBlur{
+        height: 54%;
+    }

@@ -1,0 +1,120 @@
+.Services h1{
+    font-size: 30px;
+    width: max-content;
+    border-bottom:2px solid  #FE2D2D;
+
+    ;
+}
+.ServiceText h4{
+    font-size: 47px;
+}
+.ServiceText{
+    width: 40%;
+}
+.Services{
+    padding: 100px;
+    
+}
+
+.Services .ServiceSlider{
+    width: 58%;
+    padding-right: 2%;
+}
+.ServicesSlides{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.ss1{
+    background-image: url(./Assets/serviceImg.jpg);
+}
+
+.ss2{
+    background-image: url(./Assets/serviceImg1.jpg);
+   
+}
+.ss3{
+    background-image: url(./Assets/serviceImg2.jpg);
+
+}
+
+.ss4{
+    background-image: url(./Assets/serviceImg3.jpg);
+}
+
+.ServiceContainer{
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+
+ .swiper-slide-active  .ServicesSlides img{
+   width: 400px;
+   height: 500px;
+}
+.Services .btn{
+    background: linear-gradient(0deg, #509BF4, #509BF4),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+.swiper-pagination-bullet{
+    top: 14px;
+    position: relative;
+    cursor: pointer;
+}
+.ServiceSlideText{
+    
+    position: relative;
+    top: 30%;
+    left: 10%;
+    color: white;
+    width: 80%;
+    transition: all 0.5s ease-in;
+}
+
+.ServiceSlideText h2{
+    padding-bottom: 15px;
+    font-size: 22px;
+}
+
+.swiper-slide .ServiceSlideText{
+    display: none;
+}
+
+.ServiceSlideText p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.ServiceSlideText a{
+text-decoration: underline;
+}
+.swiper-slide-active .ServiceSlideText{
+    display: block;
+    position: relative;
+    z-index: 99!important;
+}
+
+.ServiceSlideOverlay{
+    z-index: 2!important;
+    position: absolute;
+    background: black;
+    width: 87%;
+    height: 94%;
+    opacity: 70%;
+    top: 10px;
+    left: 12px;
+}
+
+
+
+
+@media(max-width:1280px){
+
+    .ServiceSlideOverlay{
+        width: 139%;
+    }
+}
