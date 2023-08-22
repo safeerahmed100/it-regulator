@@ -10,6 +10,7 @@ function Testimonials() {
   return (
     
     <div className='Testimonials'>
+      <div className='HeaderBlur'></div>
       <Slide duration={1000}>
     <h1>WHAT OUR CLIENT'S SAY</h1>
     </Slide>

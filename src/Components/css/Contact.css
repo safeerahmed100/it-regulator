@@ -72,10 +72,16 @@ select{
 
 
 .Contact .btn{
-    background: linear-gradient(0deg, #509BF4, #509BF4),
-linear-gradient(0deg, #FFFFFF, #FFFFFF);
+background-color: white;
+color: black;
+transition: all 0.5s ease-in-out;
 }
 
+.Contact .btn:hover{
+    background: linear-gradient(0deg, #509BF4, #509BF4),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+color: white;    
+}
 
 
 
@@ -87,7 +93,7 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
 
     .Contact .HeaderBlur{
         height: 102%;
-        top: 4345px;
+        top: 4159px;
     }
     
   }

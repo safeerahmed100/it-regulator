@@ -16,14 +16,14 @@ function Partners() {
       <h1>Partners & Affiliations</h1>
       <div className='PartnersIcon'>
         <Slide Fade cascade damping={0.1}>
-      <a href='https://www.trendmicro.com/en_us/business.html' rel='noreferrer' target="_blank"> <img src={mozy}  className='hover:animate-bounce'  alt='log' /></a>
-<a href='https://www.trendmicro.com/en_us/business.html' rel='noreferrer' target="_blank"><img src={trend} className='hover:animate-bounce'  alt='log' /></a>
-<a href='https://www.vmware.com/sg.html' rel='noreferrer' target='_blank' ><img src={vmware}  className='hover:animate-bounce' alt='log' /> </a>
-<a href='https://www.gillware.com/' rel='noreferrer' target="_blank"><img src={gillware} className='hover:animate-bounce'  alt='log' /></a>
-<a href='https://www.microsoft.com/' rel='noreferrer' target="_blank"><img src={microsoft} className='hover:animate-bounce'  alt='log' /></a>
-<a href='https://meraki.cisco.com/' rel='noreferrer' target="_blank"><img src={cisco}  className='hover:animate-bounce' alt='log' /></a>
-<a href='https://www.dell.com/' rel='noreferrer' target="_blank"> <img src={dell} className='hover:animate-bounce'  alt='log' /></a>
-<a href='https://www.hp.com/' rel='noreferrer' target="_blank"><img src={hp}  className='hover:animate-bounce' alt='log' /> </a>
+      <a href='https://www.trendmicro.com/en_us/business.html'  rel='noreferrer' target="_blank"> <img src={mozy}   alt='log' /></a>
+<a href='https://www.trendmicro.com/en_us/business.html'  rel='noreferrer' target="_blank"><img src={trend}   alt='log' /></a>
+<a href='https://www.vmware.com/sg.html' rel='noreferrer'  target='_blank' ><img src={vmware}   alt='log' /> </a>
+<a href='https://www.gillware.com/' rel='noreferrer'  target="_blank"><img src={gillware}   alt='log' /></a>
+<a href='https://www.microsoft.com/' rel='noreferrer'  target="_blank"><img src={microsoft}   alt='log' /></a>
+<a href='https://meraki.cisco.com/' rel='noreferrer'  target="_blank"><img src={cisco}   alt='log' /></a>
+<a href='https://www.dell.com/' rel='noreferrer'  target="_blank"> <img src={dell}   alt='log' /></a>
+<a href='https://www.hp.com/' rel='noreferrer'  target="_blank"><img src={hp}   alt='log' /> </a>
 </Slide>
       </div>
 

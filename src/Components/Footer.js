@@ -6,8 +6,8 @@ import { Fade, Slide } from 'react-awesome-reveal';
 function Footer() {
   return (
     <div className='Footer'>
-      
-      
+      <div className='HeaderBlur'></div>
+      <div className='FooterContainer'>
       <div className='Info'>
       <Slide>
       <Fade cascade damping={0.4}>
@@ -83,7 +83,7 @@ function Footer() {
         </Fade>
         </Slide>
       </div>
-     
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-.Footer{
+.FooterContainer{
     background-image: url(.//Rectangle\ 2153.png);
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,10 @@ font-weight: 700;
 
 }
 
+.Footer .HeaderBlur{
+background-color: #93bbe8;
+height:73%
+}
 
 .services{}
 

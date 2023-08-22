@@ -9,17 +9,17 @@
     text-align: center;
     color: white;
     padding: 20px;
+    position: relative;
+    z-index: 99;
 }
 
 .btn{ 
- /* background: linear-gradient(0deg, #509BF4, #509BF4),
-linear-gradient(0deg, #FFFFFF, #FFFFFF); */
 color: white;
 padding: 10px 20px;
 border-radius: 10px;
 border: none;
 transition: all 0.5s ease-in-out;
 }
-.btn:hover{
+*.btn:hover{
     box-shadow: 0 0 52px 10px #509bf4;
 } 

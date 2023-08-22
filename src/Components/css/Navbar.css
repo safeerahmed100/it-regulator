@@ -14,11 +14,15 @@ margin: 0 5px;
     background-color: black;
     margin: 0 6px;
 border-radius: 20px;
-}
-.Navbar .buttons .career{
-    background: linear-gradient(0deg, #509BF4, #509BF4),
-    linear-gradient(0deg, #FFFFFF, #FFFFFF);}
 
+box-shadow: 0 5px 11px -1px #000;
+}
+
+
+    .Navbar .buttons .btn:hover{
+        background: linear-gradient(0deg, #509BF4, #509BF4),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    }
 .Navbar{
     display: flex;
     align-items: center;

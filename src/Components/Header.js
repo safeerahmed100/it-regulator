@@ -40,7 +40,7 @@ function Header() {
           <Fade cascade damping={0.9}>
           <div className='headerImg'>
             <img src={content.pic} alt={content.id} className='animate-bounce' />
-         <div className='headerImgBlur'> </div>
+         <div className='headerImgBlur backdrop-blur-xl	'> </div>
           </div>
           </Fade>
       </div>

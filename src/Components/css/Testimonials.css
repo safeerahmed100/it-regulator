@@ -138,3 +138,11 @@ transition: all 0.5s ease;
   
 }
 
+.Testimonials .HeaderBlur{
+    left: 0;
+    top: 2163px;
+    height: 118%;
+    background: #93bbe8;
+    opacity: 50%;
+}
+
