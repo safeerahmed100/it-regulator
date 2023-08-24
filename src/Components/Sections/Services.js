@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import {NavLink} from 'react-router-dom' 
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import {Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import { Fade, Slide } from 'react-awesome-reveal';
 
 
@@ -30,7 +30,17 @@ function Services() {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'3'}
-        pagination={true}
+       
+
+        pagination={{
+          clickable: true,
+        }}
+
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -39,7 +49,9 @@ function Services() {
           slideShadows: false,
         }}
        
-        modules={[EffectCoverflow,Pagination]}
+        
+        modules={[Autoplay,EffectCoverflow,Pagination]}
+        
         className="mySwiper"
       >
         

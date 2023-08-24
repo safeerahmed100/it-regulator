@@ -4,26 +4,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-creative';
 import content from './HeaderSlider';
-import { EffectCreative,Navigation} from 'swiper/modules';
+import { Autoplay,Navigation} from 'swiper/modules';
 import { Fade} from 'react-awesome-reveal';
 
 function Header() {
   return (
        <Swiper
-       slidesPerView={'auto'}
+       slidesPerView={1}
         grabCursor={true}
-        effect={'creative'}
         navigation={true}
-        creativeEffect={{
-          prev: {
-            shadow: true,
-            translate: [0, 0, -400],
-          },
-          next: {
-            translate: ['100%', 0, 0],
-          },
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
         }}
-        modules={[EffectCreative,Navigation]}
+        modules={[Autoplay,Navigation]}
         className="mySwiper"
       >
       {content.map((content)=>(
