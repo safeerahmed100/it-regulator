@@ -1,6 +1,7 @@
 import React from 'react'
 import './CSS/Testimonials.css'
 import { Fade, Slide } from 'react-awesome-reveal'
+import Typewriter from 'typewriter-effect'
 
 
 function Testimonials() {
@@ -12,7 +13,13 @@ function Testimonials() {
     <div className='Testimonials'>
       <div className='HeaderBlur tablet mobilesm'></div>
       <Slide duration={1000}>
-    <h1>WHAT OUR CLIENT'S SAY</h1>
+    <h1><Typewriter
+  options={{
+    strings: ["WHAT OUR CLIENT'S SAY"],
+    autoStart: true,
+    loop: true,
+  }}
+/></h1>
     </Slide>
 
    

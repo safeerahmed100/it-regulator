@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import {NavLink} from 'react-router-dom' 
 import {Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import { Fade, Slide } from 'react-awesome-reveal';
+import Typewriter from 'typewriter-effect'
 
 
 
@@ -18,7 +19,13 @@ function Services() {
     <div className='Services'>
       <Slide duration={1000} direction={'left'}>
       
-    <h1>our services</h1>
+    <h1><Typewriter
+  options={{
+    strings: ['Our Services'],
+    autoStart: true,
+    loop: true,
+  }}
+/></h1>
     </Slide>
 
     <div className='ServiceContainer'>

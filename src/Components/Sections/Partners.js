@@ -9,11 +9,18 @@ import trend from './CSS/Assets/logo-Trend-1.png'
 import vmware from './CSS/Assets/logo-VMware-1.png'
 import microsoft from './CSS/Assets/Microsoft-Logo-1.png'
 import { Slide } from 'react-awesome-reveal'
+import Typewriter from 'typewriter-effect'
 
 function Partners() {
   return (
     <div className='Partners'>
-      <h1>Partners & Affiliations</h1>
+      <h1><Typewriter
+  options={{
+    strings: ["Partners & Affiliations"],
+    autoStart: true,
+    loop: true,
+  }}
+/></h1>
       <div className='PartnersIcon'>
         <Slide Fade cascade damping={0.1}>
       <a href='https://www.trendmicro.com/en_us/business.html'  rel='noreferrer' target="_blank"> <img src={mozy}   alt='log' /></a>
