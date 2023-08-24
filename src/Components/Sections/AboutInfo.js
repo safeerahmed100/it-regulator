@@ -2,7 +2,7 @@ import React from 'react'
 import './CSS/AboutInfo.css'
 import AboutInfoImg1 from './CSS/Assets/AboutInfoImg1.png'
 import AboutInfoImg2 from './CSS/Assets/AboutInfoImg2.png'
-import { Fade,Slide } from 'react-awesome-reveal'
+import { Fade } from 'react-awesome-reveal'
 
 
 function AboutInfo() {

@@ -1,10 +1,11 @@
 .Header{
-    background: url(./Assets/Rectangle\ 1.png);
-
+    background: url(./Assets/Rectangle\ 1.png); 
     background-position: center center;
     background-size: cover;
    
 }
+
+
 .banner{
     display: flex;
     padding: 200px 100px;
@@ -26,12 +27,12 @@
 
 .headerImg img{
     position: relative;
-    z-index: 3;
+    
     width: 400px;
     height: 250px
 }
 
-.headerImgBlur{
+/* .headerImgBlur{
     width: 370px;
     height: 350px;
     background: url(./Assets/Rectangle\ 1.png);
@@ -43,21 +44,19 @@ backdrop-filter: blur(2.8px);
 -webkit-backdrop-filter: blur(2.8px);
 border: 1px solid rgba(255, 255, 255, 0.3); 
 
-/* background: rgba(0, 0, 0);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+
 backdrop-filter: blur(11.3px);
-/* -webkit-backdrop-filter: blur(11.3px); */
+
     position: absolute;
     top: 100px;
     z-index: 2;
     right: 103px;
     
-}
+} */
 
 .swiper-button-next{
     right: 279px!important;
-    top: 470px!important;
+    top: 480px!important;
 
 }
 .swiper-button-next::after,.swiper-button-prev::after{
@@ -91,11 +90,3 @@ backdrop-filter: blur(11.3px);
     linear-gradient(0deg, #FFFFFF, #FFFFFF);;
 }
 
-@media (max-width:1280px){
-    .swiper-button-prev{
-        left: 953px!important;
-    }
-    .swiper-button-next{
-        right: 266px!important;
-    }
-}

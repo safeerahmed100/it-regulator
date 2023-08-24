@@ -1,16 +1,20 @@
 import React from 'react'
 import './css/Contact.css'
 // import ContactPopUp from './ContactPopUp'
+import {Fade, Slide} from 'react-awesome-reveal'
 
 function Contact() {
   return (
     <div className='Contact'>
       <div className='ContactContainer'>
-      <div className='ContactText'>
+        <Slide >   
+             <div className='ContactText'>
+
       <h1>NEED IT HELP NOW?</h1>
       <h3>Fill in the the form and we’ll get back to you as soon as possible</h3>
       </div>
       <div className='ContactForm'>
+        <Fade cascade damping={0.5}>
         <form >
         <select placeholder='Service'>
           <option>Services</option>
@@ -24,7 +28,7 @@ function Contact() {
         <input className='inputBusiness' type='text' placeholder='Business Name'/>
         <input  className='inputMessage' type='text' placeholder='Your Message' />
         <button className='btn'>Send</button>
-
+        </form>
         <div className='socialIcons '>
               <i className="bi bi-facebook"></i>
               <i className="bi bi-twitter"></i>
@@ -32,12 +36,12 @@ function Contact() {
               <i className="bi bi-instagram"></i>
             </div>
 
-        </form>
-
-        {/* {showPopup && <ContactPopUp setShowPopup={setShowPopup}/>} */}
+            </Fade>
       </div>
-      </div>
+      </Slide>
 
+      </div>
+  
     </div>
 
   )

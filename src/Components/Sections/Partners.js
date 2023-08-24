@@ -24,6 +24,7 @@ function Partners() {
 <a href='https://meraki.cisco.com/' rel='noreferrer'  target="_blank"><img src={cisco}   alt='log' /></a>
 <a href='https://www.dell.com/' rel='noreferrer'  target="_blank"> <img src={dell}   alt='log' /></a>
 <a href='https://www.hp.com/' rel='noreferrer'  target="_blank"><img src={hp}   alt='log' /> </a>
+
 </Slide>
       </div>
 

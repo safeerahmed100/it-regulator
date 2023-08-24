@@ -1,11 +1,14 @@
+
 .Navbar i{
     display: none;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
 }
 
-
 @media (max-width:768px){
+
+/* Global Settings */
+
+
+/* NAVBAR SECTION */
    .Navbar .NavLinks{
     display: none;
    }
@@ -19,9 +22,9 @@
     flex-direction: column;
     padding: 50px;
     background: rgb(0, 0, 0);
-    position: absolute;
-    top: -57px;
-    right: -239px;
+    position: relative;
+    top: 0;
+    right: 0;
     z-index: 9999;
     text-align: center;
     width: 384px;
@@ -40,6 +43,10 @@
     color: black;
     font-size: 40px;
 }
+
+
+/* HEADER SECTION */
+
 .Header .headerText h1{
     font-size: 30px;
 }
@@ -56,15 +63,249 @@
     justify-content: space-between;
 }
 
-.banner .swiper-button-prev{
-    rotate: 0deg;
-    top: 469px!important;
-    left: 383px!important;
+.swiper-button-prev, .swiper-button-next{
+  display: none!important;
+    
 
 }
+/* CONTACT SECTION */
 
 .Contact form {
     padding: 100px 0;
 
+}
+
+.inputName, .inputPhone, .inputEmail, .inputBusiness{
+ 
+    width: 100%; 
+} 
+/*ABOUT SECTION */
+
+.About{
+    padding: 40px 20px;
+    flex-direction: column;
+
+}
+.AboutText,.AboutVid{
+width: 100%!important;
+}
+.AboutInfo h1{
+    top: 0!important;
+}
+
+.AboutInfoText p{
+    font-size: 12px;
+}
+
+.AboutInfoText .btn{
+    right: 33%;
+    padding: 10px;
+    font-size: 12px;
+}
+/* SERVICE SECTION */
+.ServiceContainer{
+    flex-direction: column;
+}
+.ServiceContainer .ServiceSlider{
+    width: 100%!important;
+}
+
+.ServiceContainer .ServiceText{
+    width: 100%!important;
+    text-align: center;
+}
+
+/* //Testimonials  */
+/* .Testimonials .HeaderBlur{
+    height: 130%!important;
+    top: 2596px!important;
+
+} */
+/* Footer */
+.FooterContainer{
+    flex-direction: column;
+    padding: 50px;
+    
+}
+.Info {width: 50%!important;}
+.services  {width: 50%!important;}
+.comp  {width: 50%!important;}
+.Navigations  {width: 50%!important;}
+.staffing{
+    width: 50%!important;
+}
+.FooterResponsive{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/*TESTIMONIALS */
+
+.hoverContainer, .hoverBgBlur{
+    width: 60px!important;
+    height: 350px!important;
+border-radius: 5px!important;
+
+transition: all 0.5s ease;
+
+
+}
+
+.second  {
+    width: 60px!important;
+    height: 400px!important;
+}
+.middle {
+    width: 60px!important;
+    height: 460px!important;
+}
+
+.hoverContainer:hover, .hoverBgBlur:hover {
+    width: 300px!important;
+    height: 460px!important;
+}
+.hoverContainer:hover p {
+top: 30%!important;
+} 
+.hoverContainer span {
+top: 38%!important;
+}
+.hoverContainer:hover h2{
+    top:40%!important ;
+
+}
+.Testimonials .tablet{
+
+    top: 2596px!important;
+}
+}
+@media (max-width:425px){
+    .btn{
+        font-size: 8px;
+        padding: 4px 8px;
+        margin: 4px 0;
+        background-color:#509bf4 ;
+    }
+/*Header Section */
+.Header .banner {
+
+padding: 100px 10px;
+}
+.Header .banner h1{
+    font-size: 20px;
+}
+
+.Header .banner .headerImg img{
+width: 200px;
+height:100px;
+
+}
+
+
+
+/* About Section */
+.About,.Services, .Testimonials,ContactText {
+    padding: 20px!important;
+}
+.AboutText h1, .Services h1, .Testimonials h1,.Partners h1,.ContactText h1{
+    font-size: 25px!important;
+}
+
+.AboutText h4,.ServiceText h4{
+    font-size: 27px!important;
+    text-align: center;
+}
+.AboutText p, .ServiceText p,.ContactText h3{
+    font-size: 12px!important;
+    text-align: center;
+}
+
+
+.ServiceContainer {
+    flex-direction: column-reverse;
+}
+    
+.NewsLetter .Form{
+    padding: 0;
+}
+
+
+.Testimonials .mobilesm{
+    top: 1728px!important;
+    height: 70%!important;
+}
+
+.hoverContainer, .hoverBgBlur{
+    width: 30px!important;
+    height: 180px!important;
+border-radius: 5px!important;
+
+transition: all 0.5s ease;
+
+
+}
+
+.second  {
+    width: 45px!important;
+    height: 200px!important;
+}
+.middle {
+    width: 55px!important;
+    height: 230px!important;
+}
+
+.hoverContainer:hover, .hoverBgBlur:hover {
+    width: 150px!important;
+    height: 230px!important;
+}
+.hoverContainer:hover p {
+top: 30%!important;
+} 
+.hoverContainer span {
+top: 38%!important;
+}
+.hoverContainer:hover h2{
+    top:40%!important ;
+
+}
+
+.hoverContainer h2{
+    font-size: 25px!important;
+}
+.hoverContainer:hover h2{
+    font-size: 18px!important;
+    top: 38%!important;
+}
+.hoverContainer:hover span{
+    font-size: 12px;
+
+}
+
+.hoverContainer p{
+    font-size: 8px;
+}
+
+
+
+.Partners{
+    padding: 20px 0px!important;
+    position: relative;
+    background-color: white;
+}
+.PartnersIcon img{
+    width:200px ;
+}
+
+    .ContactForm input{
+        width: 100%;
+    }
+.Footer h1,h2{
+    font-size: 12px!important;
+}
+.Footer p{
+    font-size: 8px!important;
 }
 }

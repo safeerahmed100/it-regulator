@@ -8,6 +8,8 @@ function Footer() {
     <div className='Footer'>
       <div className='HeaderBlur'></div>
       <div className='FooterContainer'>
+
+        <div className='FooterResponsive'>
       <div className='Info'>
       <Slide>
       <Fade cascade damping={0.4}>
@@ -22,7 +24,7 @@ function Footer() {
         </Slide>
       </div>
       
-
+      
       <div className='services'>
         <Slide>
       <Fade cascade damping={0.4}>
@@ -42,7 +44,8 @@ function Footer() {
         </Fade>
         </Slide>
       </div>
-
+      </div>
+      <div className='FooterResponsive'>
       <div className='comp'>
         <Fade >
       <Fade cascade damping={0.4}>
@@ -60,6 +63,8 @@ function Footer() {
         </Fade>
       </div>
 
+
+
       <div className='staffing'><Slide direction={'right'}>
       <Fade cascade damping={0.4}>
         <h1>IT Staffing Services</h1>
@@ -72,7 +77,8 @@ function Footer() {
         </Fade>
         </Slide>
       </div>
-
+      </div>
+<div className='FooterResponsive'>
       <div className='Navigations'><Slide direction={'right'}>
         <Fade cascade damping={0.4}>
         <h1>Navigation</h1>
@@ -84,7 +90,9 @@ function Footer() {
         </Slide>
       </div>
       </div>
-    </div>
+      </div>
+      </div>
+   
   );
 }
 
