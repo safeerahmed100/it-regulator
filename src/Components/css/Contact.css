@@ -29,6 +29,8 @@ form{
 
 select{
     width: 100%;
+    width: 98%;
+    padding: 10px;
 }
 
  .inputName, .inputPhone, .inputEmail, .inputBusiness{
