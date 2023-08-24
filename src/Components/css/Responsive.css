@@ -3,6 +3,84 @@
     display: none;
 }
 
+.NavbarResponsive{
+    padding: 0;
+}
+.displayNone{
+    display: none;
+}
+/* For Large Laptop */
+@media (max-width:1440px){
+
+    .inputName, .inputPhone, .inputEmail, .inputBusiness{
+        width: 48%!important;
+    }
+}
+/* For Laptop */
+
+@media (max-width:1024px){
+
+.Navbar .logoSide img{
+    width: 150px;
+}
+.Navbar .NavLinks a{
+    font-size: 12px;
+}
+.Navbar .buttons .btn{
+    font-size: 12px;
+}
+.Navbar .buttons{
+    margin-right: 50px;
+}
+.swiper-button-prev {
+    top: 100px!important;
+    left: 750px!important;
+
+}
+.swiper-button-next {
+    right: 229px!important;
+    top: 451px!important;
+
+}
+
+.Testimonials .HeaderBlur{
+    top: 2093px!important;
+    height: 110%!important;
+}
+.ContactContainer{
+    padding: 0!important;
+}
+.AboutInfo h1{
+    position: relative;
+    top:0!important;
+}
+
+.ContactForm input, select {
+    margin: 5px 4px!important;
+}
+
+.inputName, .inputPhone, .inputEmail, .inputBusiness{
+    width: 49%!important;
+}
+
+.FooterContainer{
+    padding: 60px 30px;
+}
+
+.Info, .services, .comp, .Navigations, .staffing{
+    width: 50%!important;
+    padding: 30px 0;
+
+}
+.About {
+    padding: 100px 20px!important;
+}
+
+.AboutText{
+    width: 100%!important;
+}
+}
+/* For Tablet */
 @media (max-width:768px){
 
 /* Global Settings */
@@ -16,34 +94,29 @@
 .Navbar .buttons{
     display: none;
 }
-
+.Navbar i{
+    display: block;
+    font-size: 35px;
+}
 .Navbar .mobile{
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    background: rgb(0, 0, 0);
+    background: black;
+    width: 783px;
+    text-align: right;
     position: relative;
-    top: 0;
-    right: 0;
-    z-index: 9999;
+    left: -14px;
+    top: 1px;
+    padding-bottom: 52px;
+}
+.mobile a{
+    color: white;
     text-align: center;
-    width: 384px;
 }
 
-.Navbar .NavLinks a{
-    
-        font-size: 20px;
-        color: white;
-        margin: 48px 0;
-        text-align: center;
+.bi-x{
+    text-align: right;
 }
-
-.Navbar i{
-    display: block;
-    color: black;
-    font-size: 40px;
-}
-
 
 /* HEADER SECTION */
 
@@ -74,10 +147,12 @@
     padding: 100px 0;
 
 }
-
+.ContactContainer {
+padding: 0!important;
+}
 .inputName, .inputPhone, .inputEmail, .inputBusiness{
  
-    width: 100%; 
+    width: 100%!important; 
 } 
 /*ABOUT SECTION */
 
@@ -182,13 +257,26 @@ top: 38%!important;
     top: 2596px!important;
 }
 }
+
+/* For Mobile */
 @media (max-width:425px){
     .btn{
-        font-size: 8px;
+        font-size: 12px;
         padding: 4px 8px;
         margin: 4px 0;
         background-color:#509bf4 ;
     }
+.FooterResponsive .Info img{
+    width: 135px;
+}
+    .AboutText .btn{
+        position: relative;
+        left: 40%;
+    }
+
+.Navbar .mobile{
+    width: 440px;
+}
 /*Header Section */
 .Header .banner {
 
@@ -234,7 +322,7 @@ height:100px;
 
 
 .Testimonials .mobilesm{
-    top: 1728px!important;
+    top: 1709px!important;
     height: 70%!important;
 }
 
@@ -308,4 +396,24 @@ top: 38%!important;
 .Footer p{
     font-size: 8px!important;
 }
+
+
+.NewsLetter .Form input{
+    width: 40%;
+}
+.NewsLetter .Form .btn{
+    width: 50%;
+}
+.Form form{
+    padding: 10px 30px;
+    display: block;
+}
+}
+
+/* For Mobile Small */
+@media (max-width:375px){
+    .Navbar .mobile{
+        width: 380px;
+    }
+
 }

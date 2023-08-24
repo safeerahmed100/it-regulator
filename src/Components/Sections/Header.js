@@ -10,6 +10,7 @@ import { Fade} from 'react-awesome-reveal';
 function Header() {
   return (
        <Swiper
+       slidesPerView={'auto'}
         grabCursor={true}
         effect={'creative'}
         navigation={true}

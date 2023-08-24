@@ -12,7 +12,7 @@ function handleMenu(){
 }
 
   return (
-    <div className='Navbar'>
+    <div className={isActive===true?'Navbar NavbarResponsive' : 'Navbar'}>
       <Slide>
       <div className='logoSide'>
         <Link to='/'>
@@ -27,9 +27,14 @@ function handleMenu(){
         <NavLink to='/resources' className='link' >Resources</NavLink>
         <NavLink to='/contact' className='link' >Contact Us</NavLink>
       </div>
-<i className={isActive===true? 'bi bi-x z-4' : 'bi bi-list'} onClick={handleMenu}></i>
+<i className={isActive===true?'displayNone':'bi bi-list'} style={{color:'black'}} onClick={handleMenu}></i>
+
+
 {isActive &&  (
+  
+
         <div  className='NavLinks mobile '>
+          <i className='bi bi-x' style={{color:'white'}} onClick={handleMenu}></i>
         <NavLink to='/about' className='link' end>About</NavLink>
         <NavLink to='/service' className='link' >IT Services & Solutions</NavLink>
         <NavLink to='/industries'className='link' >Industries</NavLink>
@@ -37,6 +42,8 @@ function handleMenu(){
         <NavLink to='/resources' className='link' >Resources</NavLink>
         <NavLink to='/contact' className='link' >Contact Us</NavLink>
         </div>
+     
+
 )}
       <div className='buttons'>
         <button className='btn career'>Career</button>

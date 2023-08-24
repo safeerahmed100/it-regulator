@@ -55,8 +55,8 @@ backdrop-filter: blur(11.3px);
 } */
 
 .swiper-button-next{
-    right: 279px!important;
-    top: 480px!important;
+    /* right: 279px!important;
+    top: 480px!important; */
 
 }
 .swiper-button-next::after,.swiper-button-prev::after{
@@ -71,11 +71,11 @@ backdrop-filter: blur(11.3px);
     
 }
 
-.swiper-button-prev{
-    top: 70px!important;
-    left: 1600px!important;
+ .swiper-button-prev{
+    /* top: 70px!important;
+    left: 942px!important; */
  cursor: pointer;
-}
+} 
 
 .HeaderBlur{
     position: absolute;
