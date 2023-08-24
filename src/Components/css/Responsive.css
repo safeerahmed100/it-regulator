@@ -11,6 +11,7 @@
 }
 /* For Large Laptop */
 @media (max-width:1440px){
+    
 
     .inputName, .inputPhone, .inputEmail, .inputBusiness{
         width: 48%!important;
@@ -19,6 +20,7 @@
 /* For Laptop */
 
 @media (max-width:1024px){
+    
 
 .Navbar .logoSide img{
     width: 150px;
@@ -83,6 +85,7 @@
 /* For Tablet */
 @media (max-width:768px){
 
+    
 /* Global Settings */
 
 
@@ -417,3 +420,18 @@ top: 38%!important;
     }
 
 }
+
+
+
+@media (max-width: 768px) and (min-width: 300px) {
+    .ForPc {
+      display: none!important; /* Hide the footer on smaller screens */
+    }
+  }
+
+
+@media (max-width:2560px) and (min-width:767px){
+    .ForMobile{
+        display: none!important;
+    }
+} 

@@ -27,7 +27,7 @@ form{
     justify-content: center;
 }
 
-.Form form select{
+.ContactForm select{
     
     width: 98%;
     padding: 10px!important;
