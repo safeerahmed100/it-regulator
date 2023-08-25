@@ -6,7 +6,6 @@ import { Fade, Slide } from 'react-awesome-reveal';
 function Footer() {
   return (
     <div className='Footer'>
-      <div className='HeaderBlur'></div>
       <div className='FooterContainer ForMobile'>
 
       <div className='FooterResponsive'>

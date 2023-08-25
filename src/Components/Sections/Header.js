@@ -23,7 +23,6 @@ function Header() {
       {content.map((content)=>(
       <SwiperSlide key={content.id} >
       < div className='Header'  >
-      <div className='HeaderBlur' ></div>
       <div className='banner'  >
         <div className='headerText'>
           <Fade cascade damping={0.9}>

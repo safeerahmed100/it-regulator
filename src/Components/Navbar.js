@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../Assets/logo.png'
 import './css/Navbar.css'
 import {Link,NavLink} from "react-router-dom";
@@ -7,13 +7,26 @@ import { Slide } from "react-awesome-reveal";
 
 function Navbar() {
   const [isActive,setIsActive] = useState(false)
+  const [isShow,setIsShow]=useState(false)
+
+  function transitionNav(){
+    (window.scrollY>100? setIsShow(true): setIsShow(false))
+  }
+
+  useEffect(()=>{
+    window.addEventListener("scroll",transitionNav);
+    return()=>{
+      window.removeEventListener("scroll",transitionNav);
+    }
+  })
 function handleMenu(){
   setIsActive(!isActive)
 }
 
   return (
-    <div className={isActive===true?'Navbar NavbarResponsive' : 'Navbar'}>
-      <Slide>
+    <div className={`Navbar ${isShow && 'nav_black'}`}>
+
+<Slide>
       <div className='logoSide'>
         <Link to='/'>
     <img src={Logo} alt='logo'/>

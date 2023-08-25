@@ -2,6 +2,13 @@
     width: 290px;
     height: 95px;
 }
+.nav_black{
+    position: fixed;
+    background-color: white!important;
+    z-index: 99;
+    width: 100%
+    
+}
 
 .NavLinks a{
 text-decoration: none;
