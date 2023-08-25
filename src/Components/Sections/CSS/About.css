@@ -23,7 +23,7 @@
     font-size: 47px;
   }
   
-  .AboutVid {
-    animation: AnimateRight 2.5s cubic-bezier(0.56, 0.23, 0.45, 0.94);
+  .AboutVid img {
+    width: 500px;
   }
   

@@ -11,7 +11,7 @@ function Testimonials() {
   return (
     
     <div className='Testimonials'>
-      <div className='HeaderBlur tablet mobilesm'></div>
+      
       <Slide duration={1000}>
     <h1><Typewriter
   options={{
