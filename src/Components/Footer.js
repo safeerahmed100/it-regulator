@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../Assets/logo.png';
+import VeteranLogo from '../Assets/logo-veteranownedbusiness 1.png'
 import './css/Footer.css';
 import { Fade, Slide } from 'react-awesome-reveal';
 
@@ -85,6 +86,10 @@ function Footer() {
         <a href='/industries'>Industries</a>
         <a href='/resources'>Resources</a>
         <a href='/contact'>Contact Us</a>
+        <img src={VeteranLogo} alt='vl'/>
+        <button className='Footerbtn' style={{background:'blue'}}>Newsletter</button>
+        <button className='Footerbtn'style={{background:'red'}} >Careers</button>
+        <button className='Footerbtn'style={{background:'black'}}>Partner with us</button>
         </Fade>
         </Slide>
       </div>
@@ -101,7 +106,12 @@ function Footer() {
         <h2><i className='bi bi-telephone-fill'></i>888-792-8151</h2>
         <h2><i className="bi bi-envelope-fill"></i>Info@itregulators.com</h2>
         <p><i className="bi bi-envelope-fill"></i>PublicRelations@itregulators.com</p>
-        
+        <div className='socialIcons '>
+              <i className="bi bi-facebook"></i>
+              <i className="bi bi-twitter"></i>
+              <i className="bi bi-linkedin"></i>
+              <i className="bi bi-instagram"></i>
+            </div>
         </Fade>
         </Slide>
       </div>
@@ -166,6 +176,10 @@ function Footer() {
         <a href='/industries'>Industries</a>
         <a href='/resources'>Resources</a>
         <a href='/contact'>Contact Us</a>
+        <img src={VeteranLogo} alt='vl'/>
+        <button className='Footerbtn' style={{background:'blue'}}>Newsletter</button>
+        <button className='Footerbtn'style={{background:'red'}} >Careers</button>
+        <button className='Footerbtn'style={{background:'black'}}>Partner with us</button>
         </Fade>
         </Slide>
       </div>

@@ -9,6 +9,7 @@
     align-items:flex-start;
     background-repeat: no-repeat;
     padding: 90px 60px;
+    background-size: cover;
     
    
 }
@@ -29,7 +30,21 @@ margin: 0px 15px;
 font-size: 17px;
 font-weight: 700;
 
-
+}
+.Footerbtn{
+background: red;
+    padding: 5px 20px;
+    width: 123px;
+    text-align: left;
+    margin: 5px;
+    font-size: 14px;
+    color: white;
 }
 
+.Info .socialIcons{
+    position: relative;
+    top: 10px;
+    bottom: 0;
+  
+}
 
