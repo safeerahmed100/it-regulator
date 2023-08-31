@@ -3,6 +3,7 @@
     background-position: right center;
     background-size:cover;
     position: relative;
+    z-index: -1;
 }
 
 .ServicesHeader p{

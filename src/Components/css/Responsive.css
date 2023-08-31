@@ -1,4 +1,6 @@
-
+.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper {
+z-index: -1;
+}
 .Navbar i{
     display: none;
 }
@@ -9,6 +11,11 @@
 .displayNone{
     display: none;
 }
+
+.mobile a{
+    color: white;
+    text-align: center;
+}
 /* For Large Laptop */
 @media (max-width:1440px){
     
@@ -16,24 +23,47 @@
     .inputName, .inputPhone, .inputEmail, .inputBusiness{
         width: 48%!important;
     }
+    .Navbar .mobile{
+        display: none;
+    }
 }
 /* For Laptop */
 
 @media (max-width:1024px){
     
-
+.Navbar{
+    padding: 0;
+}
 .Navbar .logoSide img{
     width: 150px;
 }
-.Navbar .NavLinks a{
-    font-size: 12px;
-}
-.Navbar .buttons .btn{
-    font-size: 12px;
-}
+.Navbar .NavLinks{
+    display: none;
+   }
+
 .Navbar .buttons{
-    margin-right: 50px;
+    display: none;
 }
+.Navbar i{
+    display: block;
+    font-size: 35px;
+}
+.Navbar .mobile{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    width: 1024px;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+.Navbar .mobile a{
+    color: white;
+    font-size: 18px;
+    line-height: 4;
+}
+
+
 .swiper-button-prev {
     top: 100px!important;
     left: 750px!important;
@@ -82,6 +112,7 @@
     width: 100%!important;
 }
 }
+
 /* For Tablet */
 @media (max-width:768px){
 
@@ -106,16 +137,11 @@
     flex-direction: column;
     background: black;
     width: 768px;
-    text-align: right;
-    position: relative;
-    left: -14px;
-    top: 1px;
-    padding-bottom: 52px;
-}
-.mobile a{
-    color: white;
+    height: 100vh;
     text-align: center;
+    position: relative;
 }
+
 
 .bi-x{
     text-align: right;
@@ -186,6 +212,7 @@ width: 100%!important;
 }
 .ServiceContainer .ServiceSlider{
     width: 100%!important;
+    
 }
 
 .ServiceContainer .ServiceText{
@@ -448,3 +475,11 @@ top: 38%!important;
         display: none!important;
     }
 } 
+
+@media (max-width:1024px) and (min-width:300px){
+    
+    .About{
+        flex-direction: column-reverse;
+    }
+
+}

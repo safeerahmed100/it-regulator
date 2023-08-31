@@ -2,17 +2,17 @@ import React from 'react';
 import logo from '../Assets/logo.png';
 import VeteranLogo from '../Assets/logo-veteranownedbusiness 1.png'
 import './css/Footer.css';
-import { Fade, Slide } from 'react-awesome-reveal';
+import {  Slide } from 'react-awesome-reveal';
 
 function Footer() {
   return (
     <div className='Footer'>
+      
       <div className='FooterContainer ForMobile'>
-
+      <Slide>
       <div className='FooterResponsive'>
       <div className='Info'>
-      <Slide>
-      <Fade cascade damping={0.4}>
+      
         <img src={logo} alt='logo' />
         <h1>IT Regulators Inc.</h1>
         <h1>MAIN OFFICE:440 W. Boughton Rd. Ste. C1Bolingbrook Illinois. 60640</h1>
@@ -20,14 +20,12 @@ function Footer() {
         <h2><i className="bi bi-envelope-fill"></i>Info@itregulators.com</h2>
         <p><i className="bi bi-envelope-fill"></i>PublicRelations@itregulators.com</p>
         
-        </Fade>
-        </Slide>
+       
       </div>
       
       
       <div className='services'>
-        <Slide>
-      <Fade cascade damping={0.4}>
+        
         <h1>Services & Solutions</h1>
         <a href='/it-managed-services'>IT Managed Services</a>
         <a href='/it-deployment'>IT Deployment</a>
@@ -41,14 +39,13 @@ function Footer() {
         <a href='/security-systems'>Security Systems</a>
         <a href='/email-spam-protection'>Email & Spam Protection</a>
         <a href='/low-voltage-cabling'>Low Voltage Cabling</a>
-        </Fade>
-        </Slide>
+       
       </div>
       </div>
       <div className='FooterResponsive'>
       <div className='comp'>
-        <Fade >
-      <Fade cascade damping={0.4}>
+        
+      
         <h1>IT Competencies</h1>
         <a href='/'>.NET</a>
         <a href='/'>Cybersecurity</a>
@@ -59,14 +56,13 @@ function Footer() {
         <a href='/'>SQL Server</a>
         <a href='/'>Virtualization</a>
         <a href='/'>VPN</a>
-        </Fade>
-        </Fade>
+       
       </div>
 
 
 
-      <div className='staffing'><Slide direction={'right'}>
-      <Fade cascade damping={0.4}>
+      <div className='staffing'>
+      
         <h1>IT Staffing Services</h1>
         <a href='/'>Short-term, long-term, and permanent placement of certified IT professionals</a>
         <a href='/'>Contract</a>
@@ -74,13 +70,11 @@ function Footer() {
         <a href='/'>Permanent</a>
         <a href='/'>Emergency</a>
         <a href='/'>IT/MIS Department Staffing/Builder</a>
-        </Fade>
-        </Slide>
+        
       </div>
       </div>
       <div className='FooterResponsive'>
-      <div className='Navigations'><Slide direction={'right'}>
-        <Fade cascade damping={0.4}>
+      <div className='Navigations'>
         <h1>Navigation</h1>
         <a href='/about'>About Us</a>
         <a href='/industries'>Industries</a>
@@ -90,16 +84,18 @@ function Footer() {
         <button className='Footerbtn' style={{background:'blue'}}>Newsletter</button>
         <button className='Footerbtn'style={{background:'red'}} >Careers</button>
         <button className='Footerbtn'style={{background:'black'}}>Partner with us</button>
-        </Fade>
-        </Slide>
+       
       </div>
       </div>
+      </Slide>
       </div>
+      
 
       <div className='FooterContainer ForPc'>
-        <div className='Info'>
       <Slide>
-      <Fade cascade damping={0.4}>
+        <div className='Info'>
+   
+      
         <img src={logo} alt='logo' />
         <h1>IT Regulators Inc.</h1>
         <h1>MAIN OFFICE:440 W. Boughton Rd. Ste. C1Bolingbrook Illinois. 60640</h1>
@@ -112,14 +108,14 @@ function Footer() {
               <i className="bi bi-linkedin"></i>
               <i className="bi bi-instagram"></i>
             </div>
-        </Fade>
-        </Slide>
+       
+       
       </div>
       
       
       <div className='services'>
-        <Slide>
-      <Fade cascade damping={0.4}>
+       
+      
         <h1>Services & Solutions</h1>
         <a href='/it-managed-services'>IT Managed Services</a>
         <a href='/it-deployment'>IT Deployment</a>
@@ -133,13 +129,12 @@ function Footer() {
         <a href='/security-systems'>Security Systems</a>
         <a href='/email-spam-protection'>Email & Spam Protection</a>
         <a href='/low-voltage-cabling'>Low Voltage Cabling</a>
-        </Fade>
-        </Slide>
+      
       </div>
 
       <div className='comp'>
-        <Fade >
-      <Fade cascade damping={0.4}>
+       
+      
         <h1>IT Competencies</h1>
         <a href='/'>.NET</a>
         <a href='/'>Cybersecurity</a>
@@ -150,14 +145,13 @@ function Footer() {
         <a href='/'>SQL Server</a>
         <a href='/'>Virtualization</a>
         <a href='/'>VPN</a>
-        </Fade>
-        </Fade>
+      
       </div>
 
 
 
-      <div className='staffing'><Slide direction={'right'}>
-      <Fade cascade damping={0.4}>
+      <div className='staffing'>
+      
         <h1>IT Staffing Services</h1>
         <a href='/'>Short-term, long-term, and permanent placement of certified IT professionals</a>
         <a href='/'>Contract</a>
@@ -165,12 +159,11 @@ function Footer() {
         <a href='/'>Permanent</a>
         <a href='/'>Emergency</a>
         <a href='/'>IT/MIS Department Staffing/Builder</a>
-        </Fade>
-        </Slide>
+       
       </div>
 
-      <div className='Navigations'><Slide direction={'right'}>
-        <Fade cascade damping={0.4}>
+      <div className='Navigations'>
+       
         <h1>Navigation</h1>
         <a href='/about'>About Us</a>
         <a href='/industries'>Industries</a>
@@ -180,11 +173,11 @@ function Footer() {
         <button className='Footerbtn' style={{background:'blue'}}>Newsletter</button>
         <button className='Footerbtn'style={{background:'red'}} >Careers</button>
         <button className='Footerbtn'style={{background:'black'}}>Partner with us</button>
-        </Fade>
-        </Slide>
+
       </div>
-        
+      </Slide> 
         </div>
+       
       </div>
    
   );
@@ -195,6 +188,3 @@ export default Footer;
 
 
 
-/*
-
-      */

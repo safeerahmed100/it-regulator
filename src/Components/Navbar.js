@@ -34,7 +34,22 @@ function handleMenu(){
       </div>
       <div className='NavLinks'>
         <NavLink to='/about' className='link' end>About</NavLink>
-        <NavLink to='/service' className='link' >IT Services & Solutions</NavLink>
+        <NavLink to='/service' className='link serviceDrop' >IT Services & Solutions</NavLink>
+        <div className='dropDown'>
+        <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
+        <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
+        <NavLink to='./it-managed-service' className='link'>IT Assessments & Audits</NavLink> 
+        <NavLink to='./it-managed-service' className='link'>IT Deployement</NavLink> 
+        <NavLink to='./it-managed-service' className='link'>IT Staffing Services</NavLink> 
+        <NavLink to='./it-managed-service' className='link'>IT Emergency Support</NavLink> 
+        <NavLink to='./it-managed-service' className='link'>IT Help Desk</NavLink> 
+        <NavLink to='./it-security-services' className='link'>IT Security Services</NavLink> 
+        <NavLink to='./it-managed-service' className='link'>Office 365</NavLink> 
+        <NavLink to='./it-managed-service' className='link'>IT Low Voltage Cabling</NavLink> 
+        <NavLink to='./it-managed-service' className='link'>Email & Spam Protection</NavLink> 
+        <NavLink to='./it-managed-service' className='link'>Security Systems</NavLink> 
+
+        </div>
         <NavLink to='/industries'className='link' >Industries</NavLink>
         <NavLink to='/locations'className='link' >Locations</NavLink>
         <NavLink to='/resources' className='link' >Resources</NavLink>
@@ -50,6 +65,7 @@ function handleMenu(){
           <i className='bi bi-x' style={{color:'white'}} onClick={handleMenu}></i>
         <NavLink to='/about' className='link' end>About</NavLink>
         <NavLink to='/service' className='link' >IT Services & Solutions</NavLink>
+        <NavLink to='/networksecurity' className='link'></NavLink>
         <NavLink to='/industries'className='link' >Industries</NavLink>
         <NavLink to='/locations'className='link' >Locations</NavLink>
         <NavLink to='/resources' className='link' >Resources</NavLink>

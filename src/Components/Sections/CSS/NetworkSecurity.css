@@ -1,0 +1,95 @@
+.NetwokSecurityHeader{
+    background: url(./Assets/networkSecurityHeader.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 20px;
+    position: relative;
+    z-index: -1;
+}
+
+.NetworkContainer{
+padding: 20px 60px;
+    align-items: center;
+    display: flex;
+}
+
+.NetworkServiceImg {
+   margin: 0 100px;
+}
+
+.NetworkServiceText {
+    width: 50%;
+}
+
+.NetworkServiceImg img {
+    width: 300px;
+    border-radius: 25px;
+}
+.NetworkServiceImg img:hover{
+    box-shadow: 13px 12px 18px 0px #00000073;
+    
+}
+
+.NetworkServiceText h2{
+
+    
+font-size: 30px;
+font-weight: 500;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: left;
+border-bottom: 2px solid #FE2D2D;
+
+
+}
+
+.NetworkCenterContainer{
+    background:url(./Assets/NetworkContainerBg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.ManageServiceHeader{
+    z-index: -1;
+position: relative;
+    background:url(./Assets//mange-serviceHeader.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.NetworkServiceText li{
+    list-style-type: disc;
+    color:  #509BF4;
+    
+}
+.NetworkServiceText h3{
+    font-weight: 700;
+    font-size: large;
+    font-style:bold;
+}
+
+.ManageServiceHeader p{
+    color: white;
+}
+.ManageContainer{
+    text-align: center;
+    font-weight: bold;
+}
+.ManageContainerCover{
+    background:url(./Assets//manageServiceBackCover.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 60px;
+}
+.ManageContainerCover p{
+    width: 60%;
+    color: white;
+
+}
+
+.NetworkServiceText button{
+background-color: #509BF4;
+}
