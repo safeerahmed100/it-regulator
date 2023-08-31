@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
+    position: relative;
 }
 
 .AssessmentSliderContainer{
@@ -11,14 +12,22 @@
     display: flex;
     padding: 100px 60px;
     align-items: center;
-
+    height: 50vh;
+    z-index: 99;
 }
-
+.AssessmentContainer p{
+    width: 90%;
+    font-size: 22px;
+}
 .AssessmentSliderText{
-    width: 50%;
+    width: 70%;
 }
 .AssessmentSliderImg{
-    width: 50%;
+    width: 30%;
+}
+.AssessmentSliderText h1{
+    font-size: 50px;
+    font-weight: bold;
 }
 .AssessmentContainer{
     background: url(./Assets/AssessmentContainer.png);
@@ -29,4 +38,9 @@
     color: white;
     padding: 100px 60px;
     text-align: center;
+}
+
+.AssessmentInfoContainer{
+
+    padding: 60px 100px;
 }

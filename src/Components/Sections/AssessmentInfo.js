@@ -1,9 +1,12 @@
 import React from 'react'
 import AssessmentSlider from './AssessmentSlider'
+import AssessmentImg1 from './CSS/Assets/AssessmenCont1.png'
+
 
 function AssessmentInfo() {
   return (
-    <div className='AssessmentInfo'>    <div className='NetworkContainer NetworkCenterContainer'>
+    <div className='AssessmentInfo'>  
+      <div className='NetworkContainer AssessmentInfoContainer NetworkCenterContainer'>
     <div className='NetworkServiceText'>
         <h3>Want to know just how effective, secure and future-proof your existing IT infrastructure really is?</h3>
        <h2>A comprehensive IT Assessment from ITRegulators will:</h2>
@@ -16,7 +19,7 @@ function AssessmentInfo() {
     
     </div>
     <div className='NetworkServiceImg'>
-        <img  alt='NetworkService'/>
+        <img src={AssessmentImg1} alt='NetworkService'/>
     </div>
     </div>
 
@@ -24,7 +27,7 @@ function AssessmentInfo() {
 <div className='AssessmentContainer'>
 <p>ITRegulators can then provide further IT consulting or IT support to assist in theimplementation of any recommended strategic Information Technology solutions.</p>
 </div>
-<div className='NetworkContainer NetworkCenterContainer'>
+<div className='NetworkContainer  AssessmentInfoContainer NetworkCenterContainer'>
     <div className='NetworkServiceText'>
        <h2>At the conclusion of your IT Assessment you will receive:</h2>
         <ul>
@@ -32,12 +35,12 @@ function AssessmentInfo() {
             <li>A network architecture diagram, illustrating the current IT environment, 
 areas of vulnerability, and desktop computer profiles</li>
             <li>Recommendations on staffing plans</li>
-            <p>A list of risks, concerns, and action items</p>           
+            <li>A list of risks, concerns, and action items</li>           
         </ul>
     
     </div>
     <div className='NetworkServiceImg'>
-        <img  alt='NetworkService'/>
+        <img src={AssessmentImg1} alt='NetworkService'/>
     </div>
     </div>
     </div>

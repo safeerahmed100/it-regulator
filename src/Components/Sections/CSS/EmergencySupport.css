@@ -4,4 +4,34 @@
     background-position: center center;
     background-repeat: no-repeat;
     z-index: -1;
+    position: relative;
+}
+
+.EmergencyInfoContainer{
+    padding: 60px 100px;
+    display: flex;
+    align-items: center;
+}
+.EmergencyInfoText{
+    width: 70%;
+    margin: 0 20px;
+}
+.EmergencyInfoText h2{
+    font-size: 24px;
+
+}
+.EmergencyInfoText li{
+    text-decoration : dotted;
+}
+.EmergencyInfoImg{
+    width: 30%;
+}
+hr{
+    margin: 5px 0;
+    background-color: red;
+    width: 20%;
+    height: 0.2vh;
+}
+.secondCont{
+    flex-direction: row-reverse;
 }
