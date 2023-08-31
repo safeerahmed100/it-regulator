@@ -1,15 +1,21 @@
 import './App.css';
 import Navbar from './Components/Navbar'
 import './Components/css/Responsive.css'
-import Home from './Components/HomePage'
+import Home from './Components/Pages/HomePage'
 import { Routes,Route } from 'react-router-dom';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
- import AboutPage from './Components/AboutPage';
-import ServicePage from './Components/ServicePage';
-import NetworkSecurity from './Components/NetworkSecurity';
-import ManageServices from './Components/ManageServices';
-import ConsultancyServices from './Components/ConsultancyServices';
+ import AboutPage from './Components/Pages/AboutPage';
+import ServicePage from './Components/Pages/ServicePage';
+import NetworkSecurity from './Components/Pages/NetworkSecurity';
+import ManageServices from './Components/Pages/ManageServices';
+import ConsultancyServices from './Components/Pages/ConsultancyServices';
+import StaffingSerivce from './Components/Pages/StaffingSerivce';
+import AssessmentsAudits from './Components/Pages/AssessmentsAudits';
+import Deployment from './Components/Pages/Deployment';
+import HelpDesk from './Components/Pages/HelpDesk';
+import EmergencySupport from './Components/Pages/EmergencySupport';
+
 
 // import ContactPopUp from './Components/ContactPopUp';
 
@@ -26,6 +32,13 @@ function App() {
     <Route path='/it-security-services' element={<NetworkSecurity/>}></Route>
     <Route path='/it-managed-services' element={<ManageServices/>}></Route>
     <Route path='/it-consultancy-services' element={<ConsultancyServices/>}></Route>
+    <Route path='/it-staffing-services' element={<StaffingSerivce/>}></Route>
+    <Route path='/it-assessment-audit-services' element={<AssessmentsAudits/>}></Route>
+    <Route path='/it-deployement-services' element={<Deployment/>}></Route>
+    <Route path='/it-emergency-support' element={<EmergencySupport/>}></Route>
+    <Route path='/it-help-support' element={<HelpDesk/>}></Route>
+
+
 
   </Routes>
   <Contact />

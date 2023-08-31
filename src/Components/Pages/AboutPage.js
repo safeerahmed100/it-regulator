@@ -1,6 +1,6 @@
 import React from 'react'
-import AboutHeader from './Sections/AboutHeader'
-import AboutInfo from './Sections/AboutInfo'
+import AboutHeader from '../Sections/AboutHeader'
+import AboutInfo from '../Sections/AboutInfo'
 
 function AboutPage() {
   return (

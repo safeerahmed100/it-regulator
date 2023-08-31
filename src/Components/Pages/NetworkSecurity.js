@@ -1,6 +1,6 @@
 import React from 'react'
-import NetworkSecurityHeader from './Sections/NetworkSecurityHeader'
-import NetworkServiceInfo from './Sections/NetworkServiceInfo'
+import NetworkSecurityHeader from '../Sections/NetworkSecurityHeader'
+import NetworkServiceInfo from '../Sections/NetworkServiceInfo'
 
 function NetworkSecurity() {
   return (

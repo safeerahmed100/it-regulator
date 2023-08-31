@@ -1,0 +1,22 @@
+.AssessmentHeader{
+    background: url(./Assets/AssessmentHeader.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.AssessmentSliderContainer{
+    background-color: lightblue;
+    display: flex;
+    padding: 100px 60px;
+    align-items: center;
+
+}
+
+.AssessmentSliderText{
+    width: 50%;
+}
+.AssessmentSliderImg{
+    width: 50%;
+}
