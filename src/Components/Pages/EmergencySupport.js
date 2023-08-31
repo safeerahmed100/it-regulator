@@ -1,8 +1,13 @@
 import React from 'react'
+import EmergencySupportHeader from '../Sections/EmeregencySupportHeader'
+import '../Sections/CSS/EmergencySupport.css'
 
 function EmergencySupport() {
   return (
-    <div>EmergencySupport</div>
+    <div>
+<EmergencySupportHeader/>
+
+    </div>
   )
 }
 

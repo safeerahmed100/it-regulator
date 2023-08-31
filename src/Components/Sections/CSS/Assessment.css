@@ -20,3 +20,13 @@
 .AssessmentSliderImg{
     width: 50%;
 }
+.AssessmentContainer{
+    background: url(./Assets/AssessmentContainer.png);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 100px 60px;
+    text-align: center;
+}

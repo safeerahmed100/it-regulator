@@ -21,6 +21,9 @@ function AssessmentInfo() {
     </div>
 
 <AssessmentSlider/>
+<div className='AssessmentContainer'>
+<p>ITRegulators can then provide further IT consulting or IT support to assist in theimplementation of any recommended strategic Information Technology solutions.</p>
+</div>
 <div className='NetworkContainer NetworkCenterContainer'>
     <div className='NetworkServiceText'>
        <h2>At the conclusion of your IT Assessment you will receive:</h2>
