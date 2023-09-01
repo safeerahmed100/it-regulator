@@ -8,9 +8,10 @@
 }
 
 .NetworkContainer{
-padding: 20px 60px;
+padding: 30px 60px;
     align-items: center;
     display: flex;
+    justify-content: space-between;
 }
 
 .NetworkServiceImg {
@@ -38,7 +39,6 @@ font-weight: 500;
 line-height: 47px;
 letter-spacing: 0em;
 text-align: left;
-border-bottom: 2px solid #FE2D2D;
 
 
 }

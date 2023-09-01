@@ -1,8 +1,15 @@
 import React from 'react'
+import DeploymentHeader from '../Sections/DeploymentHeader'
+import DeploymentInfo from '../Sections/DeploymentInfo'
+import '../Sections/CSS/Deployment.css'
+
 
 function Deployment() {
   return (
-    <div>Deployment</div>
+    <div>
+      <DeploymentHeader/>
+      <DeploymentInfo/>
+    </div>
   )
 }
 

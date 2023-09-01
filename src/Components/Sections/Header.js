@@ -9,6 +9,7 @@ import { Fade} from 'react-awesome-reveal';
 
 function Header() {
   return (
+    <div className='HeaderSlider'>
        <Swiper
        slidesPerView={1}
         grabCursor={true}
@@ -18,7 +19,7 @@ function Header() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay,Navigation]}
-        className="mySwiper"
+        className="mySwiper MainHeader"
       >
       {content.map((content)=>(
       <SwiperSlide key={content.id} >
@@ -42,6 +43,7 @@ function Header() {
          </SwiperSlide>
     ))}
  </Swiper>
+ </div>
   )
 }
 export default Header

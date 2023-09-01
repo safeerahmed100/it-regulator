@@ -13,7 +13,7 @@ import ConsultancyServices from './Components/Pages/ConsultancyServices';
 import StaffingSerivce from './Components/Pages/StaffingSerivce';
 import AssessmentsAudits from './Components/Pages/AssessmentsAudits';
 import Deployment from './Components/Pages/Deployment';
-import HelpDesk from './Components/Pages/HelpDesk';
+import OfficePage from './Components/Pages/OfficePage';
 import EmergencySupport from './Components/Pages/EmergencySupport';
 
 
@@ -36,7 +36,9 @@ function App() {
     <Route path='/it-assessment-audit-services' element={<AssessmentsAudits/>}></Route>
     <Route path='/it-deployement-services' element={<Deployment/>}></Route>
     <Route path='/it-emergency-support' element={<EmergencySupport/>}></Route>
-    <Route path='/it-help-support' element={<HelpDesk/>}></Route>
+    {/* <Route path='/it-help-support' element={<HelpDesk/>}></Route> */}
+    <Route path='/office-365' element={<OfficePage/>}></Route>
+
 
 
 

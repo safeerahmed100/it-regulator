@@ -7,11 +7,14 @@
     padding: 40px;
     z-index: -1;
 }
-.ConsultancyContainer{    display: flex;
+.ConsultancyContainer{ 
+       display: flex;
+       justify-content: space-between;
 align-items: center;
+padding: 30px 60px;
 }
 .ConsultancyInfo{
-    padding: 20px 100px;
+    padding: 20px 0 0 0;
 }
 
 .Container1,.Container2,.Container3{
@@ -29,6 +32,21 @@ align-items: center;
     background: url(./Assets/ConsultancyContainer2.png);
 }
 
-.StaffingHeader{
-    background: url(./Assets/StaffingHeader.png);
+.ConsultancySection{
+    background: url(./Assets/ConsultancySection.png);
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    margin-top: 20px;
+    
+
+}
+.ConsultancySectionText{
+    
+    color: white;
+    text-align: center;
+}
+
+.ConsultancySectionText .btn{
+    background-color:#509BF4;
 }
