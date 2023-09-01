@@ -3,4 +3,6 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
 }

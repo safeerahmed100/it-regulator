@@ -8,11 +8,11 @@
 }
 
 .AssessmentSliderContainer{
-    background-color: lightblue;
+    background:url(./Assets/assessmentSliderBg.png);
     display: flex;
     padding: 100px 60px;
     align-items: center;
-    height: 50vh;
+    height: 80vh;
     z-index: 99;
 }
 .AssessmentContainer p{
@@ -43,4 +43,11 @@
 .AssessmentInfoContainer{
 
     padding: 60px 100px;
+}
+
+.AssessmentGap{
+    padding: 60px ;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
 }

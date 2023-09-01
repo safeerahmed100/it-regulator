@@ -22,6 +22,10 @@ function AssessmentInfo() {
         <img src={AssessmentImg1} alt='NetworkService'/>
     </div>
     </div>
+    
+    <div className='AssessmentGap'><h2><span style={{borderBottom:'1px solid red'}}>Our 3-step </span>IT Assessment involves</h2>
+    
+    </div>
 
 <AssessmentSlider/>
 <div className='AssessmentContainer'>

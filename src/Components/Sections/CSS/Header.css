@@ -83,3 +83,6 @@ backdrop-filter: blur(11.3px);
     linear-gradient(0deg, #FFFFFF, #FFFFFF);;
 }
 
+.MainHeader{
+    z-index: -1!important;
+}
