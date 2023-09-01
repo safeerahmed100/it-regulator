@@ -9,6 +9,9 @@
     width: 100%
     
 }
+.Navbar .remote{
+    display: none;
+}
 
 .NavLinks a{
 text-decoration: none;
@@ -51,8 +54,8 @@ box-shadow: 0 5px 11px -1px #000;
 .dropDown {
     display: none;
     position: absolute;
-    left: 36px;
-    top: 20px;
+    left: 260px;
+    top: 63px;
     padding: 18px;
     background: white;
     box-shadow: 0 8px 12px 4px #00000052;
@@ -74,22 +77,26 @@ box-shadow: 0 5px 11px -1px #000;
   }
 @media (max-width:1280px) {
     .logoSide{
-        width: 80%;
+        width: 30%;
 
+    }
+    .logoSide img{
+        width: 200px;
     }
 
     .NavLinks{
-        width: 110%;
+        width: 100%;
     }
 
     .buttons{
-        width: 110%;
+        width: 40%;
 
     }
     .Navbar .buttons .btn{
         padding: 8px 12px;
         margin: 0 6px;
     }
+    
 
     .Navbar{
         padding: 20px 10px;

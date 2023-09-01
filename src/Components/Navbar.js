@@ -26,7 +26,7 @@ function handleMenu(){
   return (
     <div className={`Navbar ${isShow && 'nav_black'}`}>
 
-<Slide>
+
       <div className='logoSide'>
         <Link to='/'>
     <img src={Logo} alt='logo'/>
@@ -77,9 +77,9 @@ function handleMenu(){
       <div className='buttons'>
         <button className='btn career'>Career</button>
         <a href='tel:+888-792-8151' className='btn'><span><i className="bi bi-telephone-fill"></i></span>+888-792-8151</a>
-        <button className='btn'>Remote Support</button>
+        <button className='btn remote'>Remote Support</button>
       </div>
-      </Slide>
+    
     </div>
   )
 }
