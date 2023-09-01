@@ -29,12 +29,7 @@ function Contact() {
         <input  className='inputMessage' type='text' placeholder='Your Message' />
         <button className='btn'>Send</button>
         </form>
-        <div className='socialIcons '>
-              <i className="bi bi-facebook"></i>
-              <i className="bi bi-twitter"></i>
-              <i className="bi bi-linkedin"></i>
-              <i className="bi bi-instagram"></i>
-            </div>
+       
 
             </Fade>
       </div>

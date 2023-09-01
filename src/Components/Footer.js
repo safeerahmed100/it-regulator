@@ -92,7 +92,7 @@ function Footer() {
       
 
       <div className='FooterContainer ForPc'>
-      <Slide>
+      
         <div className='Info'>
    
       
@@ -175,7 +175,7 @@ function Footer() {
         <button className='Footerbtn'style={{background:'black'}}>Partner with us</button>
 
       </div>
-      </Slide> 
+     
         </div>
        
       </div>
