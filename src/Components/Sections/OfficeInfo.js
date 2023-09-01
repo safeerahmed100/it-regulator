@@ -31,9 +31,11 @@ function OfficeInfo() {
   <li><span style={{fontWeight:800}}>Reduced acquisition and maintenance costs —</span> leverage the benefits of cutting-edge tools at SMB-friendly prices and enjoy the latest features that come with regular updates</li>
             <br/>
             <li><span style={{fontWeight:800}}>Improved data security — </span>the Office 365 suite lets you customize user access settings to ensure that the right data is in the right hands</li>
+            <br/>
+            <li><span style={{fontWeight:800}}>Increased productivity —</span> the fast and efficient provisioning of apps means a smoother work experience and increased productivity</li>
+
             </ul>
             <br/>
-            <p style={{color:'#509BF4'}}>ITRegulators’ emergency support ensures fast and efficient solutions to whatever it problem arises</p>
         </div>
         <div className='EmergencyInfoImg '>
             <img src={EmergencyInfoImg1} alt='some'/> 

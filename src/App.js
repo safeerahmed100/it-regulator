@@ -15,6 +15,9 @@ import AssessmentsAudits from './Components/Pages/AssessmentsAudits';
 import Deployment from './Components/Pages/Deployment';
 import OfficePage from './Components/Pages/OfficePage';
 import EmergencySupport from './Components/Pages/EmergencySupport';
+import LowVoltageCabling from './Components/Pages/LowVoltageCabling';
+import HelpDesk from './Components/Pages/HelpDesk';
+
 
 
 // import ContactPopUp from './Components/ContactPopUp';
@@ -36,8 +39,9 @@ function App() {
     <Route path='/it-assessment-audit-services' element={<AssessmentsAudits/>}></Route>
     <Route path='/it-deployement-services' element={<Deployment/>}></Route>
     <Route path='/it-emergency-support' element={<EmergencySupport/>}></Route>
-    {/* <Route path='/it-help-support' element={<HelpDesk/>}></Route> */}
+    <Route path='/it-help-desk' element={<HelpDesk/>}></Route>
     <Route path='/office-365' element={<OfficePage/>}></Route>
+    <Route path='/low-voltage-cabling' element={<LowVoltageCabling/>}></Route>
 
 
 

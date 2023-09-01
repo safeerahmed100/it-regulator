@@ -42,10 +42,10 @@ function handleMenu(){
         <NavLink to='./it-deployement-services' className='link'>IT Deployement</NavLink> 
         <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink> 
         <NavLink to='./it-emergency-support' className='link'>IT Emergency Support</NavLink> 
-        <NavLink to='./it-help-support' className='link'>IT Help Desk</NavLink> 
+        <NavLink to='./it-help-desk' className='link'>IT Help Desk</NavLink> 
         <NavLink to='./it-security-services' className='link'>IT Security Services</NavLink> 
         <NavLink to='./office-365' className='link'>Office 365</NavLink> 
-        <NavLink to='./it-managed-service' className='link'>IT Low Voltage Cabling</NavLink> 
+        <NavLink to='./low-voltage-cabling' className='link'>IT Low Voltage Cabling</NavLink> 
         <NavLink to='./it-managed-service' className='link'>Email & Spam Protection</NavLink> 
         <NavLink to='./it-managed-service' className='link'>Security Systems</NavLink> 
 
