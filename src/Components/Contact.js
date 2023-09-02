@@ -10,7 +10,7 @@ function Contact() {
         <Slide >   
              <div className='ContactText'>
 
-      <h1>NEED IT HELP NOW?</h1>
+      <h1>NEED IT <span style={{color:'#ff3939'}}>HELP</span> NOW?</h1>
       <h3>Fill in the the form and we’ll get back to you as soon as possible</h3>
       </div>
       <div className='ContactForm'>

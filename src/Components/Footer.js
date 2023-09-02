@@ -170,8 +170,6 @@ function Footer() {
         <a href='/resources'>Resources</a>
         <a href='/contact'>Contact Us</a>
         <img src={VeteranLogo} alt='vl'/>
-        <button className='Footerbtn' style={{background:'blue'}}>Newsletter</button>
-        <button className='Footerbtn'style={{background:'red'}} >Careers</button>
         <button className='Footerbtn'style={{background:'black'}}>Partner with us</button>
 
       </div>

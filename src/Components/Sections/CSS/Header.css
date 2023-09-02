@@ -79,6 +79,7 @@ backdrop-filter: blur(11.3px);
 
 
 .Header .btn{
+    margin-top: 20px;
     background: linear-gradient(0deg, #509BF4, #509BF4),
     linear-gradient(0deg, #FFFFFF, #FFFFFF);;
 }

@@ -24,6 +24,7 @@ function Services() {
     strings: ['Our Services'],
     autoStart: true,
     loop: true,
+    pauseFor:500000
   }}
 /></h1>
     </Slide>

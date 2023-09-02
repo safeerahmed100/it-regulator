@@ -1,6 +1,6 @@
 .About {
     background: url("./Assets//Rectangle\ 2151.png");
-    padding: 100px;
+    padding: 80px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,6 +20,7 @@
   }
   
   .AboutText h4 {
+    padding-bottom:30px ;
     font-size: 47px;
   }
   

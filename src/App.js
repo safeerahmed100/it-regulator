@@ -42,16 +42,10 @@ function App() {
     <Route path='/it-help-desk' element={<HelpDesk/>}></Route>
     <Route path='/office-365' element={<OfficePage/>}></Route>
     <Route path='/low-voltage-cabling' element={<LowVoltageCabling/>}></Route>
-
-
-
-
   </Routes>
   <Contact />
   <Footer />
-<div className='FooterBanner'>
-    <h6>Design and developed by CREATECHZ</h6>
-  </div>
+
 </>
   );
 }

@@ -20,7 +20,8 @@ function About() {
   options={{
     strings: ['About Us'],
     autoStart: true,
-    loop: true,
+    loop:false,
+    pauseFor:5000000  
   }}
 /></h1>
       <Fade cascade damping={0.5}   >
