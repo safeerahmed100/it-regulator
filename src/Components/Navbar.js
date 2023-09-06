@@ -5,7 +5,7 @@ import {Link,NavLink} from "react-router-dom";
 
 
 function Navbar() {
-  const [isActive,setIsActive] = useState(false)
+  const [isActive,setIsActive] = useState(true)
   const [isShow,setIsShow]=useState(false)
 
   function transitionNav(){
@@ -25,12 +25,10 @@ function handleMenu(){
   return (
     <div className={`Navbar ${isShow && 'nav_black'}`}>
 
-
       <div className='logoSide'>
         <Link to='/'>
     <img src={Logo} alt='logo'/>
     </Link>
-   
       </div>
      
       <div className='NavLinks'>
@@ -62,11 +60,9 @@ function handleMenu(){
         <a href='tel:+888-792-8151' className='btn'><span><i className="bi bi-telephone-fill"></i></span>+888-792-8151</a>
         <button className='btn remote'>Remote Support</button>
       </div>
-      <i className={isActive===true?'displayNone':'bi bi-list'} style={{color:'black'}} onClick={handleMenu}></i>
 
+<i className={isActive===true?'displayNone':'bi bi-list'} style={{color:'black'}} onClick={handleMenu}></i>
 {isActive &&  (
-  
-
         <div  className='NavLinks mobile '>
           <i className='bi bi-x' style={{color:'white'}} onClick={handleMenu}></i>
         <NavLink to='/about' className='link' end>About</NavLink>

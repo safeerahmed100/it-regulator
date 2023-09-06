@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderComponent from '../Sections/HeaderComponent'
 import InfoComponent from '../Sections/InfoComponent'
+import BannerComponent from '../Sections/BannerComponent'
 import Img1 from '../Sections/CSS/Assets/Deployment1 .png'
 import Img2 from '../Sections/CSS/Assets/Deployment2.png'
 import Img3 from '../Sections/CSS/Assets/Deployment3.png'
@@ -42,7 +43,11 @@ paraText='Getting the product to the desk is only one phase of any project, fina
 boldpara='Our deployment teams follow detailed instructions and sign-off processes to ensure the user experience is delivered ensuring IT support confidence is retained and enhanced at the end'
 componentImage={Img3}
      />
-
+      <BannerComponent
+      componentClass='DeploymentBanner'
+      BannerPara='Talk to us about how IT Deployment services from ITRegulators can benefit your business'
+      BannerBtn='Contact Us Now'
+      />
 
     </div>
   )

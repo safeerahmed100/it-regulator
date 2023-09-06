@@ -1,0 +1,49 @@
+.manageContainer{
+    background: url(./Assets/manageServiceBackCover.png);
+}
+.ConsultingBanner{
+    background: url(./Assets/ConsultancySection.png);
+}
+.AssessmentBanner{
+    background: url(./Assets/AssessmentContainer.png);
+}
+.DeploymentBanner{
+
+    background: url(./Assets/DeploymentContainer.png);
+}
+.HelpDeskBanner{
+    background: url(./Assets/HelpDeskContainer.png);
+
+}
+.HelpDeskBanner2{
+    background: url(./Assets/HelpDeskContainer2.png);
+}
+.HelpDeskBanner2 h5{
+    color: black;
+    font-weight: 700;
+    font-size:20px;
+
+}
+.BannerContainer{
+    background-position: center;
+    background-size: cover;
+    padding: 60px 40px;
+    text-align: center;
+color: white;
+}
+
+
+.BannerContainer button{
+    background: rgb(80, 155, 244);
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+    margin-top: 10px;
+
+}
+  
+.BannerContainer button:hover{
+    box-shadow: 0px 20px 43px 0px #509BF494;
+
+}
+

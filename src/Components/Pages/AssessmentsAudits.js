@@ -5,6 +5,7 @@ import InfoComponent from '../Sections/InfoComponent'
 import Img1 from '../Sections/CSS/Assets/AssessmentImg1.png'
 import Img2 from '../Sections/CSS/Assets/AssessmentCont1.png'
 import AssessmentSlider from '../Sections/AssessmentSlider'
+import BannerComponent from '../Sections/BannerComponent'
 function AssessmentsAudits() {
   return (
     <div>
@@ -20,6 +21,10 @@ subHeading='Want to know just how effective, secure and future-proof your existi
   componentImage={Img1}
  />
  <AssessmentSlider/>
+ <BannerComponent 
+ componentClass='AssessmentBanner'
+ BannerPara='ITRegulators can then provide further IT consulting or IT support to assist in theimplementation of any recommended strategic Information Technology solutions.'
+ />
  <InfoComponent 
   heading='At the conclusion of your IT Assessment you will receive:'
   listItem1='A detailed report outlining the day-to-day activities of the IT department'

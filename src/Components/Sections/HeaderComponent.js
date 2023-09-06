@@ -7,7 +7,7 @@ function HeaderComponent({componentClass,highlightedText,Text}) {
       <Fade cascade damping={0.9}>
       <div className='banner'  >
         <div className='headerText'>   
-          <h1><span style={{color:'#509BF4'}}>{highlightedText}</span>{Text}</h1>     
+          <h1><span style={{color:'#ff3939'}}>{highlightedText}</span>{Text}</h1>     
           </div>      
       </div>
       </Fade>  

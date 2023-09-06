@@ -6,6 +6,7 @@ import Img3 from '../Sections/CSS/Assets/Consultancy3.png'
 import Img4 from '../Sections/CSS/Assets/Consultancy4.png'
 import Img5 from '../Sections/CSS/Assets/Consultancy5.png'
 import InfoComponent from '../Sections/InfoComponent'
+import BannerComponent from '../Sections/BannerComponent'
 function ConsultancyServices() {
   return (
     <div>
@@ -37,6 +38,11 @@ componentImage={Img4}  />
   heading='Strategic IT consulting services'
   paraText='Because your business relies so heavily on technology, it is critical that your technology is aligned with, and supports your, business goals and meets outside requirements, such as compliancy and security, head on. ITRegulators provides C-level consulting with skilled professionals that not only understand technology but who make a point of understanding your business. From whiteboard to the board room, ITRegulators provides the high-level, strategic IT thinking and direction that ensures that your technology powers your business effectively – today and tomorrow.'
 componentImage={Img5}  />
+    <BannerComponent
+    componentClass='ConsultingBanner'
+      BannerPara='Learn more about how IT Consultancy services can benefit your business.'
+      BannerBtn='Contact Us'
+    />
     </div>
   )
 }
