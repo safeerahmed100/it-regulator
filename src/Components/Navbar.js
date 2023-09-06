@@ -35,7 +35,7 @@ function handleMenu(){
       <div className='NavLinks'>
         <NavLink to='/about' className='link' end>About</NavLink>
         <NavLink to='/service' className='link serviceDrop' onMouseEnter={()=>setIsHover(true)} onMouseLeave={()=>setIsHover(false)}>IT Services & Solutions</NavLink>
-        <div className='dropDown'>
+        <div className={`dropDown ${isShow && 'dropDown-scroll'}`}>
         <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
         <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
         <NavLink to='./it-assessment-audit-services' className='link'>IT Assessments & Audits</NavLink> 
