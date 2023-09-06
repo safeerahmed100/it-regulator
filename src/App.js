@@ -17,6 +17,7 @@ import EmergencySupport from './Components/Pages/EmergencySupport';
 import LowVoltageCabling from './Components/Pages/LowVoltageCabling';
 import HelpDesk from './Components/Pages/HelpDesk';
 import EmailPage from './Components/Pages/EmailPage';
+import {React,useState } from 'react';
 
 
 
@@ -25,12 +26,12 @@ import EmailPage from './Components/Pages/EmailPage';
 
 
 function App() {
-  
+  const [isHover,setIsHover]=useState(false)
   return (
    <>
-  <Navbar />
+  <Navbar isHover={isHover} setIsHover={setIsHover}/>
   <Routes>
-    <Route path='/' element={<Home />}></Route>
+    <Route path='/' element={<Home isHover={isHover} setIsHover={setIsHover}/>}></Route>
     <Route path='/About' element={<AboutPage />}></Route>
     <Route path='/Service' element={<ServicePage />}></Route>
     <Route path='/it-security-services' element={<NetworkSecurity/>}></Route>

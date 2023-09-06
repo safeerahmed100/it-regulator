@@ -9,7 +9,7 @@ import headerImg1 from './CSS/Assets/headerimg1.png'
 import headerImg2 from './CSS/Assets/headerimg2.png'
 import headerImg3 from './CSS/Assets/headerimg3.png'
 
-function Header() {
+function Header({isHover,setIsHover}) {
   return (
     <div className='HeaderSlider'>
        <Swiper
@@ -21,7 +21,7 @@ function Header() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay,Navigation]}
-        className="mySwiper MainHeader"
+        className={`mySwiper ${isHover===true? 'stacking': ''}`}
       >
       
       <SwiperSlide key='1' >

@@ -1,7 +1,5 @@
 
-.serviceDrop:hover + .MainHeader{
-    z-index: -1!important;
-}
+
 .Navbar i{
     display: none;
 }

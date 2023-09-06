@@ -6,10 +6,10 @@ import Services from '../Sections/Services'
 import Newsletter from '../Sections/Newsletter'
 import Partners from '../Sections/Partners'
 import Contact from '../Contact'
-function Home() {
+function Home({isHover,setIsHover}) {
   return (
    <>
-   <Header />
+   <Header isHover={isHover} setIsHover={setIsHover} />
    <About />
    <Services />
    {/* <Testimonials /> */}

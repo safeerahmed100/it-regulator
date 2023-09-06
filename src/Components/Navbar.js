@@ -4,9 +4,10 @@ import './css/Navbar.css'
 import {Link,NavLink} from "react-router-dom";
 
 
-function Navbar() {
-  const [isActive,setIsActive] = useState(true)
+function Navbar({isHover,setIsHover}) {
+  const [isActive,setIsActive] = useState(false)
   const [isShow,setIsShow]=useState(false)
+
 
   function transitionNav(){
     (window.scrollY>100? setIsShow(true): setIsShow(false))
@@ -33,7 +34,7 @@ function handleMenu(){
      
       <div className='NavLinks'>
         <NavLink to='/about' className='link' end>About</NavLink>
-        <NavLink to='/service' className='link serviceDrop' >IT Services & Solutions</NavLink>
+        <NavLink to='/service' className='link serviceDrop' onMouseEnter={()=>setIsHover(true)} onMouseLeave={()=>setIsHover(false)}>IT Services & Solutions</NavLink>
         <div className='dropDown'>
         <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
         <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 

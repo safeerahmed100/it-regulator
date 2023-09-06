@@ -1,4 +1,10 @@
 
+.stacking{
+    z-index: -1!important;
+}
+.logoSide img{
+    width: 200px;
+}
 .nav_black{
     position: fixed;
     background-color: white!important;
@@ -28,35 +34,31 @@ box-shadow: 0 5px 11px -1px #000;
 .Navbar .buttons .career{
     background-color: #509BF4;
 }
-
-    .Navbar .buttons .btn:hover{
-        background: linear-gradient(0deg, #509BF4, #509BF4),
-        linear-gradient(0deg, #FFFFFF, #FFFFFF);
-    }
+.Navbar .buttons .btn:hover{
+    background: linear-gradient(0deg, #509BF4, #509BF4),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+ }
 .Navbar{
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
 }
-
 .link{
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .link.active{
     border-bottom: 1px solid red;
 }
-.rightSide{
-    display: flex;
-    ;
-}
 
 /*DROP DOWN CSS */
 .dropDown {
+    z-index: 2;
     display: none;
     position: absolute;
-    left: 339px;
-    top: 76px;
+    left: 22%;
+    top: 9.5%;
     padding: 18px;
     background: white;
     box-shadow: 0 8px 12px 4px #00000052;
@@ -70,6 +72,7 @@ box-shadow: 0 5px 11px -1px #000;
   .serviceDrop:hover + .dropDown {
     display: inline-grid;
   }
+ 
   .dropDown:hover{
   display:inline-grid;
   }
