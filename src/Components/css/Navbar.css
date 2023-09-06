@@ -25,6 +25,7 @@
 text-decoration: none;
 color: black;
 margin: 0 5px;
+font-size: 14px;
 
 }
 
@@ -33,7 +34,7 @@ margin: 0 5px;
     background-color: black;
     margin: 0 6px;
 border-radius: 20px;
-
+font-size: 12px;
 box-shadow: 0 5px 11px -1px #000;
 }
 .Navbar .buttons .career{
