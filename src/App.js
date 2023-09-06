@@ -3,7 +3,6 @@ import Navbar from './Components/Navbar'
 import './Components/css/Responsive.css'
 import Home from './Components/Pages/HomePage'
 import { Routes,Route } from 'react-router-dom';
-import Contact from './Components/Contact';
 import Footer from './Components/Footer';
  import AboutPage from './Components/Pages/AboutPage';
 import ServicePage from './Components/Pages/ServicePage';
@@ -17,6 +16,8 @@ import OfficePage from './Components/Pages/OfficePage';
 import EmergencySupport from './Components/Pages/EmergencySupport';
 import LowVoltageCabling from './Components/Pages/LowVoltageCabling';
 import HelpDesk from './Components/Pages/HelpDesk';
+import EmailPage from './Components/Pages/EmailPage';
+
 
 
 
@@ -42,8 +43,9 @@ function App() {
     <Route path='/it-help-desk' element={<HelpDesk/>}></Route>
     <Route path='/office-365' element={<OfficePage/>}></Route>
     <Route path='/low-voltage-cabling' element={<LowVoltageCabling/>}></Route>
+    <Route path='/email-spam-protection' element={<EmailPage/>}></Route>
+
   </Routes>
-  <Contact />
   <Footer />
 
 </>

@@ -5,6 +5,7 @@ import Services from '../Sections/Services'
 // import Testimonials from './Sections/Testimonials'
 import Newsletter from '../Sections/Newsletter'
 import Partners from '../Sections/Partners'
+import Contact from '../Contact'
 function Home() {
   return (
    <>
@@ -14,6 +15,7 @@ function Home() {
    {/* <Testimonials /> */}
    <Newsletter />
    <Partners />
+   <Contact/>
    </>
   )
 }

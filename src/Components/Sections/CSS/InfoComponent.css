@@ -1,0 +1,82 @@
+.InfoComponent {
+    background:#509BF421;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  
+  .InfoText {
+    width: 45%;
+  }
+  .InfoComponent h2{
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 30px;
+
+  }
+  li{
+    list-style-type: disc;
+    color:rgb(80, 155, 244);
+  }
+  .InfoText h3 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .InfoText h4 {
+    padding-bottom:30px ;
+    font-size: 47px;
+  }
+  .InfoText h6{
+    color: #509BF494;
+  }
+  .InfoText p{
+    padding:10px 0;
+    font-weight: 400;
+  }
+  .InfoText button{
+    background: rgb(80, 155, 244);
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+    margin-top: 10px;
+}
+  
+.InfoText button:hover{
+    box-shadow: 0px 20px 43px 0px #509BF494;
+
+}
+  
+  .InfoImage img {
+    width: 350px;
+  }
+
+.InfoText hr{
+    margin: 5px;
+border-top: 2px solid red;
+width: 30%;
+}
+
+.InfoText span{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.Reverse{
+    background-color: #a8a8a81c;
+    flex-direction: row-reverse;
+}
+.boldpara{
+  font-weight: 600!important;
+}
+
+.spanText{
+color: black;
+}
+.headingSpan{
+color: black;
+font-size: 16px!important;
+}

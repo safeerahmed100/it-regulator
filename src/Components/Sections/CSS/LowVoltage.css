@@ -1,7 +1,0 @@
-.LowVoltageHeader{
-    background: url(./Assets/LowVoltageHeader.png);
-    position: relative;
-    z-index: -1;
-    background-position: center;
-    background-size: cover;
-}

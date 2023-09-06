@@ -1,6 +1,7 @@
 import React from 'react'
 import ServicesHeader from '../Sections/ServicesHeader'
 import ServicesSlider from '../Sections/ServicesSlider'
+import Contact from '../Contact'
 
 function ServicePage() {
   return (
@@ -11,8 +12,8 @@ function ServicePage() {
     
     <ServicesSlider/>
     <ServicesSlider/>
-    
     </div>
+    <Contact />
     </>
 
   )

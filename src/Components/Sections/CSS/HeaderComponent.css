@@ -1,0 +1,44 @@
+.HeaderComponent{
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+.AboutHeader{
+    background-image: url(./Assets/AboutPageHeaderImg.png);
+}
+.ConsultancyHeader{
+     background: url(./Assets/ConsultancyHeaderImg.png);
+}
+.HelpDeskHeader{
+        background:url(./Assets/HelpDeskHeader.png);
+}
+.LowVoltageHeader{
+    background: url(./Assets/LowVoltageHeader.png);
+}
+.NetwokSecurityHeader{
+    background: url(./Assets/networkSecurityHeader.png);
+}
+.OfficeHeader{
+     background:url(./Assets/OfficeHeader.png);
+    }
+
+.AssessmentHeader{
+     background: url(./Assets/AssessmentHeader.png);
+    }
+
+    .DeploymentHeader{
+        background: url(./Assets/DeploymentHeader.png);
+    }
+    .EmergencySupportHeader{
+        background: url(./Assets/EmergencySupportHeader.png);
+    }
+    .StaffingHeader{
+        background: url(./Assets/StaffingHeader.png);
+    }
+    .ManageServiceHeader{
+        background: url(./Assets/mange-serviceHeader.png);
+    }
+    .EmailHeader{
+        background: url(./Assets/EmailHeader.png);
+    }

@@ -46,7 +46,7 @@ function handleMenu(){
         <NavLink to='./it-security-services' className='link'>IT Security Services</NavLink> 
         <NavLink to='./office-365' className='link'>Office 365</NavLink> 
         <NavLink to='./low-voltage-cabling' className='link'>IT Low Voltage Cabling</NavLink> 
-        <NavLink to='./it-managed-service' className='link'>Email & Spam Protection</NavLink> 
+        <NavLink to='./email-spam-protection' className='link'>Email & Spam Protection</NavLink> 
         <NavLink to='./it-managed-service' className='link'>Security Systems</NavLink> 
         </div>
         <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink> 
