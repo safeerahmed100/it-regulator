@@ -1,484 +1,66 @@
-
-
-.Navbar i{
+.HamBurger i.fa-solid{
     display: none;
 }
 
-.NavbarResponsive{
-    padding: 0;
-}
-.displayNone{
-    display: none;
-}
-
-.mobile a{
-    color: white;
-    text-align: center;
-}
-/* For Large Laptop */
-@media (max-width:1440px){
-    
-
-    .inputName, .inputPhone, .inputEmail, .inputBusiness{
-        width: 48%!important;
-    }
-    .Navbar .mobile{
+@media (max-width:1024px) {
+   
+    .NavLinks{
         display: none;
     }
-}
-/* For Laptop */
-
-@media (max-width:1024px){
-    
-.Navbar{
-    padding: 0;
-}
-.Navbar .logoSide img{
-    width: 150px;
-}
-.Navbar .NavLinks{
-    display: none;
-   }
-
-.Navbar .buttons{
-    display: none;
-}
-.Navbar i{
-    display: block;
-    font-size: 35px;
-}
-.Navbar .mobile{
+    .Navbar .buttons{
+        display: none;
+    }
+    .mobile{
+    top: 0;
+    left: 0;
     display: flex;
-    flex-direction: column;
-    background: black;
-    width: 1024px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
     height: 100vh;
-    text-align: center;
-    position: relative;
-}
-.Navbar .mobile a{
-    color: white;
-    font-size: 18px;
-    line-height: 4;
-}
-
-
-.swiper-button-prev {
-    top: 100px!important;
-    left: 750px!important;
-
-}
-.swiper-button-next {
-    right: 229px!important;
-    top: 451px!important;
-
-}
-
-.Testimonials .HeaderBlur{
-    top: 2093px!important;
-    height: 110%!important;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .mobile a{
+        color: white;
+        text-align: right;
+        width: 80%;
+        border-bottom: 1px solid red;
+    }
+    .fa-solid{
+        font-size: 24px;
+    }
+    
+.socialIcons i{
+    font-size: 12px!important;
+    margin: 2px 2px 10px 2px!important;
 }
 .ContactContainer{
-    padding: 0!important;
+    padding: 0 150px!important;
 }
-.AboutInfo h1{
-    position: relative;
-    top:0!important;
-}
-
 .ContactForm input, select {
-    margin: 5px 4px!important;
+    margin: 5px 3px!important;
+    padding: 10px!important;
 }
-
-.inputName, .inputPhone, .inputEmail, .inputBusiness{
-    width: 49%!important;
+.inputName, .inputPhone, .inputEmail, .inputBusiness {
+    width: 48%!important;
 }
-
-.FooterContainer{
-    padding: 60px 30px;
-}
-
-.Info, .services, .comp, .Navigations, .staffing{
-    width: 50%!important;
-    padding: 30px 0;
-
-}
-.About {
-    padding: 100px 20px!important;
-}
-
-.AboutText{
-    width: 100%!important;
-}
-}
-
-/* For Tablet */
-@media (max-width:768px){
-
-    
-/* Global Settings */
+} 
 
 
-/* NAVBAR SECTION */
-   .Navbar .NavLinks{
-    display: none;
-   }
-
-.Navbar .buttons{
-    display: none;
-}
-.Navbar i{
-    display: block;
-    font-size: 35px;
-}
-.Navbar .mobile{
+.mobile-Nav{
+    background-color: black;
     display: flex;
-    flex-direction: column;
-    background: black;
-    width: 768px;
-    height: 100vh;
-    text-align: center;
-    position: relative;
+    align-items: center;
 }
-
-
-.bi-x{
-    text-align: right;
-}
-
-/* HEADER SECTION */
-
-.Header .headerText h1{
-    font-size: 30px;
-}
-.Header .banner img{
-    width: 300px;
-    height: 200px;
-}
-
-.Header .banner .headerImgBlur{
-    display: none;
-}
-
-.Header .banner{
-    justify-content: space-between;
-}
-
-.swiper-button-prev, .swiper-button-next{
-  display: none!important;
-    
-
-}
-/* CONTACT SECTION */
-
-.Contact form {
-    padding: 100px 0;
-
-}
-.ContactContainer {
-padding: 0!important;
-}
-.inputName, .inputPhone, .inputEmail, .inputBusiness{
- 
-    width: 100%!important; 
-} 
-/*ABOUT SECTION */
-
-.About{
-    padding: 40px 20px;
-    flex-direction: column;
-
-}
-.AboutText,.AboutVid{
-width: 100%!important;
-}
-.AboutInfo h1{
-    top: 0!important;
-}
-
-.AboutInfoText p{
-    font-size: 12px;
-}
-
-.AboutInfoText .btn{
-    right: 33%;
-    padding: 10px;
-    font-size: 12px;
-}
-/* SERVICE SECTION */
-.ServiceContainer{
-    flex-direction: column;
-}
-.ServiceContainer .ServiceSlider{
-    width: 100%!important;
-    
-}
-
-.ServiceContainer .ServiceText{
-    width: 100%!important;
-    text-align: center;
-}
-
-/* //Testimonials  */
-/* .Testimonials .HeaderBlur{
-    height: 130%!important;
-    top: 2596px!important;
-
-} */
-/* Footer */
-.FooterContainer{
-    flex-direction: column;
-    padding: 50px;
-    
-}
-.Info {width: 50%!important;}
-.services  {width: 50%!important;}
-.comp  {width: 50%!important;}
-.Navigations  {width: 50%!important;}
-.staffing{
-    width: 50%!important;
-}
-.FooterResponsive{
-    padding-top: 20px;
+.mobile-Nav .Page-link a{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    color: white;
 }
-
-/*TESTIMONIALS */
-
-.hoverContainer, .hoverBgBlur{
-    width: 60px!important;
-    height: 350px!important;
-border-radius: 5px!important;
-
-transition: all 0.5s ease;
-
-
-}
-
-.second  {
-    width: 60px!important;
-    height: 400px!important;
-}
-.middle {
-    width: 60px!important;
-    height: 460px!important;
-}
-
-.hoverContainer:hover, .hoverBgBlur:hover {
-    width: 300px!important;
-    height: 460px!important;
-}
-.hoverContainer:hover p {
-top: 30%!important;
-} 
-.hoverContainer span {
-top: 38%!important;
-}
-.hoverContainer:hover h2{
-    top:40%!important ;
-
-}
-.Testimonials .tablet{
-
-    top: 2596px!important;
-}
-}
-
-/* For Mobile */
-@media (max-width:425px){
-    .btn{
-        font-size: 12px;
-        padding: 8px 14px;
-        margin: 4px 0;
-        background-color:#509bf4 ;
-    }
-.FooterResponsive .Info img{
-    width: 135px;
-}
-    .AboutText .btn{
-        position: relative;
-        left: 40%;
-    }
-
-.Navbar .mobile{
-    width: 425px;
-}
-/*Header Section */
-.Header .banner {
-
-padding: 100px 10px;
-}
-.Header .banner h1{
-    font-size: 20px;
-}
-
-.Header .banner .headerImg img{
-width: 200px;
-height:100px;
-
-}
-
-
-
-/* About Section */
-.About,.Services, .Testimonials,ContactText {
-    padding: 20px!important;
-}
-.AboutText h1, .Services h1, .Testimonials h1,.Partners h1,.ContactText h1{
-    font-size: 25px!important;
-}
-
-.AboutText h4,.ServiceText h4{
-    font-size: 27px!important;
-    text-align: center;
-}
-.AboutText p, .ServiceText p,.ContactText h3{
-    font-size: 12px!important;
-    text-align: center;
-}
-
-
-.ServiceContainer {
-    flex-direction: column-reverse;
-}
-    
-.NewsLetter .Form{
-    padding: 0;
-}
-.NewsLetter .Form .btn{
-padding: 10px 0px;
-margin-left: -10px;
-
-}
-.Form form{
-    padding: 0px;
-}
-
-.Testimonials .mobilesm{
-    top: 1709px!important;
-    height: 70%!important;
-}
-
-.hoverContainer, .hoverBgBlur{
-    width: 30px!important;
-    height: 180px!important;
-border-radius: 5px!important;
-
-transition: all 0.5s ease;
-
-
-}
-
-.second  {
-    width: 45px!important;
-    height: 200px!important;
-}
-.middle {
-    width: 55px!important;
-    height: 230px!important;
-}
-
-.hoverContainer:hover, .hoverBgBlur:hover {
-    width: 150px!important;
-    height: 230px!important;
-}
-.hoverContainer:hover p {
-top: 30%!important;
-} 
-.hoverContainer span {
-top: 38%!important;
-}
-.hoverContainer:hover h2{
-    top:40%!important ;
-
-}
-
-.hoverContainer h2{
-    font-size: 25px!important;
-}
-.hoverContainer:hover h2{
-    font-size: 18px!important;
-    top: 38%!important;
-}
-.hoverContainer:hover span{
-    font-size: 12px;
-
-}
-
-.hoverContainer p{
-    font-size: 8px;
-}
-
-
-
-.Partners{
-    padding: 20px 0px!important;
+.Menu {
     position: relative;
-    background-color: white;
-}
-.PartnersIcon img{
-    width:200px ;
-}
-
-    .ContactForm input{
-        width: 100%;
-    }
-.Footer h1,h2{
-    font-size: 12px!important;
-}
-.Footer p{
-    font-size: 8px!important;
-}
-
-
-.NewsLetter .Form input{
-    width: 40%;
-}
-.NewsLetter .Form .btn{
-    width: 50%;
-}
-.Form form{
-    padding: 10px 30px;
-    display: block;
-
-}
-
-.FooterContainer{
-    padding: 60px 20px;
-}
-}
-
-
-/* For Mobile Small */
-@media (max-width:375px){
-    .Navbar .mobile{
-        width: 375px;
-    }
-
-}
-
-
-
-@media (max-width: 768px) and (min-width: 300px) {
-    .ForPc {
-      display: none!important; /* Hide the footer on smaller screens */
-    }
-  }
-
-
-@media (max-width:2560px) and (min-width:767px){
-    .ForMobile{
-        display: none!important;
-    }
-} 
-
-@media (max-width:1024px) and (min-width:300px){
-    
-    .About{
-        flex-direction: column-reverse;
-    }
-
+    top: 25px;
 }

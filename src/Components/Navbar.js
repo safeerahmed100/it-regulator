@@ -58,25 +58,38 @@ function handleMenu(){
 
       <div className='buttons'>
         <button className='btn career'>Career</button>
-        <a href='tel:+888-792-8151' className='btn'><span><i className="bi bi-telephone-fill"></i></span>+888-792-8151</a>
-        <button className='btn remote'>Remote Support</button>
+        <a href='tel:+888-792-8151' className='btn'><span> <i className="fa-solid fa-phone-volume"></i> </span>+888-792-8151</a>
+        <button className='btn remote animate-bounce'><i class="fa-solid fa-headphones"></i><span>  Remote Support</span></button>
+
       </div>
 
-<i className={isActive===true?'displayNone':'bi bi-list'} style={{color:'black'}} onClick={handleMenu}></i>
+<div className='HamBurger'><i className={isActive===true?'displayNone':'fa-solid fa-bars'} style={{color:'black'}} onClick={handleMenu}></i>
+</div>
+
 {isActive &&  (
+
         <div  className='NavLinks mobile '>
-          <i className='bi bi-x' style={{color:'white'}} onClick={handleMenu}></i>
+          <div className='logoSide'>
+        <Link to='/'>
+    <img src={Logo} alt='logo'/>
+    </Link>
+      </div>
+      <div className='NavigationLinks'>
+        <i className='fa-solid fa-x' style={{color:'white'}} onClick={handleMenu}></i>
         <NavLink to='/about' className='link' end>About</NavLink>
         <NavLink to='/service' className='link' >IT Services & Solutions</NavLink>
-        <NavLink to='/networksecurity' className='link'></NavLink>
+        <NavLink to='/networksecurity' className='link'>Network Security</NavLink>
         <NavLink to='/industries'className='link' >Industries</NavLink>
         <NavLink to='/locations'className='link' >Locations</NavLink>
         <NavLink to='/resources' className='link' >Resources</NavLink>
         <NavLink to='/contact' className='link' >Contact Us</NavLink>
         </div>
+        </div>
+        
      
 
 )}
+
 </div>
   )
 }

@@ -38,7 +38,7 @@ form{
 
  .inputName, .inputPhone, .inputEmail, .inputBusiness{
  
-    width: 49%; 
+    width: 48%; 
 } 
 
 
@@ -74,7 +74,8 @@ form{
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 0 300px;}
+  padding: 0 200px;
+}
 
 
 .Contact .btn{
@@ -90,22 +91,5 @@ transition: all 0.5s ease-in-out;
 color: white;    
 }
 
- .socialIcons i{
-    font-size: 25px;
-    margin: 0px 5px;
-    padding: 4px 10px;
-    background-color: white;
-    border-radius: 30px;
-}
-.socialIcons{
-    position: relative;
-    bottom: 70px;
-}
-
-.socialIcons i::before{
-    position: relative;
-    top: -5px;
-    left: 1px;
-}
 
   

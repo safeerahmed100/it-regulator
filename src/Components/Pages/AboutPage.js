@@ -5,6 +5,8 @@ import Contact from '../Contact'
 import InfoComponent from '../Sections/InfoComponent'
 import AboutInfoImg1 from '../Sections/CSS/Assets/AboutInfoImg1.png'
  import AboutInfoImg2 from '../Sections/CSS/Assets/AboutInfoImg2.png'
+import ResponsiveNav from '../Sections/ResponsiveNav'
+ 
 
 
 function AboutPage() {
@@ -26,6 +28,7 @@ function AboutPage() {
           componentImage={AboutInfoImg2}
         />
     <Contact />
+    <ResponsiveNav/>
 
     </>
   )

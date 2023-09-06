@@ -48,3 +48,22 @@ background: red;
   
 }
 
+.socialIcons i{
+    font-size: 25px;
+    margin: 0px 5px;
+    padding: 10px 11px;
+    background-color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.fa-brands{
+    padding: 10px 11px;
+}
+.socialIcons i:hover{
+    background-color: black;
+    color: white;
+}
+.ForMobile{
+    display: none!important;
+}

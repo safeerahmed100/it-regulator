@@ -16,9 +16,12 @@ function Footer() {
         <img src={logo} alt='logo' />
         <h1>IT Regulators Inc.</h1>
         <h1>MAIN OFFICE:440 W. Boughton Rd. Ste. C1Bolingbrook Illinois. 60640</h1>
-        <h2><i className='bi bi-telephone-fill'></i>888-792-8151</h2>
-        <h2><i className="bi bi-envelope-fill"></i>Info@itregulators.com</h2>
-        <p><i className="bi bi-envelope-fill"></i>PublicRelations@itregulators.com</p>
+        <div className='socialIcons '>
+        <i className="fa-brands fa-facebook"></i>
+        <i className="fa-brands fa-twitter"></i>
+        <i className="fa-brands fa-linkedin-in"></i>
+         <i className="fa-brands fa-instagram"></i>
+            </div>
         
        
       </div>
@@ -103,10 +106,10 @@ function Footer() {
         <h2><i className="bi bi-envelope-fill"></i>Info@itregulators.com</h2>
         <p><i className="bi bi-envelope-fill"></i>PublicRelations@itregulators.com</p>
         <div className='socialIcons '>
-              <i className="bi bi-facebook"></i>
-              <i className="bi bi-twitter"></i>
-              <i className="bi bi-linkedin"></i>
-              <i className="bi bi-instagram"></i>
+        <i className="fa-brands fa-facebook"></i>
+        <i className="fa-brands fa-twitter"></i>
+        <i className="fa-brands fa-linkedin-in"></i>
+         <i className="fa-brands fa-instagram"></i>
             </div>
        
        
