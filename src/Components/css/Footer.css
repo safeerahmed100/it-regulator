@@ -67,3 +67,14 @@ background: red;
 .ForMobile{
     display: none!important;
 }
+
+.ForPc img{
+    margin: 5% 0;
+}
+
+.ForPc button{
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}

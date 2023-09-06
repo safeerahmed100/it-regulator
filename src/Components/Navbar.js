@@ -59,7 +59,7 @@ function handleMenu(){
       <div className='buttons'>
         <button className='btn career'>Career</button>
         <a href='tel:+888-792-8151' className='btn'><span> <i className="fa-solid fa-phone-volume"></i> </span>+888-792-8151</a>
-        <button className='btn remote animate-bounce'><i class="fa-solid fa-headphones"></i><span>  Remote Support</span></button>
+        <button className='btn remote animate-bounce'><i className="fa-solid fa-headphones"></i><span>  Remote Support</span></button>
 
       </div>
 

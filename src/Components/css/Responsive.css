@@ -1,7 +1,12 @@
 .HamBurger i.fa-solid{
     display: none;
 }
-
+.swiper-3d{
+    height: 50vh;
+}
+i:hover{
+    cursor: pointer;
+}
 @media (max-width:1024px) {
    
     .NavLinks{
