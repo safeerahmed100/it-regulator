@@ -4,6 +4,9 @@
 .swiper-3d{
     height: 50vh;
 }
+.swiper-horizontal{
+    height: 50vh;
+}
 i:hover{
     cursor: pointer;
 }
