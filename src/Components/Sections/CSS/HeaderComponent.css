@@ -1,7 +1,7 @@
 .HeaderComponent{
-    background-position: center center;
-    background-size: cover;
-    position: relative;
+    background-position: center center!important;
+    background-size: cover!important;
+    position: relative!important;
     z-index: -1;
 }
 .AboutHeader{
@@ -44,4 +44,19 @@
     }
     .SecurityHeader{
         background: url(./Assets/SecurityHeader.png);
+    }
+    .CompetenciesHeader{
+        background: url(./Assets/CompetencyHeader.png);
+    }
+    .FrameworkHeader{
+        background: url(./Assets/FrameworkHeader.png);
+    }
+    .DirectoryHeader{
+        background:  url(./Assets/DirectoryHeader.png);
+    }
+    .ExchangeHeader{
+        background: url(./Assets/ExchangeHeader.png);
+    }
+    .LanHeader{
+        background:  url(./Assets/LanHeader.png);
     }

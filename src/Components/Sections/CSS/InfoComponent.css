@@ -80,3 +80,29 @@ color: black;
 color: black;
 font-size: 16px!important;
 }
+
+.ExchangeBanner1{
+  background:url(./Assets/ExchangeBanner1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: right;
+}
+
+.ExchangeBanner1{
+  color: white!important;
+}
+
+.ExchangeBanner1 ul li {
+  color: white!important;
+  margin: 10px 0;
+}
+
+.ExchangeBanner1 .headingSpan{
+  color: white!important;
+  font-weight: 200!important;
+
+}
+ul{
+  margin: 5px 4%;
+}

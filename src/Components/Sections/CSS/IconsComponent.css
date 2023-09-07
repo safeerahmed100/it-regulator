@@ -10,7 +10,8 @@
     flex-direction: column;
     align-items: center;
 margin: 40px 20px;
-width: 30%;}
+width: 30%;
+text-align: center;}
 
 .IconsItem i{
     margin: 10px 0;
@@ -18,12 +19,12 @@ width: 30%;}
 .IconsComponent h4{
     margin-bottom: 30px;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     color:#509bf4;
 }
 .IconsComponent {
     background-color: #e2ebf7;
-    padding: 20px 60px;
+    padding: 20px 30px;
 }
 .IconsItem span{
     font-size: 22px;
@@ -34,3 +35,4 @@ width: 30%;}
 .HelpDeskIcons .IconsItem i{
     margin: 0px 30px;
 }
+

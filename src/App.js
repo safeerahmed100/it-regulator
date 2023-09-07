@@ -19,6 +19,11 @@ import HelpDesk from './Components/Pages/HelpDesk';
 import EmailPage from './Components/Pages/EmailPage';
 import {React,useState } from 'react';
 import SecurityPage from './Components/Pages/SecurityPage';
+import CompetenciesPage from './Components/Pages/CompetenciesPage';
+import FrameworkPage from './Components/Pages/FrameworkPage';
+import DirectoryPage from './Components/Pages/DirectoryPage';
+import ExchangePage from './Components/Pages/ExchangePage';
+import LanWanPage from './Components/Pages/LanWanPage';
 
 
 
@@ -47,6 +52,13 @@ function App() {
     <Route path='/low-voltage-cabling' element={<LowVoltageCabling/>}></Route>
     <Route path='/email-spam-protection' element={<EmailPage/>}></Route>
     <Route path='/security-systems' element={<SecurityPage/>}></Route>
+    <Route path='/it-competencies' element={<CompetenciesPage/>}></Route>
+    <Route path='/net-framework' element={<FrameworkPage/>}></Route>
+    <Route path='/active-directory' element={<DirectoryPage/>}></Route>
+    <Route path='/exchange' element={<ExchangePage/>}></Route>
+    <Route path='/lan-wan' element={<LanWanPage/>}></Route>
+
+    
 
   </Routes>
   <Footer />

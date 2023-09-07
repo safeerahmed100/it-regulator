@@ -18,6 +18,24 @@
 .HelpDeskBanner2{
     background: url(./Assets/HelpDeskContainer2.png);
 }
+
+.EmailBanner{
+    background: url(./Assets/EmailBanner.png);
+}
+.FrameworkBanner{
+    background:url(./Assets/FrameworkBanner.png);
+}
+
+.DirectoryBanner{
+    background:  url(./Assets/DirectoryBanner.png);
+}
+.ExchangeBanner{
+    background: url(./Assets/ExchangeBanner.png);
+}
+
+
+    
+
 .HelpDeskBanner2 h5{
     color: black;
     font-weight: 700;
@@ -27,7 +45,7 @@
 .BannerContainer{
     background-position: center;
     background-size: cover;
-    padding: 60px 40px;
+    padding: 100px 40px;
     text-align: center;
 color: white;
 }
