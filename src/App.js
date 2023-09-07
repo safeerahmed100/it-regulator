@@ -18,6 +18,7 @@ import LowVoltageCabling from './Components/Pages/LowVoltageCabling';
 import HelpDesk from './Components/Pages/HelpDesk';
 import EmailPage from './Components/Pages/EmailPage';
 import {React,useState } from 'react';
+import SecurityPage from './Components/Pages/SecurityPage';
 
 
 
@@ -45,6 +46,7 @@ function App() {
     <Route path='/office-365' element={<OfficePage/>}></Route>
     <Route path='/low-voltage-cabling' element={<LowVoltageCabling/>}></Route>
     <Route path='/email-spam-protection' element={<EmailPage/>}></Route>
+    <Route path='/security-systems' element={<SecurityPage/>}></Route>
 
   </Routes>
   <Footer />

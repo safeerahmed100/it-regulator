@@ -1,0 +1,36 @@
+.Icons{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.IconsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin: 40px 20px;
+width: 30%;}
+
+.IconsItem i{
+    margin: 10px 0;
+}
+.IconsComponent h4{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    color:#509bf4;
+}
+.IconsComponent {
+    background-color: #e2ebf7;
+    padding: 20px 60px;
+}
+.IconsItem span{
+    font-size: 22px;
+}
+.HelpDeskIcons .IconsItem{
+    flex-direction: row;
+}
+.HelpDeskIcons .IconsItem i{
+    margin: 0px 30px;
+}
