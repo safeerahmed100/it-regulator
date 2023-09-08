@@ -72,3 +72,17 @@ i:hover{
     position: relative;
     top: 25px;
 }
+
+
+@media (max-width:768px){
+.ForPc{
+display: none!important;
+}
+
+.ForMobile{
+    display: flex!important;
+}
+.Info, .services, .comp, .Navigations, .staffing{
+    width: 100%;
+}
+}

@@ -24,6 +24,8 @@ import FrameworkPage from './Components/Pages/FrameworkPage';
 import DirectoryPage from './Components/Pages/DirectoryPage';
 import ExchangePage from './Components/Pages/ExchangePage';
 import LanWanPage from './Components/Pages/LanWanPage';
+import MobilityPage from './Components/Pages/MobilityPage';
+import SharepointPage from './Components/Pages/SharepointPage';
 
 
 
@@ -57,6 +59,9 @@ function App() {
     <Route path='/active-directory' element={<DirectoryPage/>}></Route>
     <Route path='/exchange' element={<ExchangePage/>}></Route>
     <Route path='/lan-wan' element={<LanWanPage/>}></Route>
+    <Route path='/mobility' element={<MobilityPage/>}></Route>
+    <Route path='/sharepoint' element={<SharepointPage/>}></Route>
+    
 
     
 

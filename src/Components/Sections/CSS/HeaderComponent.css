@@ -60,3 +60,9 @@
     .LanHeader{
         background:  url(./Assets/LanHeader.png);
     }
+    .MobilityHeader{
+        background: url(./Assets/MobilityHeader.png);
+    }
+    .SharepointHeader{
+        background: url(./Assets/SharepointHeader.png);
+    }
