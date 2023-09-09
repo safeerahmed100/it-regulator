@@ -7,6 +7,8 @@ import {Link,NavLink} from "react-router-dom";
 function Navbar({isHover,setIsHover}) {
   const [isActive,setIsActive] = useState(false)
   const [isShow,setIsShow]=useState(false)
+  const [isdropdown,setisDropDown]=useState(false)
+  const [isdropdown1,setisDropDown1]=useState(false)
 
 
   function transitionNav(){
@@ -37,8 +39,8 @@ function handleMenu(){
         <NavLink to='/service' className='link serviceDrop' onMouseEnter={()=>setIsHover(true)} onMouseLeave={()=>setIsHover(false)}>IT Services & Solutions</NavLink>
         <div className={`dropDown ${isShow && 'dropDown-scroll'}`}>
           <div className='ServicesLink'>
-          <span>IT Services And Solutions</span>
-
+          <span onClick={()=>setisDropDown(!isdropdown)}>IT Services And Solutions</span>
+          <div className={`displayNone ${isdropdown===true?'ServiceLinkTab': 'displayNone' }`}>
         <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
         <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
         <NavLink to='./it-assessment-audit-services' className='link'>IT Assessments & Audits</NavLink> 
@@ -51,8 +53,10 @@ function handleMenu(){
         <NavLink to='./email-spam-protection' className='link'>Email & Spam Protection</NavLink> 
         <NavLink to='./security-systems' className='link'>Security Systems</NavLink> 
         </div>
+        </div>
         <div className='CompetenciesLink'>
-          <span>IT Competencies</span>
+          <span onClick={()=>setisDropDown1(!isdropdown1)}>IT Competencies</span>
+          <div className={`displayNone ${isdropdown1===true?'CompetenciesLinkTab': 'displayNone' }`}>
           <NavLink to='./it-competencies' className='link'>IT Competencies</NavLink>
           <NavLink to='./net-framework'  className='link'>Net Framework</NavLink> 
           <NavLink to='./active-directory'  className='link'>Active Directory</NavLink> 
@@ -64,6 +68,7 @@ function handleMenu(){
           <NavLink to='./sql-server'   className='link'>Sql Server</NavLink> 
           <NavLink to='./vpn'   className='link'>VPN</NavLink> 
           <NavLink to='./industries'   className='link'>Industries</NavLink> 
+        </div>
         </div>
         </div>
         <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink> 

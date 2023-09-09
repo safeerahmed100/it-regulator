@@ -79,7 +79,7 @@ box-shadow: 0 5px 11px -1px #000;
     line-height: 2;
     border-bottom: 1px solid grey;
   }
-  .serviceDrop:hover + .dropDown {
+  .serviceDrop:hover + .dropDown  {
     display: flex;
     align-items: center;
   }
@@ -92,6 +92,9 @@ box-shadow: 0 5px 11px -1px #000;
   button {
     padding: 10px 20px;
   }
+
+
+
 /* @media (max-width:1280px) {
     .logoSide{
         width: 30%;
@@ -128,22 +131,37 @@ box-shadow: 0 5px 11px -1px #000;
     }
     
 } */
+.ServicesLink,.CompetenciesLink{
+   padding: 10px;
+}
+
+.ServicesLink:hover{
+    background-color: #509BF4;
+}
+.CompetenciesLink:hover{
+    background-color: #509BF4;
+}
+.displayNone{
+    display: none;
+}
+
+.ServicesLink span:hover{
+    cursor: progress;
+}
+
+.CompetenciesLink span:hover{
+    cursor: progress;
+}
 
 
-.ServicesLink{
-
+.ServiceLinkTab{
     display: flex;
     flex-direction: column;
+    
 }
 
-.CompetenciesLink{
-    margin: 20px;
+.CompetenciesLinkTab{
     display: flex;
     flex-direction: column;
-}
-.ServicesLink span{
-    font-weight: 800;
-}
-.CompetenciesLink span{
-    font-weight: 800;
+    
 }
