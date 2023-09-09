@@ -36,6 +36,9 @@ function handleMenu(){
         <NavLink to='/about' className='link' end>About</NavLink>
         <NavLink to='/service' className='link serviceDrop' onMouseEnter={()=>setIsHover(true)} onMouseLeave={()=>setIsHover(false)}>IT Services & Solutions</NavLink>
         <div className={`dropDown ${isShow && 'dropDown-scroll'}`}>
+          <div className='ServicesLink'>
+          <span>IT Services And Solutions</span>
+
         <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
         <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
         <NavLink to='./it-assessment-audit-services' className='link'>IT Assessments & Audits</NavLink> 
@@ -47,7 +50,8 @@ function handleMenu(){
         <NavLink to='./low-voltage-cabling' className='link'>IT Low Voltage Cabling</NavLink> 
         <NavLink to='./email-spam-protection' className='link'>Email & Spam Protection</NavLink> 
         <NavLink to='./security-systems' className='link'>Security Systems</NavLink> 
-        <div className='dropDown2'>
+        </div>
+        <div className='CompetenciesLink'>
           <span>IT Competencies</span>
           <NavLink to='./it-competencies' className='link'>IT Competencies</NavLink>
           <NavLink to='./net-framework'  className='link'>Net Framework</NavLink> 

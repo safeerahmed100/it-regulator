@@ -64,7 +64,7 @@ box-shadow: 0 5px 11px -1px #000;
     z-index: 2;
     display: none;
     position: absolute;
-    left: 23%;
+    left: 20%;
     top: 7%;
     padding: 18px;
     background: white;
@@ -80,11 +80,14 @@ box-shadow: 0 5px 11px -1px #000;
     border-bottom: 1px solid grey;
   }
   .serviceDrop:hover + .dropDown {
-    display: inline-grid;
+    display: flex;
+    align-items: center;
   }
  
   .dropDown:hover{
-  display:inline-grid;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
   }
   button {
     padding: 10px 20px;
@@ -126,7 +129,15 @@ box-shadow: 0 5px 11px -1px #000;
     
 } */
 
-.dropDown2{
+
+.ServicesLink{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.CompetenciesLink{
+    margin: 20px;
     display: flex;
     flex-direction: column;
 }
