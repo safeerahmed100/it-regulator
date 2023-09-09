@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './CSS/Testimonials.css'
 import { Slide } from 'react-awesome-reveal'
 import Typewriter from 'typewriter-effect'
@@ -11,7 +11,26 @@ import { Autoplay,EffectCoverflow, Pagination } from 'swiper/modules';
 
 
 function Testimonials() {
-  
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    // Function to check the screen width and update the state
+    function checkScreenWidth() {
+      const screenWidth = window.innerWidth;
+      setIsSmallScreen(screenWidth <= 768);
+    }
+
+    // Initial check
+    checkScreenWidth();
+
+    // Attach a resize event listener to update the state when the window is resized
+    window.addEventListener('resize', checkScreenWidth);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', checkScreenWidth);
+    };
+  }, []);
    
 
   return (
@@ -32,7 +51,7 @@ function Testimonials() {
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={'3'}
+        slidesPerView={`${isSmallScreen===true?'1':'3'}`}
        
 
         pagination={{

@@ -71,8 +71,7 @@ function InfoComponent({heading,
     pauseFor:500000  
   }}
 /></h3>} 
-{heading && <hr></hr>
-}
+
             {paraText && <p>{paraText}</p>}  
              { paraTwo && <p>{paraTwo}</p> }
              {boldpara && <p className='boldpara'>{boldpara}</p>}

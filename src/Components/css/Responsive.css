@@ -85,4 +85,78 @@ display: none!important;
 .Info, .services, .comp, .Navigations, .staffing{
     width: 100%;
 }
+
+.InfoComponent{
+    text-align: center;
+    flex-direction: column-reverse;
+
+}
+.Reverse{
+    text-align: center;
+    flex-direction: column!important;
+    align-items: center!important;
+}
+.InfoText{
+    padding: 10px;
+    width: 100%!important;
+}
+}
+
+@media (max-width:425px){
+    .HeaderComponent .banner{
+        padding: 30px!important;
+    }
+    .HeaderComponent .banner .headerText h1{
+        font-size: 30px!important;
+    }
+    .Header .banner{
+        padding: 50px;
+        height: 30vh;
+    }
+    .Header .banner h1{
+        font-size: 30px;
+    }
+    .Header .banner .headerText{
+        width: 100%;
+    }
+    .Header .banner .headerImg{
+   display: none;
+    }
+    .AboutText{
+        width: 100%!important;
+    }
+    .About{
+        flex-direction: column-reverse;
+    }
+    .ServiceContainer{
+        flex-direction: column;
+    }
+    .ServiceSlider{
+        width: 100%!important;
+    }
+    .Services{
+        padding: 30px 20px!important;
+    }
+    .ServiceText{
+        width: 100%!important;
+    }
+    .ContactContainer{
+        padding: 0px 30px!important;
+    }
+
+    .inputName, .inputPhone, .inputEmail, .inputBusiness{
+        width: 100%!important;
+    }
+    .Contact{
+        padding: 30px!important;
+    }
+    .ForMobile{
+        display: flex!important;
+    }
+    .Testimonials h1{
+        width: 100%!important;
+    }
+    .Testimonials .swiper-slide-active .TestimonialCard{
+        transform: translate(1);
+    }
 }
