@@ -7,9 +7,7 @@ import {Link,NavLink} from "react-router-dom";
 function Navbar({isHover,setIsHover}) {
   const [isActive,setIsActive] = useState(false)
   const [isShow,setIsShow]=useState(false)
-  const [isdropdown,setisDropDown]=useState(false)
-  const [isdropdown1,setisDropDown1]=useState(false)
-
+  
 
   function transitionNav(){
     (window.scrollY>100? setIsShow(true): setIsShow(false))
@@ -39,8 +37,8 @@ function handleMenu(){
         <NavLink to='/service' className='link serviceDrop' onMouseEnter={()=>setIsHover(true)} onMouseLeave={()=>setIsHover(false)}>IT Services & Solutions</NavLink>
         <div className={`dropDown ${isShow && 'dropDown-scroll'}`}>
           <div className='ServicesLink'>
-          <span onMouseEnter={()=>setisDropDown(!isdropdown)}>IT Services And Solutions</span>
-          <div className={`displayNone ${isdropdown===true?'ServiceLinkTab': 'displayNone' }`}>
+          <span>IT Services And Solutions</span>
+          <div className='ServiceLinkTab'>
         <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
         <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
         <NavLink to='./it-assessment-audit-services' className='link'>IT Assessments & Audits</NavLink> 
@@ -55,8 +53,8 @@ function handleMenu(){
         </div>
         </div>
         <div className='CompetenciesLink'>
-          <span onMouseEnter={()=>setisDropDown1(!isdropdown1)}>IT Competencies</span>
-          <div className={`displayNone ${isdropdown1===true?'CompetenciesLinkTab': 'displayNone' }`}>
+          <span>IT Competencies</span>
+          <div className='CompetenciesLinkTab'>
           <NavLink to='./it-competencies' className='link'>IT Competencies</NavLink>
           <NavLink to='./net-framework'  className='link'>Net Framework</NavLink> 
           <NavLink to='./active-directory'  className='link'>Active Directory</NavLink> 

@@ -135,24 +135,18 @@ box-shadow: 0 5px 11px -1px #000;
    padding: 10px;
 }
 
-.ServicesLink:hover{
-    color: white;
-    background-color: #509BF4;
-}
-.CompetenciesLink:hover{
-    background-color: #509BF4;
-color: white;
-}
+
+
 .displayNone{
     display: none;
 }
 
 .ServicesLink span:hover{
-    cursor: progress;
+    cursor: pointer;
 }
 
 .CompetenciesLink span:hover{
-    cursor: progress;
+    cursor: pointer;
 }
 
 
