@@ -35,9 +35,22 @@
 .SharepointBanner{
     background: url(./Assets/SharepointBanner.png);
 }
-
-
+.SqlBanner{
+    background:url(./Assets/SqlBanner.png);
+}
+.VirtualizationBanner{
+    background: url(./Assets/VirtualizationBanner.png);
+}
+.VpnBanner{
+    background: url(./Assets/VpnBanner.png);
+}
     
+.NapearvilleBanner{
+    background: url(./Assets/NapervilleBanner.png);
+}
+.ChicagoBanner{
+    background: url(./Assets/ChicagoBanner.png);
+}
 
 .HelpDeskBanner2 h5{
     color: black;

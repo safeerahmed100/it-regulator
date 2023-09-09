@@ -20,6 +20,21 @@ function InfoComponent({heading,
   listHeadingBold4,
   listHeadingBold5,
   listHeadingBold6,
+  listHeadingBold7,
+  listHeadingBold8,
+  listHeadingBold9,
+  listHeadingBold10,
+  listHeadingBold11,
+  listHeadingBold12,
+  listHeadingBold13,
+  listHeadingBold14,
+  listHeadingBold15,
+  listHeadingBold16,
+  listHeadingBold17,
+  listHeadingBold18,
+  listHeadingBold19,
+  listHeadingBold20,
+  listHeadingBold21,
   blueText,
   boldpara,
   subHeading,
@@ -62,6 +77,7 @@ function InfoComponent({heading,
              { paraTwo && <p>{paraTwo}</p> }
              {boldpara && <p className='boldpara'>{boldpara}</p>}
              {bluePara && <p style={{color:'#509BF4',fontSize:'25px',fontWeight:'600'}}>{bluePara}</p>}
+          <div className='BoldHeadingList'>
           <ul>
           {listItem1 &&<li>{listItem1}</li>}
           {listItem1Para && <p>{listItem1Para}</p>}
@@ -83,7 +99,27 @@ function InfoComponent({heading,
           {listHeadingBold4 && <li className='spanText'><span className='headingSpan'>{listHeadingBold4}</span></li>}
           {listHeadingBold5 && <li className='spanText'><span className='headingSpan'>{listHeadingBold5}</span></li>}
           {listHeadingBold6 && <li className='spanText'><span className='headingSpan'>{listHeadingBold6}</span></li>}
+          {listHeadingBold7 && <li className='spanText'><span className='headingSpan'>{listHeadingBold7}</span></li>}
           </ul>
+          <ul>
+          {listHeadingBold8 && <li className='spanText'><span className='headingSpan'>{listHeadingBold8}</span></li>}
+          {listHeadingBold9 && <li className='spanText'><span className='headingSpan'>{listHeadingBold9}</span></li>}
+          {listHeadingBold10 && <li className='spanText'><span className='headingSpan'>{listHeadingBold10}</span></li>}
+          {listHeadingBold11 && <li className='spanText'><span className='headingSpan'>{listHeadingBold11}</span></li>}
+          {listHeadingBold12 && <li className='spanText'><span className='headingSpan'>{listHeadingBold12}</span></li>}
+          {listHeadingBold13 && <li className='spanText'><span className='headingSpan'>{listHeadingBold13}</span></li>}
+          {listHeadingBold14 && <li className='spanText'><span className='headingSpan'>{listHeadingBold14}</span></li>}
+          {listHeadingBold15 && <li className='spanText'><span className='headingSpan'>{listHeadingBold15}</span></li>}
+          {listHeadingBold16 && <li className='spanText'><span className='headingSpan'>{listHeadingBold16}</span></li>}
+         </ul>
+         <ul>
+          {listHeadingBold17 && <li className='spanText'><span className='headingSpan'>{listHeadingBold17}</span></li>}
+          {listHeadingBold18 && <li className='spanText'><span className='headingSpan'>{listHeadingBold18}</span></li>}
+          {listHeadingBold19 && <li className='spanText'><span className='headingSpan'>{listHeadingBold19}</span></li>}
+          {listHeadingBold20 && <li className='spanText'><span className='headingSpan'>{listHeadingBold20}</span></li>}
+          {listHeadingBold21 && <li className='spanText'><span className='headingSpan'>{listHeadingBold21}</span></li>}
+          </ul>
+          </div>
           { paraThree && <p>{paraThree}</p> }
           {boldHeading && <span>{boldHeading}</span>} 
           {blueText &&<h6>{blueText}</h6>}  

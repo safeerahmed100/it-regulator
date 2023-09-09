@@ -1,0 +1,39 @@
+.FaqsContainer{
+    padding: 30px;
+    background-color: #e8f2fe;
+
+}
+
+.Question{
+    box-shadow: 0 0 12px 1px #9999996e;
+    font-size: 18px;
+    font-weight: 600;
+    display: grid;
+    padding: 30px;
+    margin: 10px 0;
+    grid-template-columns: 1fr 30fr 1fr;
+    background-color: white;
+}
+.Question h6{
+    text-transform: capitalize;
+}
+.Answer{
+    transition: all 0.3s ease-in;
+    display: none;
+    box-shadow: 0 0 12px 1px #9999996e;
+   
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.DisplayAnswer{
+    display: flex;
+}
+.Answer p{
+    margin: 30px 20px;
+}
+
+.Answer i{
+    padding:0 20px
+}

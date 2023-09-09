@@ -30,7 +30,7 @@
     font-size: 47px;
   }
   .InfoText h6{
-    color: #509BF494;
+    color: #509bf4;
   }
   .InfoText p{
     padding:10px 0;
@@ -106,4 +106,9 @@ font-size: 16px!important;
 }
 ul{
   margin: 5px 4%;
+}
+
+
+.Industries .BoldHeadingList{
+  display: flex;
 }

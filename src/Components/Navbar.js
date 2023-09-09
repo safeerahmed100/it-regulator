@@ -47,6 +47,20 @@ function handleMenu(){
         <NavLink to='./low-voltage-cabling' className='link'>IT Low Voltage Cabling</NavLink> 
         <NavLink to='./email-spam-protection' className='link'>Email & Spam Protection</NavLink> 
         <NavLink to='./security-systems' className='link'>Security Systems</NavLink> 
+        <div className='dropDown2'>
+          <span>IT Competencies</span>
+          <NavLink to='./it-competencies' className='link'>IT Competencies</NavLink>
+          <NavLink to='./net-framework'  className='link'>Net Framework</NavLink> 
+          <NavLink to='./active-directory'  className='link'>Active Directory</NavLink> 
+          <NavLink to='./exchange'   className='link'>Exchange Directory</NavLink> 
+          <NavLink to='./lan-wan'   className='link'>LAN / WAN</NavLink> 
+          <NavLink to='./mobility'   className='link'>Mobility</NavLink> 
+          <NavLink to='./sharepoint'   className='link'>Sharepoint</NavLink> 
+          <NavLink to='./virtualization'   className='link'>Virtualization</NavLink> 
+          <NavLink to='./sql-server'   className='link'>Sql Server</NavLink> 
+          <NavLink to='./vpn'   className='link'>VPN</NavLink> 
+          <NavLink to='./industries'   className='link'>Industries</NavLink> 
+        </div>
         </div>
         <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink> 
         <NavLink to='/industries'className='link' >Industries</NavLink>
@@ -94,3 +108,19 @@ function handleMenu(){
   )
 }
 export default Navbar
+
+
+/*
+
+
+
+
+/' 
+
+ 
+
+/it-managed-napearville'
+/it-managed-chicago' 
+/it-managed-jiolet' 
+/it-managed-boilingbrook
+*/

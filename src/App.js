@@ -26,6 +26,14 @@ import ExchangePage from './Components/Pages/ExchangePage';
 import LanWanPage from './Components/Pages/LanWanPage';
 import MobilityPage from './Components/Pages/MobilityPage';
 import SharepointPage from './Components/Pages/SharepointPage';
+import SqlPage from './Components/Pages/SqlPage';
+import VritualizationPage from './Components/Pages/VritualizationPage';
+import Vpn from './Components/Pages/Vpn';
+import Industries from './Components/Pages/Industries';
+import NapearvillePage from './Components/Pages/NapearvillePage';
+import ChicagoPage from './Components/Pages/ChicagoPage';
+import JioletPage from './Components/Pages/JioletPage';
+import BoilingbrookPage from './Components/Pages/BoilingbrookPage';
 
 
 
@@ -61,6 +69,15 @@ function App() {
     <Route path='/lan-wan' element={<LanWanPage/>}></Route>
     <Route path='/mobility' element={<MobilityPage/>}></Route>
     <Route path='/sharepoint' element={<SharepointPage/>}></Route>
+    <Route path='/sql-server' element={<SqlPage/>}></Route>
+    <Route path='/virtualization' element={<VritualizationPage/>}></Route>
+    <Route path='/vpn' element={<Vpn/>}></Route>
+    <Route path='/industries' element={<Industries/>}></Route>
+    <Route path='/it-managed-napearville' element={<NapearvillePage/>}></Route>
+    <Route path='/it-managed-chicago' element={<ChicagoPage/>}></Route>
+    <Route path='/it-managed-jiolet' element={<JioletPage/>}></Route>
+    <Route path='/it-managed-boilingbrook' element={<BoilingbrookPage/>}></Route>
+    
     
 
     

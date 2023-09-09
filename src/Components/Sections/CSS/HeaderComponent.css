@@ -66,3 +66,27 @@
     .SharepointHeader{
         background: url(./Assets/SharepointHeader.png);
     }
+    .SqlHeader{
+        background: url(./Assets/SqlBanner.png);
+    }
+    .VirtualizationHeader{
+        background: url(./Assets/VirtualizationHeader.png);
+    }
+    .VpnHeader{
+        background: url(./Assets/VpnHeader.png);
+    }
+    .IndustriesHeader{
+        background: url(./Assets/IndustriesHeader.png);
+    }
+    .NapearvilleHeader{
+        background: url(./Assets/NapervilleHeader.png);
+    }
+    .ChicagoHeader{
+        background: url(./Assets/ChicagoHeader.png);
+    }
+    .JioletHeader{
+        background: url(./Assets/JioletHeader.png);
+    }
+    .BoilingbrookHeader{
+        background: url(./Assets/BoilingBrookHeader.png);
+    }
