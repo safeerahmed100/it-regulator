@@ -69,6 +69,7 @@ width: 30%;
 .Reverse{
     background-color: #a8a8a81c;
     flex-direction: row-reverse;
+    align-items: flex-start;
 }
 .boldpara{
   font-weight: 600!important;

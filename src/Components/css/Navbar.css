@@ -136,10 +136,12 @@ box-shadow: 0 5px 11px -1px #000;
 }
 
 .ServicesLink:hover{
+    color: white;
     background-color: #509BF4;
 }
 .CompetenciesLink:hover{
     background-color: #509BF4;
+color: white;
 }
 .displayNone{
     display: none;
