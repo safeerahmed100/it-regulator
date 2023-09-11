@@ -71,7 +71,13 @@ function handleMenu(){
         </div>
         <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink> 
         <NavLink to='/industries'className='link' >Industries</NavLink>
-        <NavLink to='/locations'className='link' >Locations</NavLink>
+        <NavLink to='/locations'className='link locationDrop' >Locations</NavLink>
+        <div className={`LocationDropDown ${isShow && 'LocationDropDown-scroll'}`}>
+        <NavLink to='/it-managed-napearville' className='link' >Napearville</NavLink>
+        <NavLink to='/it-managed-chicago' className='link' >Chicago</NavLink>
+        <NavLink to='/it-managed-jiolet' className='link' >Jiolet</NavLink>
+        <NavLink to='/it-managed-boilingbrook' className='link' >Boilingbrook</NavLink>
+        </div>
         <NavLink to='/resources' className='link' >Resources</NavLink>
         <NavLink to='/contact' className='link' >Contact</NavLink>
       </div>
@@ -123,17 +129,15 @@ function handleMenu(){
 export default Navbar
 
 
-/*
 
 
 
 
-/' 
+
+
 
  
+        
 
-/it-managed-napearville'
-/it-managed-chicago' 
-/it-managed-jiolet' 
-/it-managed-boilingbrook
-*/
+
+

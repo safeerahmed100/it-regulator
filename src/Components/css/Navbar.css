@@ -73,6 +73,9 @@ box-shadow: 0 5px 11px -1px #000;
   .dropDown-scroll{
     top: 60%;
   }
+  .LocationDropDown-scroll{
+    top: 60%;
+  }
   .dropDown a {
     color: black;
     text-decoration: none;
@@ -84,6 +87,18 @@ box-shadow: 0 5px 11px -1px #000;
     align-items: center;
   }
  
+  .LocationDropDown{
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    line-height: 4;
+    left: 52%;
+    top: 7%;
+    position: absolute;
+    padding: 18px;
+    background: white;
+    box-shadow: 0 8px 12px 4px #00000052;
+  }
   .dropDown:hover{
   display:flex;
   flex-direction: row;
@@ -93,7 +108,19 @@ box-shadow: 0 5px 11px -1px #000;
     padding: 10px 20px;
   }
 
+.locationDrop:hover + .LocationDropDown{
+    display: flex;
+}
+.LocationDropDown:hover{
+    display: flex;
+}
 
+.LocationDropDown a {
+    color: black;
+    text-decoration: none;
+    line-height: 2;
+    border-bottom: 1px solid grey;
+  }
 
 /* @media (max-width:1280px) {
     .logoSide{
