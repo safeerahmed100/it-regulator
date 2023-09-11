@@ -82,9 +82,7 @@ i:hover{
     margin: 5px 3px!important;
     padding: 10px!important;
 }
-.inputName, .inputPhone, .inputEmail, .inputBusiness {
-    width: 48%!important;
-}
+
 
 
 
@@ -107,12 +105,41 @@ i:hover{
 .ForPc{
 display: none!important;
 }
+.swiper-horizontal{
+    height: 100%;
+}
+.About{
+padding: 30px!important;
+}
+.AboutText{
+    text-align: center;
+}
+.About .AboutText h4{
+    font-size: 30px;
+}
 
+.About .AboutText h1{
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    border:none;
+    padding: 30px;
+    text-decoration: underline 2px solid red;
+}
+.Header .banner .headerText{
+    font-size: 24px;
+}
+.Header .banner .headerText button{
+    font-size: 12px;
+}
+.Header .banner{
+    text-align: center;
+}
 .ForMobile{
     display: flex!important;
 }
-.Info, .services, .comp, .Navigations, .staffing{
-    width: 100%;
+.Info .servicesn.comp  .Navigations .staffing{
+    width: 48%!important;
 }
 
 .InfoComponent{
@@ -129,7 +156,10 @@ display: none!important;
     padding: 10px;
     width: 100%!important;
 }
+
+
 }
+
 
 @media (max-width:425px){
     .HeaderComponent .banner{
@@ -173,9 +203,6 @@ display: none!important;
         padding: 0px 30px!important;
     }
 
-    .inputName, .inputPhone, .inputEmail, .inputBusiness{
-        width: 100%!important;
-    }
     .Contact{
         padding: 30px!important;
     }
@@ -188,4 +215,46 @@ display: none!important;
     .Testimonials .swiper-slide-active .TestimonialCard{
         transform: translate(1);
     }
+    .NewsLetter{
+        padding: 30px;
+    }
+    .NewsLetter .Form form{
+        padding: 10px 0;
+    }
+
+    .NewsLetter .Form form input{
+        width:30%
+    }
+    .NewsLetter .Form form button{
+        width: 40%;
+        margin: 0;
+    }
+
+    .Services h1{
+        font-size: 24px!important;
+        width: 100%!important;
+        text-decoration: underline 2px solid red;
+        text-align: center;
+        border: none!important;
+    }
+    .Services .swiper-slide.swiper-slide-visible.swiper-slide-active{
+        position: relative;
+        left: 10%;
+    }
+    .Services .ServiceText h4{
+    font-size: 30px;
+    }
+    .Services .ServiceText{
+        text-align: center;
+    }
+    .Testimonials h1{
+        border:none!important;
+        text-decoration: underline 2px solid red;
+    
+    }
+    .Testimonials{
+        padding: 30px!important;
+    
+    }
+ 
 }
