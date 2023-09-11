@@ -88,15 +88,21 @@ function handleMenu(){
 </div>
 
 {isActive &&  (
-
-        <div  className='NavLinks mobile '>
-          <div className='logoSide'>
-        <Link to='/'>
-    <img src={Logo} alt='logo'/>
-    </Link>
+       <div  className='NavLinks mobile '>
+       <div className='NavTop'>
+      <div className='logoSide'>
+      <Link to='/'>
+      <img src={Logo} alt='logo'/>
+      </Link>
       </div>
+      <div className='NavClose'>
+      <i className='fa-solid fa-x' style={{color:'white'}} onClick={handleMenu}></i>
+
+      </div>
+        </div>
+
+         
       <div className='NavigationLinks'>
-        <i className='fa-solid fa-x' style={{color:'white'}} onClick={handleMenu}></i>
         <NavLink to='/about' className='link' end>About</NavLink>
         <NavLink to='/service' className='link' >IT Services & Solutions</NavLink>
         <NavLink to='/networksecurity' className='link'>Network Security</NavLink>

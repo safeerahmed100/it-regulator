@@ -12,6 +12,10 @@ i:hover{
 }
 @media (max-width:1024px) {
    
+    .HamBurger i.fa-solid{
+        display: block;
+    }
+
     .NavLinks{
         display: none;
     }
@@ -19,23 +23,34 @@ i:hover{
         display: none;
     }
     .mobile{
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    background-color: black;
-    position: absolute;
-    z-index: 2;
-    height: 100vh;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
+        padding: 20px;
+        top: 0;
+        text-align: center;
+        left: 0;
+        display: block;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        z-index: 2;
+        height:100vh
+    }
+    .NavTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    .mobile .NavigationLinks{
+     display: flex;
+        flex-direction: column;
+        float: left;
+        text-align: left;
+        width: 100%;
+        line-height: 4;
+    }
     }
     .mobile a{
         color: white;
-        text-align: right;
-        width: 80%;
+       
         border-bottom: 1px solid red;
     }
     .fa-solid{
@@ -56,7 +71,7 @@ i:hover{
 .inputName, .inputPhone, .inputEmail, .inputBusiness {
     width: 48%!important;
 }
-} 
+
 
 
 .mobile-Nav{
