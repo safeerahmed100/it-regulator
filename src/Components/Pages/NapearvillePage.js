@@ -6,7 +6,6 @@ import InfoComponent from '../Sections/InfoComponent'
 import ServicesSlider from '../Sections/ServicesSlider'
 import Testimonials from '../Sections/Testimonials'
 import BannerComponent from '../Sections/BannerComponent'
-
 import Faqs from '../Sections/Faqs'
 function NapearvillePage() {
   return (
@@ -33,7 +32,6 @@ componentImage={Img2}
 <Faqs/>
 <BannerComponent componentClass='NapearvilleBanner' BannerPara='Find out how ITRegulators can assist your Naperville organization by developing a tailored IT strategy that satisfies your budget and needs' 
 BannerBtn='Schedule an appointment'/>
-
   </div>
   )
 }

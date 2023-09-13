@@ -1,0 +1,50 @@
+.BlogPage h1{
+    padding: 30px;
+  font-weight: 600;
+    font-size: 30px;
+}
+.BlogsContainer h2{
+font-size: 14px;
+font-weight: 400;
+}
+.BlogsContainer h3{
+    font-size: 30px;
+    font-weight: 500;
+} 
+.BlogsContainer h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+.BlogsContainer hr{
+    border-top: 2px solid red;
+ background: #FE2D2D;
+    width: max-content;
+
+}
+.BlogsContainer{
+    width: 45%;
+    padding: 10px 20px;
+}
+.BlogsCard{
+    padding: 30px;
+}
+.BlogsContainer img{
+    width: 100%;
+}
+.BlogsContainer a{
+    font-weight: 800;
+    text-decoration: underline;
+}
+.BlogItemText{
+    padding: 30px;
+}
+.BlogItemText h2{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 2;
+    text-decoration: underline solid red;
+}
+
+.BlogsFooter{
+    text-align: center;
+}

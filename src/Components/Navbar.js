@@ -78,7 +78,11 @@ function handleMenu(){
         <NavLink to='/it-managed-jiolet' className='link' >Jiolet</NavLink>
         <NavLink to='/it-managed-boilingbrook' className='link' >Boilingbrook</NavLink>
         </div>
-        <NavLink to='/resources' className='link' >Resources</NavLink>
+        <NavLink to='/resources' className='link resourcesDown' >Resources</NavLink>
+        <div class='ResourcesDropDown'>
+        <NavLink to='/blogs' className='link' >Blogs</NavLink>
+        <NavLink to='/news' className='link' >News</NavLink>
+        </div>
         <NavLink to='/contact' className='link' >Contact</NavLink>
       </div>
       

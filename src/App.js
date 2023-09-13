@@ -34,6 +34,10 @@ import NapearvillePage from './Components/Pages/NapearvillePage';
 import ChicagoPage from './Components/Pages/ChicagoPage';
 import JioletPage from './Components/Pages/JioletPage';
 import BoilingbrookPage from './Components/Pages/BoilingbrookPage';
+import BlogPage from './Components/Pages/BlogPage';
+import BlogItems from './Components/Sections/BlogItems';
+import NewsPage from './Components/Pages/NewsPage';
+import ContactPage from './Components/Pages/ContactPage';
 
 
 
@@ -77,6 +81,10 @@ function App() {
     <Route path='/it-managed-chicago' element={<ChicagoPage/>}></Route>
     <Route path='/it-managed-jiolet' element={<JioletPage/>}></Route>
     <Route path='/it-managed-boilingbrook' element={<BoilingbrookPage/>}></Route>
+    <Route path='/blogs' element={<BlogPage/>}></Route>
+    <Route path='/blogs/office/unleash-the-power' element={<BlogItems/>}></Route>
+    <Route path='/news' element={<NewsPage/>}></Route>
+    <Route path='/contact' element={<ContactPage/>}></Route>
     
     
 

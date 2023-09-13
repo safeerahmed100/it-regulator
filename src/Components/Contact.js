@@ -3,9 +3,9 @@ import './css/Contact.css'
 // import ContactPopUp from './ContactPopUp'
 import {Fade, Slide} from 'react-awesome-reveal'
 
-function Contact() {
+function Contact({componentClass}) {
   return (
-    <div className='Contact'>
+    <div className={`Contact ${componentClass}`}>
       <div className='ContactContainer'>
         <Slide >   
              <div className='ContactText'>

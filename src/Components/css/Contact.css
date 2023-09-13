@@ -80,8 +80,9 @@ form{
 
 .Contact .btn{
     margin-top: 20px;
-background-color: white;
-color: black;
+background-color:#509BF4;
+color: white;
+
 transition: all 0.5s ease-in-out;
 }
 
@@ -92,4 +93,13 @@ color: white;
 }
 
 
-  
+.Contact-class-no-bg{
+    background: none;
+}
+.Contact-class-no-bg form input,select{
+    border: 1px solid black;
+}
+.Contact-class-no-bg .ContactText h1{
+    color: black;
+}
+
