@@ -183,12 +183,22 @@ padding: 30px!important;
     display: grid!important;
     grid-template-rows: 2fr;
     grid-template-columns: 2fr 2fr;
+    justify-items: center;
 }
 .Info, .services, .comp, .Navigations, .staffing{
     padding: 15px!important;
     justify-content: space-evenly;
     width: 100%!important;
     align-items: flex-start;
+}
+.Contact .ContactContainer h1{
+    font-size: 30px;
+}
+.Contact .ContactContainer h3{
+    font-size: 16px;
+}
+.Contact .ContactContainer form{
+    padding: 15px;
 }
 }
 
@@ -234,6 +244,8 @@ padding: 30px!important;
     }
     .ServiceContainer{
         flex-direction: column;
+        position: relative;
+        left: 18%;
     }
     .ServiceSlider{
         width: 100%!important;
@@ -340,5 +352,22 @@ align-items: center;
 .InfoComponent .InfoText h3{
     font-size: 24px;
 }
+.ServicesHeader .banner{
+    padding: 30px;
 
+}
+.ServicesHeader .banner .headerText h1{
+    font-size: 30px;
+}
+.ServicesHeader .banner .headerText p{
+    width: 100%;
+}
+
+.ServiceSlider h1{
+    font-size: 24px!important;
+}
+.ServiceSlider{
+    position: relative;
+ 
+}
 }
