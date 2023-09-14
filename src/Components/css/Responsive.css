@@ -1,4 +1,4 @@
-.HamBurger i.fa-solid{
+.HamBurger{
     display: none;
 }
 .swiper-3d{
@@ -10,6 +10,8 @@
 i:hover{
     cursor: pointer;
 }
+
+
 @media (max-width:1024px) {
   
     .mobile .CompetenciesLink,.ServicesLink{
@@ -26,8 +28,8 @@ i:hover{
    .mobile .ServiceLinkTab{
     display: none;
    }
-    .HamBurger i.fa-solid{
-        display: block;
+    .HamBurger {
+        display: block!important;
     }
 
     .NavLinks{
@@ -179,7 +181,8 @@ padding: 30px!important;
 
 @media (max-width:425px){
     .HeaderComponent .banner{
-        padding: 30px!important;
+        padding: 15px!important;
+        height: 20vh;
     }
     .HeaderComponent .banner .headerText h1{
         font-size: 30px!important;
@@ -316,6 +319,12 @@ font-size: 24px;
 
 .FooterContainer .Info, .services, .comp, .Navigations, .staffing{
 align-items: center;
+}
+.InfoComponent{
+    padding: 15px!important;
+}
+.InfoComponent .InfoText h3{
+    font-size: 24px;
 }
 
 }

@@ -66,23 +66,22 @@ function handleMenu(){
           <NavLink to='./vpn'   className='link'>VPN</NavLink> 
           </div>
         </div>
-        
-        
-          <NavLink to='./industries'   className='link'>Industries</NavLink> 
         <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink> 
         <NavLink to='/industries'className='link' >Industries</NavLink>
-        <NavLink to='/locations'className='link locationDrop' >Locations</NavLink>
-        {/* <div className='location-menu'>
+        <NavLink to='/' className='link locationDrop' >Locations</NavLink>
+         <div className='location-menu'>
         <NavLink to='/it-managed-napearville' className='link' >Napearville</NavLink>
         <NavLink to='/it-managed-chicago' className='link' >Chicago</NavLink>
         <NavLink to='/it-managed-jiolet' className='link' >Jiolet</NavLink>
         <NavLink to='/it-managed-boilingbrook' className='link' >Boilingbrook</NavLink>
         </div>
-        <NavLink to='/resources' className='link resourcesDown' >Resources</NavLink>
+        <NavLink to='/' className='link resourcesDown' >Resources</NavLink>
         <div className='resource-tab'>
         <NavLink to='/blogs' className='link' >Blogs</NavLink>
-        <NavLink to='/contact' className='link' >Contact</NavLink>
-      </div> */}
+        <NavLink to='/news' className='link' >News</NavLink>
+      </div> 
+      <NavLink to='/contact' className='link' >Contact</NavLink>
+
       </div>
       
 

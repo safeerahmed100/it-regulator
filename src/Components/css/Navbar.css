@@ -20,11 +20,16 @@
     border-radius: 0!important;
     padding: 20px;
 }
+.NavLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
 
+}
 .NavLinks a{
 text-decoration: none;
 color: black;
-margin: 0 5px;
 font-size: 14px;
 
 }
@@ -235,17 +240,23 @@ box-shadow: 0 5px 11px -1px #000;
 
 }
 
-.service-solution, .service-competencies, .resource-tab, .location-menu{
+ .resource-tab, .location-menu{
     position: absolute;
+    background-color: white;
+    line-height: 4;
+    z-index: 4;
+    top: 10%;
+    left: 52%;
     display: none;
-    display: flex;
+    font-size: 14px;
+    padding: 0 20px;
     flex-direction: column;
-    z-index: 12;
-    left: 36%;
-    line-height: 2;
-    background: white;
+    cursor: pointer;
 }
 
+.resource-tab{
+    left: 61%;
+}
 .servicedropper:hover +.service-drop-menu{
     display: flex;
    
@@ -260,6 +271,7 @@ box-shadow: 0 5px 11px -1px #000;
     background-color: white;
     line-height: 4;
     z-index: 4;
+    top: 10%;
     font-size: 14px;
     padding: 0 20px;
     flex-direction: column;
@@ -291,5 +303,15 @@ box-shadow: 0 5px 11px -1px #000;
 
 .showmenu{
     display: flex;
+}
+
+.resourcesDown:hover +.resource-tab{
+    display: flex;
+}
+.locationDrop:hover +.location-menu{
+    display: flex;
+}
+    .resource-tab:hover,.location-menu:hover{
+        display: flex;
 }
 
