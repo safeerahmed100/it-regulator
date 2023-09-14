@@ -16,7 +16,7 @@
 
 
 .TestimonialCard {
-    margin: 50px 40px;
+    margin: 50px 30px;
         padding: 20px;
         background-color: white;
         display: grid;
@@ -63,5 +63,5 @@
 }
 
 .Testimonials .mySwiper{
-    height: 55vh;
+    height: 100%!important;
 }

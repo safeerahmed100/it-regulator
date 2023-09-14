@@ -12,7 +12,7 @@ import Typewriter from 'typewriter-effect'
 
 
 
-function Services() {
+function Services({isHover}) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ function Services() {
   return (
    
       
-    <div className='Services'>
+    <div className={`Services ${isHover===true? 'stacking': ''}`}>
       <Slide duration={1000} direction={'left'}>
       
     <h1><Typewriter

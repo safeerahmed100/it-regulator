@@ -11,8 +11,8 @@ function Home({isHover,setIsHover}) {
   return (
    <>
    <Header isHover={isHover} setIsHover={setIsHover} />
-   <About />
-   <Services />
+   <About isHover={isHover} setIsHover={setIsHover} />
+   <Services isHover={isHover} setIsHover={setIsHover} />
     <Testimonials /> 
    <Newsletter />
    <Partners />

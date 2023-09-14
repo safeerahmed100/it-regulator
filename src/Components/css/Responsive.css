@@ -63,6 +63,9 @@ i:hover{
         width: 100%;
         line-height: 4;
     }
+    .TestimonialCard{
+        margin: 40px 0!important;
+    }
     }
     .mobile a{
         color: rgb(0, 0, 0);
@@ -101,6 +104,7 @@ i:hover{
     position: relative;
     top: 25px;
 }
+
 
 
 @media (max-width:768px){
@@ -194,6 +198,13 @@ padding: 30px!important;
 .Contact .ContactContainer form{
     padding: 15px;
 }
+.Services .ServicesSlides{
+    display: none;
+}
+.Services .swiper-slide-active .ServicesSlides {
+    display: flex;
+}
+
 }
 
 
@@ -359,49 +370,14 @@ align-items: center;
 .ServiceSlider h1{
     font-size: 24px!important;
 }
-.ServiceSlider .mySwiper{
-    height: 52vh!important;
-    position: relative;
- 
+
+.Form input{
+    text-align: center;
+    margin: 10px;
+    width: 100%!important;
 }
-.Testimonials .mySwiper{
-    height: 58vh!important;
+.Form form{
+    padding: 10px 0!important;
 }
-
-}
-
-
-/*IPHONE SE */
-@media (max-width:375px){
-
-    .ServiceSlider .mySwiper{
-        height: 64vh!important;
-        position: relative;
-     
-    }
-    .Testimonials .mySwiper{
-        height: 78vh!important;
-    }
-    
 }
 
-/*Iphone xr */
-@media (max-width:414px){
-
-    .ServiceSlider .mySwiper{
-        height: 48vh!important;
-        position: relative;
-     
-    }
-    .Testimonials .mySwiper{
-        height: 55vh!important;
-    }
-    
-}
-
-@media (max-width:390px){
-.Testimonials .mySwiper{
-    height: 61px!important;
-}
-
-}

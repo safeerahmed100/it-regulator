@@ -6,13 +6,13 @@ import Typewriter from 'typewriter-effect';
 
 
 
-function About() {
+function About({isHover}) {
 
   return (
 
 
   
-  <div className='About'>
+  <div className={` About ${isHover===true? 'stacking': ''}`}>
     
 <div className='AboutText'>
   
