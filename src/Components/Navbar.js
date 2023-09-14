@@ -9,6 +9,7 @@ function Navbar({isHover,setIsHover}) {
   const [isShow,setIsShow]=useState(false)
   const [isdrop,setIsdrop]=useState(false)
   const [isdrop1,setIsdrop1]=useState(false)
+  const [isdrop2,setIsdrop2]=useState(false)
   
 
   function transitionNav(){
@@ -104,7 +105,7 @@ function handleMenu(){
       </Link>
       </div>
       <div className='NavClose'>
-      <i className='fa-solid fa-x' style={{color:'white'}} onClick={handleMenu}></i>
+      <i className='fa-solid fa-x'  onClick={handleMenu}></i>
 
       </div>
         </div>
@@ -112,10 +113,11 @@ function handleMenu(){
          
       <div className='NavigationLinks'>
         <NavLink to='/about' className='link' end>About</NavLink>
-        <NavLink to='/service' className='link' >IT Services & Solutions <i class="fa-solid fa-caret-down"></i></NavLink>
-        <div className='ServicesLink'>
-          <span><i class="fa-solid fa-caret-down"></i>IT Services And Solutions</span>
-          <div className='ServiceLinkTab'>
+        
+        <NavLink to='/service' className='link' >Services<i onClick={()=>setIsdrop(!isdrop)} className="fa-solid fa-angle-down"></i></NavLink>
+        <div className={`ServicesLink ${isdrop===true? 'showmenu' : ''}`}>
+          <span><i onClick={()=>setIsdrop1(!isdrop1)} className="fa-solid fa-angle-down"></i>IT Services And Solutions</span>
+          <div className={`ServiceLinkTab ${isdrop1===true? 'showmenu': ''}`}>
         <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
         <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
         <NavLink to='./it-assessment-audit-services' className='link'>IT Assessments & Audits</NavLink> 
@@ -129,9 +131,9 @@ function handleMenu(){
         <NavLink to='./security-systems' className='link'>Security Systems</NavLink> 
         </div>
         </div>
-        <div className='CompetenciesLink'>
-          <span><i class="fa-solid fa-caret-down"></i>IT Competencies </span>
-          <div className='CompetenciesLinkTab'>
+        <div className={`CompetenciesLink  ${isdrop===true? 'showmenu' : ''}`}>
+        <span><i onClick={()=>setIsdrop2(!isdrop2)} className="fa-solid fa-angle-down"></i>IT Competencies </span>
+          <div className={`CompetenciesLinkTab ${isdrop2===true? 'showmenu': '' }`}>
           <NavLink to='./it-competencies' className='link'>IT Competencies</NavLink>
           <NavLink to='./net-framework'  className='link'>Net Framework</NavLink> 
           <NavLink to='./active-directory'  className='link'>Active Directory</NavLink> 

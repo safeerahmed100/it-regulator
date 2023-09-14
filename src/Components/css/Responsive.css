@@ -45,7 +45,7 @@ i:hover{
         left: 0;
         display: block;
         width: 100%;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
         position: absolute;
         z-index: 2;
         height:100vh
@@ -65,7 +65,7 @@ i:hover{
     }
     }
     .mobile a{
-        color: white;
+        color: rgb(0, 0, 0);
        
         border-bottom: 1px solid red;
     }
@@ -104,6 +104,20 @@ i:hover{
 
 
 @media (max-width:768px){
+
+
+    .fa-angle-down {
+        position: relative;
+        left: 80%;
+        top: 5px;
+    }
+
+    .ServicesLink .fa-angle-down{
+        left: 0%;
+    }
+    .CompetenciesLink .fa-angle-down{
+        left: 0%;
+    }
 
 .Header{
     height: 30vh!important;

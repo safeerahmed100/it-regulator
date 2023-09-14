@@ -245,7 +245,7 @@ box-shadow: 0 5px 11px -1px #000;
     background-color: white;
     line-height: 4;
     z-index: 4;
-    top: 10%;
+    top: 7%;
     left: 52%;
     display: none;
     font-size: 14px;
@@ -271,7 +271,7 @@ box-shadow: 0 5px 11px -1px #000;
     background-color: white;
     line-height: 4;
     z-index: 4;
-    top: 10%;
+    top: 7%;
     font-size: 14px;
     padding: 0 20px;
     flex-direction: column;
@@ -302,9 +302,12 @@ box-shadow: 0 5px 11px -1px #000;
 }
 
 .showmenu{
-    display: flex;
+    display: flex!important;
+    flex-direction: column;
 }
-
+.ServicesLink span{
+    font-size: 14px;
+}
 .resourcesDown:hover +.resource-tab{
     display: flex;
 }

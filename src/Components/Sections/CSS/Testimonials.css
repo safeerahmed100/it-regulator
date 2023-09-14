@@ -61,3 +61,7 @@
 .Testimonials .swiper-slide-active .TestimonialCard p h6{
     font-size: 18px;
 }
+
+.Testimonials .mySwiper{
+    height: 55vh;
+}
