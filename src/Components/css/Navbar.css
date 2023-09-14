@@ -318,3 +318,18 @@ box-shadow: 0 5px 11px -1px #000;
         display: flex;
 }
 
+.serviceLink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ServicesLink span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.CompetenciesLink span{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}

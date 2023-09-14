@@ -114,9 +114,9 @@ function handleMenu(){
       <div className='NavigationLinks'>
         <NavLink to='/about' className='link' end>About</NavLink>
         
-        <NavLink to='/service' className='link' >Services<i onClick={()=>setIsdrop(!isdrop)} className="fa-solid fa-angle-down"></i></NavLink>
+        <NavLink to='/service' className='link serviceLink' >Services<i onClick={()=>setIsdrop(!isdrop)} className="fa-solid fa-angle-down"></i></NavLink>
         <div className={`ServicesLink ${isdrop===true? 'showmenu' : ''}`}>
-          <span><i onClick={()=>setIsdrop1(!isdrop1)} className="fa-solid fa-angle-down"></i>IT Services And Solutions</span>
+          <span>IT Services And Solutions <i onClick={()=>setIsdrop1(!isdrop1)} className="fa-solid fa-angle-down"></i></span>
           <div className={`ServiceLinkTab ${isdrop1===true? 'showmenu': ''}`}>
         <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
         <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
@@ -132,7 +132,7 @@ function handleMenu(){
         </div>
         </div>
         <div className={`CompetenciesLink  ${isdrop===true? 'showmenu' : ''}`}>
-        <span><i onClick={()=>setIsdrop2(!isdrop2)} className="fa-solid fa-angle-down"></i>IT Competencies </span>
+        <span>IT Competencies <i onClick={()=>setIsdrop2(!isdrop2)} className="fa-solid fa-angle-down"></i> </span>
           <div className={`CompetenciesLinkTab ${isdrop2===true? 'showmenu': '' }`}>
           <NavLink to='./it-competencies' className='link'>IT Competencies</NavLink>
           <NavLink to='./net-framework'  className='link'>Net Framework</NavLink> 

@@ -6,6 +6,7 @@ import Services from '../Sections/Services'
 import Newsletter from '../Sections/Newsletter'
 import Partners from '../Sections/Partners'
 import Contact from '../Contact'
+
 function Home({isHover,setIsHover}) {
   return (
    <>

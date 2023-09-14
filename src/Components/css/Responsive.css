@@ -105,22 +105,16 @@ i:hover{
 
 @media (max-width:768px){
 
-
-    .fa-angle-down {
-        position: relative;
-        left: 80%;
-        top: 5px;
-    }
-
-    .ServicesLink .fa-angle-down{
-        left: 0%;
-    }
-    .CompetenciesLink .fa-angle-down{
-        left: 0%;
-    }
-
+.FooterContainer .services a ,.comp a ,.Navigations a ,.staffing a{
+    text-align: center;
+    width: 100%;
+    line-height: 3;
+    border-bottom: 1px solid red;
+    color: inherit;
+    text-decoration: inherit;
+}
 .Header{
-    height: 30vh!important;
+    height: 40vh!important;
 }
 .swiper-horizontal{
     height: 100%;
@@ -244,8 +238,7 @@ padding: 30px!important;
     }
     .ServiceContainer{
         flex-direction: column;
-        position: relative;
-        left: 18%;
+       
     }
     .ServiceSlider{
         width: 100%!important;
@@ -289,12 +282,12 @@ padding: 30px!important;
         padding: 10px 0;
     }
 
-    .NewsLetter .Form form input{
-        width:30%
-    }
+  
     .NewsLetter .Form form button{
-        width: 40%;
-        margin: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0!important;
+        left: 0!important;
     }
 
     .Services h1{
@@ -366,8 +359,49 @@ align-items: center;
 .ServiceSlider h1{
     font-size: 24px!important;
 }
-.ServiceSlider{
+.ServiceSlider .mySwiper{
+    height: 52vh!important;
     position: relative;
  
 }
+.Testimonials .mySwiper{
+    height: 58vh!important;
+}
+
+}
+
+
+/*IPHONE SE */
+@media (max-width:375px){
+
+    .ServiceSlider .mySwiper{
+        height: 64vh!important;
+        position: relative;
+     
+    }
+    .Testimonials .mySwiper{
+        height: 78vh!important;
+    }
+    
+}
+
+/*Iphone xr */
+@media (max-width:414px){
+
+    .ServiceSlider .mySwiper{
+        height: 48vh!important;
+        position: relative;
+     
+    }
+    .Testimonials .mySwiper{
+        height: 55vh!important;
+    }
+    
+}
+
+@media (max-width:390px){
+.Testimonials .mySwiper{
+    height: 61px!important;
+}
+
 }
