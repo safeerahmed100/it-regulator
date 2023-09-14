@@ -162,6 +162,18 @@ padding: 30px!important;
     width: 200px!important;
 }
 
+.FooterContainer {
+    padding: 30px!important;
+    display: grid!important;
+    grid-template-rows: 2fr;
+    grid-template-columns: 2fr 2fr;
+}
+.Info, .services, .comp, .Navigations, .staffing{
+    padding: 15px!important;
+    justify-content: space-evenly;
+    width: 100%!important;
+    align-items: flex-start;
+}
 }
 
 
@@ -181,6 +193,7 @@ padding: 30px!important;
     }
     .Header .banner .headerText{
         width: 100%;
+        padding: 15px!important;
     }
     .Header .banner .headerImg{
    display: none;
@@ -203,7 +216,6 @@ padding: 30px!important;
         margin: 15px;
     }
     .ServiceContainer{
-        padding: 15px!important;
         flex-direction: column;
     }
     .ServiceSlider{
@@ -293,5 +305,17 @@ font-size: 24px;
  }
  .Partners{
     padding: 15px!important;
+ 
  }
+
+.FooterContainer{
+    grid-template-rows: 2fr!important;
+    grid-template-columns: none;
+    
+}
+
+.FooterContainer .Info, .services, .comp, .Navigations, .staffing{
+align-items: center;
+}
+
 }
