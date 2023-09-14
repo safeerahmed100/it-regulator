@@ -7,6 +7,8 @@ import {Link,NavLink} from "react-router-dom";
 function Navbar({isHover,setIsHover}) {
   const [isActive,setIsActive] = useState(false)
   const [isShow,setIsShow]=useState(false)
+  const [isdrop,setIsdrop]=useState(false)
+  const [isdrop1,setIsdrop1]=useState(false)
   
 
   function transitionNav(){
@@ -34,11 +36,11 @@ function handleMenu(){
      
       <div className='NavLinks'>
         <NavLink to='/about' className='link' end>About</NavLink>
-        <NavLink to='/service' className='link serviceDrop' onMouseEnter={()=>setIsHover(true)} onMouseLeave={()=>setIsHover(false)}>IT Services & Solutions<i class="fa-solid fa-caret-down"></i></NavLink>
-        <div className={`dropDown ${isShow && 'dropDown-scroll'}`}>
-          <div className='ServicesLink'>
-          <span>IT Services And Solutions</span>
-          <div className='ServiceLinkTab'>
+        <NavLink to='/service' className='link servicedropper' >Services</NavLink>
+        <div className='service-drop-menu'>
+        <span  onClick={()=>setIsdrop(!isdrop)} className='it-service-btn'>IT Services & Solution</span>
+        <span onClick={()=>setIsdrop1(!isdrop1)} className='it-compi-btn'>IT Competencies</span>
+        <div className={`service-solution ${isdrop===true? 'showmenu': ''} `}>
         <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
         <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
         <NavLink to='./it-assessment-audit-services' className='link'>IT Assessments & Audits</NavLink> 
@@ -51,10 +53,7 @@ function handleMenu(){
         <NavLink to='./email-spam-protection' className='link'>Email & Spam Protection</NavLink> 
         <NavLink to='./security-systems' className='link'>Security Systems</NavLink> 
         </div>
-        </div>
-        <div className='CompetenciesLink'>
-          <span>IT Competencies</span>
-          <div className='CompetenciesLinkTab'>
+        <div className={`service-competencies ${isdrop1===true? 'showmenu': ''}`}>
           <NavLink to='./it-competencies' className='link'>IT Competencies</NavLink>
           <NavLink to='./net-framework'  className='link'>Net Framework</NavLink> 
           <NavLink to='./active-directory'  className='link'>Active Directory</NavLink> 
@@ -65,25 +64,25 @@ function handleMenu(){
           <NavLink to='./virtualization'   className='link'>Virtualization</NavLink> 
           <NavLink to='./sql-server'   className='link'>Sql Server</NavLink> 
           <NavLink to='./vpn'   className='link'>VPN</NavLink> 
+          </div>
+        </div>
+        
+        
           <NavLink to='./industries'   className='link'>Industries</NavLink> 
-        </div>
-        </div>
-        </div>
         <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink> 
         <NavLink to='/industries'className='link' >Industries</NavLink>
-        <NavLink to='/locations'className='link locationDrop' >Locations <i class="fa-solid fa-caret-down"></i></NavLink>
-        <div className={`LocationDropDown ${isShow && 'LocationDropDown-scroll'}`}>
+        <NavLink to='/locations'className='link locationDrop' >Locations</NavLink>
+        {/* <div className='location-menu'>
         <NavLink to='/it-managed-napearville' className='link' >Napearville</NavLink>
         <NavLink to='/it-managed-chicago' className='link' >Chicago</NavLink>
         <NavLink to='/it-managed-jiolet' className='link' >Jiolet</NavLink>
         <NavLink to='/it-managed-boilingbrook' className='link' >Boilingbrook</NavLink>
         </div>
         <NavLink to='/resources' className='link resourcesDown' >Resources</NavLink>
-        <div class='ResourcesDropDown'>
+        <div className='resource-tab'>
         <NavLink to='/blogs' className='link' >Blogs</NavLink>
-        <NavLink to='/news' className='link' >News</NavLink>
-        </div>
         <NavLink to='/contact' className='link' >Contact</NavLink>
+      </div> */}
       </div>
       
 

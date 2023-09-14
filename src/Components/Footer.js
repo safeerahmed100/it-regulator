@@ -2,13 +2,13 @@ import React from 'react';
 import logo from '../Assets/logo.png';
 import VeteranLogo from '../Assets/logo-veteranownedbusiness 1.png'
 import './css/Footer.css';
-import {  Slide } from 'react-awesome-reveal';
+// import {  Slide } from 'react-awesome-reveal';
 
 function Footer() {
   return (
     <div className='Footer'>
       
-      <div className='FooterContainer ForMobile'>
+      {/* <div className='FooterContainer ForMobile'>
       <Slide>
       <div className='FooterResponsive'>
       <div className='Info'>
@@ -91,7 +91,7 @@ function Footer() {
       </div>
       </div>
       </Slide>
-      </div>
+      </div> */}
       
 
       <div className='FooterContainer ForPc'>

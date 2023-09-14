@@ -29,7 +29,9 @@ font-size: 14px;
 
 }
 
-
+.Navbar .buttons i{
+    font-size: 12px;
+}
 .Navbar .buttons .btn{
     background-color: black;
     margin: 0 6px;
@@ -59,7 +61,7 @@ box-shadow: 0 5px 11px -1px #000;
     border-bottom: 1px solid red;
 }
 
-/*DROP DOWN CSS */
+/* DROP DOWN CSS
 .dropDown {
     z-index: 2;
     display: none;
@@ -145,7 +147,7 @@ box-shadow: 0 5px 11px -1px #000;
     text-decoration: none;
     line-height: 3;
     border-bottom: 1px solid grey;
-  }
+  } */
 
 /* @media (max-width:1280px) {
     .logoSide{
@@ -183,9 +185,9 @@ box-shadow: 0 5px 11px -1px #000;
     }
     
 } */
-.ServicesLink,.CompetenciesLink{
+/* .ServicesLink,.CompetenciesLink{
    padding: 10px;
-}
+} */
 
 
 
@@ -193,7 +195,7 @@ box-shadow: 0 5px 11px -1px #000;
     display: none;
 }
 
-.ServicesLink span:hover{
+/* .ServicesLink span:hover{
     cursor: pointer;
 }
 
@@ -212,4 +214,82 @@ box-shadow: 0 5px 11px -1px #000;
     display: flex;
     flex-direction: column;
     
+} */
+
+.ServiceDropDown{
+    display: flex;
+    flex-direction: column;
 }
+.service-solution{
+    display: none;
+}
+
+.service-competencies{
+    display: none;
+}
+
+.service-drop-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.service-solution, .service-competencies, .resource-tab, .location-menu{
+    position: absolute;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 12;
+    left: 36%;
+    line-height: 2;
+    background: white;
+}
+
+.servicedropper:hover +.service-drop-menu{
+    display: flex;
+   
+}
+
+.service-drop-menu:hover{
+    display: flex;
+}
+.service-drop-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    line-height: 4;
+    z-index: 4;
+    font-size: 14px;
+    padding: 0 20px;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+.it-service-btn:hover +.service-solution{
+    display: flex;
+}
+
+.service-solution, .service-competencies {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 20;
+    background: white;
+    left: 100%;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+}
+.it-service-btn::after , .it-compi-btn::after{
+    content: ' > ';
+}
+
+.it-service-btn:hover +.service-solution {
+    display: flex!important;
+}
+
+.showmenu{
+    display: flex;
+}
+

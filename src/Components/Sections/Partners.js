@@ -19,6 +19,7 @@ function Partners() {
     strings: ["Partners & Affiliations"],
     autoStart: true,
     loop: true,
+    pauseFor:500000
   }}
 /></h1>
       <div className='PartnersIcon'>

@@ -76,7 +76,7 @@ i:hover{
     margin: 2px 2px 10px 2px!important;
 }
 .ContactContainer{
-    padding: 0 100px!important;
+    padding: 0 1px!important;
 }
 .ContactForm input, select {
     margin: 5px 3px!important;
@@ -102,8 +102,9 @@ i:hover{
 
 
 @media (max-width:768px){
-.ForPc{
-display: none!important;
+
+.Header{
+    height: 30vh!important;
 }
 .swiper-horizontal{
     height: 100%;
@@ -157,6 +158,9 @@ padding: 30px!important;
     width: 100%!important;
 }
 
+.FooterContainer img{
+    width: 200px!important;
+}
 
 }
 
@@ -185,38 +189,60 @@ padding: 30px!important;
         width: 100%!important;
     }
     .About{
-        flex-direction: column-reverse;
+        padding: 15px!important;
+        flex-direction: column;
+    }
+    .About .AboutText h1{
+        padding: 15px;
+    }
+    
+    .About .AboutText .h4{
+        padding: 0 0 15px 0;
+    }
+    .About .AboutText button{
+        margin: 15px;
     }
     .ServiceContainer{
+        padding: 15px!important;
         flex-direction: column;
     }
     .ServiceSlider{
         width: 100%!important;
     }
     .Services{
-        padding: 30px 20px!important;
+        padding: 15px!important;
     }
-    .ServiceText{
+
+   .Services .ServiceText{
         width: 100%!important;
+        padding: 15px 0;
     }
     .ContactContainer{
-        padding: 0px 30px!important;
+        padding: 0px 2px!important;
+    }
+    .inputName, .inputPhone, .inputEmail, .inputBusiness{
+        width: 100%!important;
     }
 
     .Contact{
-        padding: 30px!important;
+        padding: 15px!important;
     }
     .ForMobile{
         display: flex!important;
     }
     .Testimonials h1{
         width: 100%!important;
+        font-size: 24px!important;
     }
     .Testimonials .swiper-slide-active .TestimonialCard{
         transform: translate(1);
     }
     .NewsLetter{
-        padding: 30px;
+        padding: 15px!important;
+        border-radius: 12px!important;
+    }
+    .NewsLetter h1{
+        font-size: 30px!important;
     }
     .NewsLetter .Form form{
         padding: 10px 0;
@@ -256,5 +282,16 @@ padding: 30px!important;
         padding: 30px!important;
     
     }
- 
+    .Partners h1{
+font-size: 24px;
+    }
+ .Partners .PartnersIcon{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+ }
+ .Partners{
+    padding: 15px!important;
+ }
 }
