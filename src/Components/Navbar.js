@@ -42,7 +42,7 @@ function handleMenu(){
     </Link>
       </div>
      
-      <div className='NavLinks'>
+      <div className='NavLinks' onClick={()=>isActive(false)}>
         <NavLink to='/about' className='link' end>About</NavLink>
         <NavLink to='/service' className='link servicedropper' >Services</NavLink>
         <div className='service-drop-menu'>
