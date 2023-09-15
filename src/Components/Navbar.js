@@ -33,6 +33,7 @@ function handleMenu(){
 function closeMenu(){
   setIsActive(false)
 }
+
   return (
     <div className={`Navbar ${isShow && 'nav_black'}`}>
       <div className='logoSide'>
@@ -130,7 +131,7 @@ function closeMenu(){
         </div>
         </div>
         <div className={`CompetenciesLink  ${isdrop===true? 'showmenu' : ''}`}>
-        <span>IT Competencies <i onClick={()=>setIsdrop2(!isdrop2)} className="fa-solid fa-angle-down"></i> </span>
+        <span>IT Competencies <i onClick={()=>setIsdrop2(!isdrop2) }  className="fa-solid fa-angle-down"></i> </span>
           <div className={`CompetenciesLinkTab ${isdrop2===true? 'showmenu': '' }`}>
           <NavLink onClick={closeMenu} to='./it-competencies' className='link'>IT Competencies</NavLink>
           <NavLink onClick={closeMenu} to='./net-framework'  className='link'>Net Framework</NavLink> 

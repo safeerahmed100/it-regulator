@@ -399,5 +399,10 @@ align-items: center;
 .Form form{
     padding: 10px 0!important;
 }
+
+
+.Services .ServiceContainer .ServiceSlider .mySwiper{
+    height: 52vh!important;
+}
 }
 
