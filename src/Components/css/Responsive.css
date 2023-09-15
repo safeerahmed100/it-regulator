@@ -126,6 +126,7 @@ i:hover{
     }
     .mobileResponsiveImg{
         display: flex!important;
+        padding: 15px!important;
     }
     .Navbar{
         padding: 10px!important;
@@ -434,7 +435,50 @@ align-items: center;
     width: 250px!important;
 }
 
-
+.IconsComponent{
+    padding: 15px!important;
+}
+.IconsComponent h4{
+    margin: 15px!important;
+}
+.Icons{
+    padding: 15px!important;
+    grid-template-columns: 2fr 2fr!important;
+    grid-template-rows: none;
+}
+.BannerContainer{
+    padding: 60px 15px!important;
 
 }
+.BannerContainer p{
+    text-shadow: 0 0 8px #000000;
+}
+.InfoText span{
+    padding: 15px!important;
+    font-size: 18px!important;
+    font-size: 500!important;
+}
+.IconsItem{
+    margin: 15px!important;
+}
+.IconsItem span{
+    font-size: 18px!important;
+}
+.BoldHeadingList ul li{
+    text-align: left;
+}
 
+.AssessmentSliderContainer {
+    flex-direction: column;
+    height: 70vh;
+    padding: 30px!important;
+}
+.AssessmentSliderContainer .AssessmentSliderImg{
+    width: 50%;
+}
+.AssessmentSliderContainer .AssessmentSliderText{
+    width: 100%;
+    text-align: center;
+}
+
+}
