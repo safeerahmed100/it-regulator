@@ -11,9 +11,17 @@ i:hover{
     cursor: pointer;
 }
 
+.serviceLinkflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media (max-width:1024px) {
   
+    .serviceLinkflex .serviceLink{
+        width: 100%;
+    }
     .mobile .CompetenciesLink,.ServicesLink{
         display: none;
     }
@@ -40,7 +48,7 @@ i:hover{
     }
     .mobile{
         overflow: scroll!important;
-        padding: 20px;
+        padding: 15px;
         top: 0;
         text-align: center;
         left: 0;
