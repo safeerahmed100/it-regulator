@@ -12,6 +12,10 @@ function Navbar({isHover,setIsHover}) {
   const [isdrop2,setIsdrop2]=useState(false)
   
 
+  if(isActive===true){
+   document.body.style.position='fixed'
+  }
+
   function transitionNav(){
     (window.scrollY>100? setIsShow(true): setIsShow(false))
   }

@@ -39,6 +39,7 @@ i:hover{
         display: none;
     }
     .mobile{
+        overflow: hidden!important;
         padding: 20px;
         top: 0;
         text-align: center;
@@ -109,11 +110,14 @@ i:hover{
 
 @media (max-width:768px){
 
+    .Navbar{
+        padding: 15px!important;
+    }
 .FooterContainer .services a ,.comp a ,.Navigations a ,.staffing a{
     text-align: center;
     width: 100%;
     line-height: 3;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #797979;
     color: inherit;
     text-decoration: inherit;
 }
@@ -226,6 +230,8 @@ padding: 30px!important;
     .Header .banner .headerText{
         width: 100%;
         padding: 15px!important;
+        top: 45%;
+        position: relative;
     }
     .Header .banner .headerImg{
    display: none;
@@ -249,10 +255,15 @@ padding: 30px!important;
     }
     .ServiceContainer{
         flex-direction: column;
+        padding: 15px!important;
        
     }
     .ServiceSlider{
         width: 100%!important;
+        position: relative;
+        right: 20px;
+        margin:0!important;
+        padding: 0!important;
     }
     .Services{
         padding: 15px!important;
@@ -344,6 +355,7 @@ font-size: 24px;
 .FooterContainer{
     grid-template-rows: 2fr!important;
     grid-template-columns: none;
+    padding: 15px!important;
     
 }
 

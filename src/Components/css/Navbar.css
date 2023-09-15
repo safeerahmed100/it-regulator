@@ -305,9 +305,7 @@ box-shadow: 0 5px 11px -1px #000;
     display: flex!important;
     flex-direction: column;
 }
-.ServicesLink span{
-    font-size: 14px;
-}
+
 .resourcesDown:hover +.resource-tab{
     display: flex;
 }
@@ -324,12 +322,14 @@ box-shadow: 0 5px 11px -1px #000;
     align-items: center;
 }
 .ServicesLink span{
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .CompetenciesLink span{
 display: flex;
+font-size: 14px;
 justify-content: space-between;
 align-items: center;
 }

@@ -59,7 +59,7 @@ function Testimonials() {
         }}
 
         autoplay={{
-          delay: 5000000000000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
 
