@@ -48,7 +48,7 @@ i:hover{
     }
     .mobile{
         overflow: scroll!important;
-        padding: 15px;
+        padding: 10px;
         top: 0;
         text-align: center;
         left: 0;
@@ -119,7 +119,7 @@ i:hover{
 @media (max-width:768px){
 
     .Navbar{
-        padding: 15px!important;
+        padding: 10px!important;
     }
 .FooterContainer .services a ,.comp a ,.Navigations a ,.staffing a{
     text-align: center;
