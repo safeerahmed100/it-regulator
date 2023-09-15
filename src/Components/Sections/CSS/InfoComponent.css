@@ -50,8 +50,13 @@
 
 }
   
+.InfoImage{
+  display: flex;
+  justify-content: center;
+}
   .InfoImage img {
     width: 350px;
+  
   }
 
 .InfoText hr{

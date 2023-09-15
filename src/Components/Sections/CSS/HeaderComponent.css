@@ -3,6 +3,16 @@
     background-size: cover!important;
     position: relative!important;
     z-index: -1;
+    height: 35vh;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.HeaderComponent  .headerText{
+   padding: 30px;
 }
 .AboutHeader{
     background-image: url(./Assets/AboutPageHeaderImg.png);

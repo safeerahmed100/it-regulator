@@ -71,6 +71,11 @@ function InfoComponent({heading,
     pauseFor:500000  
   }}
 /></h3>} 
+<div className='InfoImage mobileResponsiveImg'>
+        <Slide direction='right'>
+            {componentImage && <img src={componentImage} alt='Backg'/>}
+            </Slide>
+        </div>
 
             {paraText && <p>{paraText}</p>}  
              { paraTwo && <p>{paraTwo}</p> }
@@ -125,7 +130,7 @@ function InfoComponent({heading,
           {buttonText&& <button>{buttonText}</button>}
           </Slide>
         </div>
-        <div className='InfoImage'>
+          <div className='InfoImage'>
         <Slide direction='right'>
             {componentImage && <img src={componentImage} alt='Backg'/>}
             </Slide>
