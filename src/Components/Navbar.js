@@ -13,7 +13,10 @@ function Navbar({isHover,setIsHover}) {
   
 
   if(isActive===true){
-   document.body.style.position='fixed'
+   document.body.style.overflow='hidden'
+  }
+  else{
+    document.body.style.overflow='auto'
   }
 
   function transitionNav(){
