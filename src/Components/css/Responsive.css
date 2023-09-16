@@ -403,6 +403,8 @@ align-items: center;
 
 .ServiceSlider h1{
     font-size: 24px!important;
+    position: relative;
+    left: 7%;
 }
 
 .Form input{
@@ -480,5 +482,32 @@ align-items: center;
     width: 100%;
     text-align: center;
 }
+.HelpDeskIcons .IconsItem{
+    flex-direction: column!important;
+}
+.HelpDeskIcons{
+grid-template-rows: 1fr 1fr 1fr!important;
+}
+.HelpDeskBanner2 h5{
+    font-size: 18px!important;
+    font-weight: 500;
 
+}
+.BoldHeadingList{
+    text-align: left;
+}
+
+.Industries .BoldHeadingList {
+    display: grid!important;
+    grid-template-columns: 2fr 2fr!important;
+    justify-items: start!important;
+    align-items: start!important;
+}
+.InfoText p{
+    font-size: 18px!important;
+    font-weight: 500!important;
+}
+.ServicePageSlider{
+    left: 20%!important;
+}
 }

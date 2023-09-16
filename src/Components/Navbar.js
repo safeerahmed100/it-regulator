@@ -101,7 +101,7 @@ function closeMenu(){
        <div className='NavTop'>
       <div className='logoSide'>
       <Link to='/'>
-      <img src={Logo} alt='logo'/>
+      <img onClick={closeMenu} src={Logo} alt='logo'/>
       </Link>
       </div>
       <div className='NavClose'>

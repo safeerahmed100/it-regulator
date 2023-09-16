@@ -7,9 +7,9 @@ import 'swiper/css/navigation';
 import { Autoplay,Pagination } from 'swiper/modules';
 
  
-function ServicesSlider() {
+function ServicesSlider({componentClass}) {
   return (
-    <div className='ServiceSlider'>
+    <div className={`ServiceSlider ${componentClass}`}>
       <div className='ServiceContainer'> 
       <Swiper
         slidesPerView={4}
