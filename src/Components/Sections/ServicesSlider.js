@@ -4,10 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import {NavLink} from 'react-router-dom' 
 import {Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
-import { Fade, Slide } from 'react-awesome-reveal';
-import Typewriter from 'typewriter-effect'
 
 
 
