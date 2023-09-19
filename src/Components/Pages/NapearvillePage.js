@@ -26,8 +26,8 @@ componentImage={Img2}
     borderBottom:'1px solid red',
     textAlign:'center'}}>Services</span> offered by ITRegulators include:</h5>
 
-<ServicesSlider/>
-<h2>Frequently Asked Questions</h2>
+<ServicesSlider  componentClass='ServicePageSlider'/>
+<h2 style={{padding:'15px',textAlign:'center',fontSize:'30px'}}>Frequently Asked Questions</h2>
 <Testimonials/>
 <Faqs/>
 <BannerComponent componentClass='NapearvilleBanner' BannerPara='Find out how ITRegulators can assist your Naperville organization by developing a tailored IT strategy that satisfies your budget and needs' 
