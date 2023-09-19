@@ -36,20 +36,20 @@
 }
 
 .ss1{
-    background-image: url(./Assets/serviceImg.jpg);
+    background-image: url(./Assets/serviceImg1.png);
 }
 
 .ss2{
-    background-image: url(./Assets/serviceImg1.jpg);
+    background-image: url(./Assets/serviceImg2.jpg);
    
 }
 .ss3{
-    background-image: url(./Assets/serviceImg2.jpg);
+    background-image: url(./Assets/serviceImg3.jpg);
 
 }
 
 .ss4{
-    background-image: url(./Assets/serviceImg3.jpg);
+    background-image: url(./Assets/serviceImg4.jpg);
 }
 
 .ServiceContainer{
@@ -111,11 +111,10 @@ text-decoration: underline;
     z-index: 2!important;
     position: absolute;
     background: black;
-    width: 87%;
-    height: 94%;
+    width: 100%!important;
+    height: 100%;
     opacity: 70%;
-    top: 10px;
-    left: 12px;
+   
 }
 
 .ServiceText a.btn {
