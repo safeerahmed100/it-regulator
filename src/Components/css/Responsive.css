@@ -457,6 +457,9 @@ align-items: center;
     position: relative;
     right: 20px;
 }
+.ServicePageSlider .ServiceSlider{
+    right: 0!important;
+}
 .Form input{
     text-align: center;
     margin: 10px;
