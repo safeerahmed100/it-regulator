@@ -31,7 +31,10 @@
 text-decoration: none;
 color: black;
 font-size: 14px;
+}
 
+a:hover{
+    border-bottom: 1px solid red;
 }
 
 .Navbar .buttons i{
