@@ -1,14 +1,18 @@
-import React,{useState,useEffect} from 'react'
-import './CSS/ServiceSlider.css'
+import React, {useState,useEffect } from 'react'
+import './CSS/Services.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay,Pagination } from 'swiper/modules';
+import {NavLink} from 'react-router-dom' 
+import {Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
+import { Fade, Slide } from 'react-awesome-reveal';
+import Typewriter from 'typewriter-effect'
 
- 
-function ServicesSlider({componentClass}) {
 
+
+
+function ServicesSlider({isHover,componentClass}) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -31,123 +35,132 @@ function ServicesSlider({componentClass}) {
   }, []);
 
   return (
-    <div className={`ServiceSlider ${componentClass}`}>
-      <div className='ServiceContainer'> 
-      <Swiper
-        slidesPerView={`${isSmallScreen===true? '1': '3'}`}
-        spaceBetween={30}
+    <div className={`Services ${isHover===true? 'stacking': ''} ${componentClass}`}>
+    <div className='ServiceContainer'>
+    <div className='ServiceSlider' >
         
+        <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={`${isSmallScreen===true? '1': '3'}`}
         pagination={{
           clickable: true,
         }}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
-        modules={[Pagination,Autoplay]}
-        className="mySwiper"
-      >
-          <div className='ServicePageSlider'>
-          <SwiperSlide>
-          <div className='ServicesSlides ss1'>
-            <div className='ServiceSlideOverlay'></div>
-            <div className='ServiceSlideText'>
-            <h2>Managed ITServices</h2>
-            <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-            <a href='/'>Read More</a>
-  
-          </div>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className='ServicesSlides ss2'>
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        modules={[Autoplay,EffectCoverflow,Pagination]}
+        className="mySwiper"> 
+        <SwiperSlide>
+        <div className='ServicesSlides ss1'>
           <div className='ServiceSlideOverlay'></div>
-  
           <div className='ServiceSlideText'>
-            <h2>Managed ITServices</h2>
-            <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-            <a href='/'>Read More</a>
-  
-          </div>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className='ServicesSlides ss3'>
-          <div className='ServiceSlideOverlay'></div>
-  
-          <div className='ServiceSlideText'>
-            <h2>Managed ITServices</h2>
-            <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-            <a href='/'>Read More</a>
-  
-          </div>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className='ServicesSlides ss4'>
-          <div className='ServiceSlideOverlay'></div>
-  
-          <div className='ServiceSlideText'>
-            <h2>Managed ITServices</h2>
-            <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
+          <h2>Managed ITServices</h2>
+          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
           <a href='/'>Read More</a>
-          </div>
-          </div>
-          </SwiperSlide>
+        </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='ServicesSlides ss2'>
+        <div className='ServiceSlideOverlay'></div>
 
-          <SwiperSlide>
-          <div className='ServicesSlides ss1'>
-            <div className='ServiceSlideOverlay'></div>
-            <div className='ServiceSlideText'>
-            <h2>Managed ITServices</h2>
-            <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-            <a href='/'>Read More</a>
-  
-          </div>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className='ServicesSlides ss2'>
-          <div className='ServiceSlideOverlay'></div>
-  
-          <div className='ServiceSlideText'>
-            <h2>Managed ITServices</h2>
-            <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-            <a href='/'>Read More</a>
-  
-          </div>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className='ServicesSlides ss3'>
-          <div className='ServiceSlideOverlay'></div>
-  
-          <div className='ServiceSlideText'>
-            <h2>Managed ITServices</h2>
-            <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-            <a href='/'>Read More</a>
-  
-          </div>
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className='ServicesSlides ss4'>
-          <div className='ServiceSlideOverlay'></div>
-  
-          <div className='ServiceSlideText'>
-            <h2>Managed ITServices</h2>
-            <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
+        <div className='ServiceSlideText'>
+          <h2>Managed ITServices</h2>
+          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
           <a href='/'>Read More</a>
-          </div>
-          </div>
-          </SwiperSlide>
-          </div>
-          </Swiper>
-          </div>
 
-</div>
-    
+        </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='ServicesSlides ss3'>
+        <div className='ServiceSlideOverlay'></div>
+
+        <div className='ServiceSlideText'>
+          <h2>Managed ITServices</h2>
+          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
+          <a href='/'>Read More</a>
+
+        </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='ServicesSlides ss4'>
+        <div className='ServiceSlideOverlay'></div>
+
+        <div className='ServiceSlideText'>
+          <h2>Managed ITServices</h2>
+          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
+        <a href='/'>Read More</a>
+        </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='ServicesSlides ss1'>
+          <div className='ServiceSlideOverlay'></div>
+          <div className='ServiceSlideText'>
+          <h2>Managed ITServices</h2>
+          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
+          <a href='/'>Read More</a>
+        </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='ServicesSlides ss2'>
+        <div className='ServiceSlideOverlay'></div>
+
+        <div className='ServiceSlideText'>
+          <h2>Managed ITServices</h2>
+          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
+          <a href='/'>Read More</a>
+
+        </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='ServicesSlides ss3'>
+        <div className='ServiceSlideOverlay'></div>
+
+        <div className='ServiceSlideText'>
+          <h2>Managed ITServices</h2>
+          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
+          <a href='/'>Read More</a>
+
+        </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='ServicesSlides ss4'>
+        <div className='ServiceSlideOverlay'></div>
+
+        <div className='ServiceSlideText'>
+          <h2>Managed ITServices</h2>
+          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
+        <a href='/'>Read More</a>
+        </div>
+        </div>
+        </SwiperSlide>
+        </Swiper>
+       
+        </div>  
+        </div>  
+        </div>  
+   
+  
+ 
+ 
   )
+
 }
 
 export default ServicesSlider

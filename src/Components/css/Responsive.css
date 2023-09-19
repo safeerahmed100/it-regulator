@@ -1,8 +1,32 @@
 .HamBurger{
     display: none;
 }
+.ServiceSlider{
+   padding: 30px; 
+}
+.ServiceSlider h1{
+    font-size: 24px;
+}
 .swiper-3d{
     height: 50vh;
+}
+.ServicePageSlider{
+    padding: 30px!important;
+}
+.ServicePageSlider .ServiceContainer{
+    padding: 0!important;
+    justify-content: center;
+}
+.ServicePageSlider .ServiceSlider{
+    width: 100%!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+.ServicePageSlider .swiper-wrapper{
+    transform-style: none!important;
+}
+ .ServiceSlideOverlay{
+    width: 93%!important;
 }
 .mobileResponsiveImg{
     display: none!important;
@@ -303,13 +327,7 @@ padding: 30px!important;
         padding: 15px!important;
        
     }
-    .ServiceSlider{
-        width: 100%!important;
-        position: relative;
-        right: 20px;
-        margin:0!important;
-        padding: 0!important;
-    }
+   
     .Services{
         padding: 15px!important;
     }
@@ -431,9 +449,11 @@ align-items: center;
 .ServiceSlider h1{
     font-size: 24px!important;
     position: relative;
-    left: 7%;
+    text-align: center;
 }
-
+.ServiceSlider{
+    padding: 15px!important;
+}
 .Form input{
     text-align: center;
     margin: 10px;
@@ -534,9 +554,7 @@ grid-template-rows: 1fr 1fr 1fr!important;
     font-size: 18px!important;
     font-weight: 500!important;
 }
-.ServicePageSlider{
-    left: 20%!important;
-}
+
 
 .IconsComponent h4{
     font-size: 20px!important;
@@ -548,5 +566,12 @@ grid-template-rows: 1fr 1fr 1fr!important;
     padding: 15px!important;
     grid-template-columns: 1fr!important;
     text-align: center;
+}
+
+.ServicePageSlider .ServiceContainer .swiper-horizontal{
+    width: 100%!important;
+}
+.ServicePageSlider{
+    padding: 15px;
 }
 }
