@@ -170,12 +170,6 @@ i:hover{
     color: inherit;
     text-decoration: inherit;
 }
-.Header{
-    height: 40vh!important;
-}
-.swiper-horizontal{
-    height: 100%;
-}
 .About{
 padding: 30px!important;
 }
@@ -261,10 +255,13 @@ padding: 30px!important;
 }
 
 
-@media (max-width:425px){
+@media (max-width:425px) and (min-width:300px){
     .HeaderComponent .banner{
         padding: 15px!important;
         height: 20vh;
+    }
+    .Header{
+        height: 40vh;
     }
     .HeaderComponent .banner .headerText h1{
         font-size: 30px!important;
