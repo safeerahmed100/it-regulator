@@ -41,7 +41,8 @@ i:hover{
 
 @media (max-width:1366px){
     .service-drop-menu{
-        top: 7%;
+        top: 6%;
+        left: 26%;
     }
 
 }
