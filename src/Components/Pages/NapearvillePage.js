@@ -20,11 +20,10 @@ componentImage={Img1} />
 paraText='As a remote path into your network, VPNs can pose a risk if not designed and implemented properly. The ITRegulators IT professionals are experts in the disciplines of security, mobility, compliance, and remote access. That expertise, combined with our 18 years of IT experience positions us well for implementing a VPN solution that delivers secure connections and protects your users, your networks, and your information. With a wide variety of VPN products and types available – including SSL, site-to-site, remote, high availability, and bonded – ITRegulators can design and implement the VPN solution that meets your remote access needs.'
 componentImage={Img2}
 />
-<h5 style={{fontSize:'40px',textAlign:'center'}}><span style={{
-    fontSize:'40px',
-    fontWeight:'500',
+<h5 style={{padding:'15px',textAlign:'center',fontSize:'30px'}}><span style={{
+ 
     borderBottom:'1px solid red',
-    textAlign:'center'}}>Services</span> offered by ITRegulators include:</h5>
+    }}>Services</span> offered by ITRegulators include:</h5>
 
 <ServicesSlider  componentClass='ServicePageSlider'/>
 <h2 style={{padding:'15px',textAlign:'center',fontSize:'30px'}}>Frequently Asked Questions</h2>
