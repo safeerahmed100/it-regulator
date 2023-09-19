@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './css/Contact.css';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { useForm, ValidationError } from '@formspree/react';
