@@ -17,7 +17,7 @@ subHeading='Want to know just how effective, secure and future-proof your existi
   listItem1='Address concerns related to the reliability of aging infrastructure'
   listItem2='Provide guidance on how to handle future growth and capacity issues'
   listItem3='Outline a plan to prioritize investments.'
-  listPara='The experts at ITRegulators will analyze the current state of your technology and prepareyour organization for future needs. This is the first step towards ensuring that your ITinfrastructure is properly designed to support your evolving business needs.'
+  paraThree='The experts at ITRegulators will analyze the current state of your technology and prepareyour organization for future needs. This is the first step towards ensuring that your ITinfrastructure is properly designed to support your evolving business needs.'
   componentImage={Img1}
  />
  <AssessmentSlider/>
