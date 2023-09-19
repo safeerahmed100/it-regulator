@@ -18,6 +18,33 @@ i:hover{
     align-items: center;
 }
 
+@media (max-width:1920px){
+.service-drop-menu{
+    top: 6%;
+    left: 30%;
+}
+}
+@media (max-width:1600px){
+.service-drop-menu{
+    top: 7%;
+    left: 29%;
+}
+}
+@media  (max-width:1440px){
+.service-drop-menu{
+    top: 7%;
+    left: 28%;
+    justify-content: space-between!important;
+
+}
+}
+
+@media (max-width:1366px){
+    .service-drop-menu{
+        top: 7%;
+    }
+
+}
 @media (min-width:1440px){
     *{
         justify-content: space-around!important;

@@ -66,6 +66,12 @@ box-shadow: 0 5px 11px -1px #000;
     border-bottom: 1px solid red;
 }
 
+.locationDrop.active{
+    border: none;
+}
+.resourcesDown.link.active{
+    border: none;
+}
 /* DROP DOWN CSS
 .dropDown {
     z-index: 2;
