@@ -7,9 +7,7 @@
 .mobileResponsiveImg{
     display: none!important;
 }
-.swiper-horizontal{
-    height: 50vh;
-}
+
 i:hover{
     cursor: pointer;
 }
@@ -20,6 +18,11 @@ i:hover{
     align-items: center;
 }
 
+@media (min-width:1440px){
+    *{
+        justify-content: space-around!important;
+    }
+}
 @media (max-width:1024px) {
   
     .serviceLinkflex .serviceLink{
@@ -414,11 +417,6 @@ align-items: center;
 }
 .Form form{
     padding: 10px 0!important;
-}
-
-
-.Services .ServiceContainer .ServiceSlider .mySwiper{
-    height: 52vh!important;
 }
 
 .ServicesHeader .banner .headerText{

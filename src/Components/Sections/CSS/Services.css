@@ -122,7 +122,13 @@ text-decoration: underline;
     position: relative;
     top: 20px;
 }
+.Services .mySwiper{
+    height: 100%;
+}
 
+.Services .swiper-wrapper{
+    padding-bottom: 30px;
+}
 @media(max-width:1280px){
 
     .ServiceSlideOverlay{
