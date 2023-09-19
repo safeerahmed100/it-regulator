@@ -514,8 +514,17 @@ align-items: center;
 
 .AssessmentSliderContainer {
     flex-direction: column;
-    height: 70vh!important;
     padding: 15px!important;
+    height: 80vh;
+}
+.AssessmentSliderImg{
+    width: 100%!important;
+    display: flex;
+    justify-content: center;
+}
+.AssessmentSliderImg img{
+    width: auto!important;
+    height: 300px!important;
 }
 .AssessmentSlider .swiper-pagination{
     bottom: 28px!important;
@@ -539,10 +548,7 @@ grid-template-rows: 1fr 1fr 1fr!important;
     font-weight: 500;
 
 }
-.BoldHeadingList{
-    text-align: left;
-    padding: 5px 0 5px 18px;
-}
+
 
 .Industries .BoldHeadingList {
     display: grid!important;
@@ -577,5 +583,8 @@ grid-template-rows: 1fr 1fr 1fr!important;
 .ServicePageSlider .ServicesSlides{
     position: relative;
     right: 10px;
+}
+.BoldHeadingList{
+margin: 10px 0 10px 50px!important ;
 }
 }

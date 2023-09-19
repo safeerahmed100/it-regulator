@@ -110,8 +110,10 @@ font-size: 16px!important;
   font-weight: 200!important;
 
 }
-ul{
-  margin: 5px 4%;
+.BoldHeadingList{
+  text-align: left;
+  margin: 20px 0 20px 30px;
+
 }
 
 
