@@ -453,6 +453,7 @@ align-items: center;
 }
 .ServiceSlider{
     padding: 15px!important;
+    width: 100%!important;
 }
 .Form input{
     text-align: center;
