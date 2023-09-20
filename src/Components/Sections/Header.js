@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CSS/Header.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -10,15 +10,17 @@ import headerImg2 from './CSS/Assets/headerimg2.png'
 import headerImg3 from './CSS/Assets/headerimg3.png'
 
 function Header({isHover,setIsHover}) {
+  const [isStop,setIsStop]=useState(false)
   return (
-    <div className='HeaderSlider'>
+    <div onMouseEnter={()=>setIsStop(true)} on onMouseLeave={()=>{setIsStop(false)}} className='HeaderSlider'>
        <Swiper
        slidesPerView={1}
         grabCursor={true}
         navigation={true}
         autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
+          delay: 4500,
+          disableOnInteraction: isStop ? true : false
+
         }}
         modules={[Autoplay,Navigation]}
         className={`mySwiper ${isHover===true? 'stacking': ''}`}

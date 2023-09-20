@@ -22,6 +22,9 @@
 
 }
 
+.swiper-button-disabled{
+    cursor: context-menu!important;
+}
 
 
 .headerImg img{

@@ -12,6 +12,10 @@
     width: 100%;
    box-shadow:  -1px -6px 20px 6px #e3e3e3    
 }
+
+a:hover{
+    border-bottom: 1px solid red;
+}
 .Navbar .remote{
     position: fixed;
     right: 0;
@@ -24,7 +28,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 56%;
 
 }
 .NavLinks a{
@@ -33,9 +37,7 @@ color: black;
 font-size: 14px;
 }
 
-a:hover{
-    border-bottom: 1px solid red;
-}
+
 
 .Navbar .buttons i{
     font-size: 12px;
@@ -62,273 +64,99 @@ box-shadow: 0 5px 11px -1px #000;
     justify-content: space-between;
     background-color: white;
 }
-.link{
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+
 .link.active{
     border-bottom: 1px solid red;
 }
-
-.locationDrop.active{
-    border: none;
-}
-.resourcesDown.link.active{
-    border: none;
-}
-/* DROP DOWN CSS
-.dropDown {
-    z-index: 2;
-    display: none;
+.service-drop-menu, .ind-menu, .location-menu, .resource-tab{
     position: absolute;
-    left: 20%;
-    top: 7%;
-    padding: 18px;
-    background: white;
-    box-shadow: 0 8px 12px 4px #00000052;
-  }
-  .dropDown-scroll{
-    top: 60%;
-  }
-  .LocationDropDown-scroll{
-    top: 60%!important;
-  }
-  .dropDown a {
-    color: black;
-    text-decoration: none;
-    line-height: 2;
-    border-bottom: 1px solid grey;
-  }
-  .serviceDrop:hover + .dropDown  {
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 0 12px  13px;
+  display: none;
+  flex-direction: column;
+  z-index: 999;
+  line-height: 3;
+  top: 20px;
+}
+
+.location-menu-wrapper:hover .location-menu{
+    display: flex;
+}
+.resource-menu-wrapper:hover .resource-tab{
+    display: flex;
+}
+
+.wrapper{
     display: flex;
     align-items: center;
-  }
- 
-  .LocationDropDown{
-    z-index: 2;
-    display: none;
-    flex-direction: column;
-    line-height: 4;
-    left: 53%;
-    top: 7%;
-    position: absolute;
-    padding: 18px;
-    background: white;
-    box-shadow: 0 8px 12px 4px #00000052;
-  }
-  .ResourcesDropDown{
-    z-index: 2;
-    display: none;
-    flex-direction: column;
-    line-height: 4;
-    left: 62.5%;
-    top: 7%;
-    position: absolute;
-    padding: 18px;
-    background: white;
-    box-shadow: 0 8px 12px 4px #00000052;
-}
-.resourcesDown:hover +.ResourcesDropDown{
-    display: flex;
-}
-.ResourcesDropDown:hover{
-    display: flex;
+    position: relative;
 }
 
-  .dropDown:hover{
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  }
-  button {
-    padding: 10px 20px;
-  }
-
-.locationDrop:hover + .LocationDropDown{
-    display: flex;
-}
-.LocationDropDown:hover{
-    display: flex;
-}
-
-.LocationDropDown a {
-    color: black;
-    text-decoration: none;
-    line-height: 2;
-    border-bottom: 1px solid grey;
-  }
-  .ResourcesDropDown a{
-    color: black;
-    text-decoration: none;
-    line-height: 3;
-    border-bottom: 1px solid grey;
-  } */
-
-/* @media (max-width:1280px) {
-    .logoSide{
-        width: 30%;
-
-    }
-    .logoSide img{
-        width: 200px;
-    }
-
-    .NavLinks{
-        width: 105%;
-        position: relative;
-        left: 25px;
-    }
-
-    .buttons{
-        width: 42%;
-        position: relative;
-        left: 10px;
-
-    }
-    .Navbar .buttons .btn{
-        padding: 8px 12px;
-        margin: 0 6px;
-    }
-    
-
-    .Navbar{
-        padding: 20px 10px;
-    }
-
-    .NavLinks a{
-        font-size: 14px;
-    }
-    
-} */
-/* .ServicesLink,.CompetenciesLink{
-   padding: 10px;
-} */
-
-
-
-.displayNone{
-    display: none;
-}
-
-/* .ServicesLink span:hover{
-    cursor: pointer;
-}
-
-.CompetenciesLink span:hover{
-    cursor: pointer;
-}
-
-
-.ServiceLinkTab{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.CompetenciesLinkTab{
-    display: flex;
-    flex-direction: column;
-    
-} */
-
-.nav_black .service-drop-menu,.resource-tab, .location-menu{
-    
-    top: 60px!important;
-
-}
-.ServiceDropDown{
-    display: flex;
-    flex-direction: column;
-}
-.service-solution{
-    display: none;
-}
-
-.service-competencies{
-    display: none;
-}
-
-.service-drop-menu{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-
-}
-
- .resource-tab, .location-menu{
-    position: absolute;
-    background-color: white;
-    line-height: 4;
-    z-index: 4;
-    top: 7%;
-    left: 52%;
-    display: none;
+.wrapper i{
     font-size: 14px;
-    padding: 0 20px;
-    flex-direction: column;
-    cursor: pointer;
+    margin: 0 5px;
+}
+
+.ind-menu{
+    display: none;
+}
+
+.service-competencies,.service-solution{
+display: none;
+flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  left: 180px;
+  top:0;
+  line-height: 3;
+}
+.service-drop-menu span{
+font-size: 14px;
+width: 100%;
+}
+.service-drop-wrapper:hover, .compi-drop-wrapper:hover{
+border-bottom: 1px solid red;
+cursor: pointer;
+}
+
+.service-wrapper:hover .service-drop-menu{
+    display: flex;
+}
+
+
+
+.service-drop-wrapper:hover .service-solution{
+    display: flex;
+}
+.compi-drop-wrapper:hover .service-competencies{
+    display: flex;
+}
+.service-solution:hover{
+    display: flex;
+}
+.service-competencies:hover{
+    display: flex;
 }
 
 .resource-tab{
-    left: 61%;
+    padding: 12px 16px;
+    min-width: 100px;
 }
-.servicedropper:hover +.service-drop-menu{
-    display: flex;
-    top: 7%;
-   
-}
-
-.service-drop-menu:hover{
-    display: flex;
-}
-.service-drop-menu{
-    display: none;
-    position: absolute;
-    background-color: white;
-    line-height: 4;
-    z-index: 4;
-    top: 7%;
-    font-size: 14px;
-    padding: 0 20px;
-    flex-direction: column;
-    cursor: pointer;
-
-}
-.it-service-btn:hover +.service-solution{
-    display: flex;
-}
-
-.service-solution, .service-competencies {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    z-index: 20;
-    background: white;
-    left: 100%;
-    width: 100%;
-    line-height: 3;
-    text-align: center;
-}
-.it-service-btn::after , .it-compi-btn::after{
-    content: ' > ';
-}
-
-.it-service-btn:hover +.service-solution {
-    display: flex!important;
+.location-menu{
+    padding: 12px 16px;
+    min-width: 120px;
 }
 
 .showmenu{
     display: flex!important;
     flex-direction: column;
-}
-
-.resourcesDown:hover +.resource-tab{
-    display: flex;
-}
-.locationDrop:hover +.location-menu{
-    display: flex;
-}
-    .resource-tab:hover,.location-menu:hover{
-        display: flex;
+    border-bottom: 1px solid red;
 }
 
 .serviceLink{
@@ -348,50 +176,81 @@ font-size: 14px;
 justify-content: space-between;
 align-items: center;
 }
-
-.icon-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
+.serviceLinkflex{
+    border-bottom: 1px solid red;
+}
+.serviceLinkflex a{
+    border:none!important;
+}
+.serviceLink{
+    border-bottom: 1px solid red;
+}
+.mobile{
+    padding:  15px!important;
+}
+.Navbar{
+    padding:  15px!important;
 }
 
-.right{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+.ind-menu{
+    background-color: #c7dffc;
+display: none;
+    flex-direction: row;
+    min-width: 60vw;
+    position: absolute;
+    right: -110px;
     align-items: center;
+    padding: 15px;
     justify-content: space-between;
 }
 
-.left h2{
+.ind-menu .left{
+width: 70%;
+line-height: 1.5;
+}
+.ind-menu .left h2{
     font-size: 30px;
     border-bottom: 1px solid red;
-    margin:30px 0px;
+    margin-bottom: 20px;
 }
-.left{
+
+.icon-item{
 display: flex;
 flex-direction: column;
-width: 24rem;
-}
-.ind-menu{
-display: none;
-    justify-content: space-between;
-    position: absolute;
-    right: -14rem;
-    align-items: center;
-    top: 4rem;
-    
-    padding: 30px;
-    z-index: 131;
-    background: #8ab7ee;
+align-items: center;
+padding: 20px;
 }
 
+.ind-menu .right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
-.ind-menu-wrapper:hover +.ind-menu{
+.ind-menu:hover{
     display: flex;
 }
-.ind-menu-wrapper{
-    position: relative;
+
+.ind-menu-wrapper:hover .ind-menu{
+    display: flex;
+}
+
+.loc{
+    border-bottom: none!important;
+}
+
+.location-link, .resource-link{
+    width: 100%;
+    border-bottom: none!important;
+}
+
+.location-link-arrow, .resource-link-arrow{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid red;
+}
+
+.location-mobile-menu,.resource-mobile-menu{
+    display: none;
 }

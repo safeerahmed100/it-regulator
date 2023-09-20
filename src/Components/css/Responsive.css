@@ -42,7 +42,7 @@ i:hover{
     align-items: center;
 }
 
-@media (max-width:1920px){
+/* @media (max-width:1920px){
 .service-drop-menu{
     top: 6%;
     left: 30%;
@@ -69,7 +69,7 @@ i:hover{
         left: 26%;
     }
 
-}
+} */
 @media (min-width:1440px){
     *{
         justify-content: space-around!important;
@@ -106,7 +106,7 @@ i:hover{
     }
     .mobile{
         overflow: scroll!important;
-        padding: 10px;
+        padding: 15px;
         top: 0;
         text-align: center;
         left: 0;
@@ -184,7 +184,7 @@ i:hover{
         padding: 15px!important;
     }
     .Navbar{
-        padding: 10px!important;
+        padding: 15px!important;
     }
 .FooterContainer .services a ,.comp a ,.Navigations a ,.staffing a{
     text-align: center;

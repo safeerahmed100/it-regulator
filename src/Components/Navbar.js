@@ -10,6 +10,8 @@ function Navbar({isHover,setIsHover}) {
   const [isdrop,setIsdrop]=useState(false)
   const [isdrop1,setIsdrop1]=useState(false)
   const [isdrop2,setIsdrop2]=useState(false)
+  const [isdrop3,setIsdrop3]=useState(false)
+  const [isdrop4,setIsdrop4]=useState(false)
   
 
   if(isActive===true){
@@ -33,8 +35,8 @@ function handleMenu(){
 function closeMenu(){
   setIsActive(false)
 }
-
   return (
+    /*Desktop Navbar */
     <div className={`Navbar ${isShow && 'nav_black'}`}>
       <div className='logoSide'>
         <Link to='/'>
@@ -43,11 +45,14 @@ function closeMenu(){
       </div>
       <div className='NavLinks'>
         <NavLink to='/about' className='link' end>About</NavLink>
-        <NavLink to='/service' className='link servicedropper' >Services</NavLink>
+        <div className='service-wrapper wrapper'>
+        <NavLink to='/service' className='link'>Services</NavLink>
+        <i className='fa-solid fa-angle-down'></i>
+       
         <div className='service-drop-menu'>
-        <span  onClick={()=>setIsdrop(!isdrop)} className='it-service-btn'>IT Services & Solution</span>
-        <span onClick={()=>setIsdrop1(!isdrop1)} className='it-compi-btn'>IT Competencies</span>
-        <div className={`service-solution ${isdrop===true? 'showmenu': ''} `}>
+        <div className='service-drop-wrapper'>
+        <span className='it-service-btn'>IT Services & Solution</span>
+        <div className='service-solution'>
         <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
         <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
         <NavLink to='./it-assessment-audit-services' className='link'>IT Assessments & Audits</NavLink> 
@@ -60,7 +65,11 @@ function closeMenu(){
         <NavLink to='./email-spam-protection' className='link'>Email & Spam Protection</NavLink> 
         <NavLink to='./security-systems' className='link'>Security Systems</NavLink> 
         </div>
-        <div className={`service-competencies ${isdrop1===true? 'showmenu': ''}`}>
+        </div>
+        <div className='compi-drop-wrapper'>
+        <span className='it-compi-btn'>IT Competencies</span>
+        <div className='service-competencies'>
+
           <NavLink to='./it-competencies' className='link'>IT Competencies</NavLink>
           <NavLink to='./net-framework'  className='link'>Net Framework</NavLink> 
           <NavLink to='./active-directory'  className='link'>Active Directory</NavLink> 
@@ -72,10 +81,13 @@ function closeMenu(){
           <NavLink to='./sql-server'   className='link'>Sql Server</NavLink> 
           <NavLink to='./vpn'   className='link'>VPN</NavLink> 
           </div>
+          </div>
+        </div>
         </div>
         <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink>
-        <div className='ind-menu-wrapper'> 
-        <NavLink to='/industries'className='link indus' >Industries</NavLink>
+        <div className='ind-menu-wrapper wrapper'> 
+        <NavLink to='/industries'className='link' >Industries</NavLink>
+        <i className='fa-solid fa-angle-down'></i>
         <div className='ind-menu'>
           <div className='left'>
             <h2>Flexible solutions for competitive industries.</h2>
@@ -111,18 +123,26 @@ edge.</p>
           </div>
         </div>
         </div>
-        <NavLink to='/' className='link locationDrop' >Locations</NavLink>
+        <div className='location-menu-wrapper wrapper'>
+        <NavLink to='/' className='link loc' >Locations</NavLink>
+        <i className='fa-solid fa-angle-down'></i>
+
          <div className='location-menu'>
         <NavLink to='/it-managed-napearville' className='link' >Napearville</NavLink>
         <NavLink to='/it-managed-chicago' className='link' >Chicago</NavLink>
         <NavLink to='/it-managed-jiolet' className='link' >Jiolet</NavLink>
         <NavLink to='/it-managed-boilingbrook' className='link' >Boilingbrook</NavLink>
         </div>
-        <NavLink to='/' className='link resourcesDown' >Resources</NavLink>
+        </div>
+        <div className='resource-menu-wrapper wrapper'>
+        <NavLink to='/' className='link loc' >Resources</NavLink>
+        <i className='fa-solid fa-angle-down'></i>
+
         <div className='resource-tab'>
         <NavLink to='/blogs' className='link' >Blogs</NavLink>
         <NavLink to='/news' className='link' >News</NavLink>
       </div> 
+      </div>
       <NavLink to='/contact' className='link' >Contact</NavLink>
       </div>
       <div className='buttons'>
@@ -132,6 +152,11 @@ edge.</p>
       </div>
 <div className='HamBurger'><i className={isActive===true?'displayNone':'fa-solid fa-bars'} style={{color:'black'}} onClick={handleMenu}></i>
 </div>
+
+
+
+
+
 {isActive &&  (
        <div  className='NavLinks mobile '>
        <div className='NavTop'>
@@ -147,7 +172,7 @@ edge.</p>
       <div className='NavigationLinks'>
         <NavLink onClick={closeMenu} to='/about' className='link' end>About</NavLink>
         <div className='serviceLinkflex'>
-        <NavLink  onClick={closeMenu} to='/service' className='link serviceLink' >Services</NavLink>
+        <NavLink  onClick={closeMenu} to='/service' className='link serviceLink' >Services  </NavLink>
         <i onClick={()=>setIsdrop(!isdrop)} className="fa-solid fa-angle-down"></i>
         </div>
         <div className={`ServicesLink ${isdrop===true? 'showmenu' : ''}`}>
@@ -184,15 +209,31 @@ edge.</p>
         </div>
         <NavLink onClick={closeMenu} to='/it-staffing-services' className='link'>IT Staffing Services</NavLink>
         <NavLink onClick={closeMenu} to='/industries'className='link' >Industries</NavLink>
-        
-        <NavLink onClick={closeMenu} to='/locations'className='link' >Locations</NavLink>
-        <NavLink onClick={closeMenu} to='/resources' className='link' >Resources</NavLink>
+        <div className='location-mobile-wrapper'>
+          <div className='location-link-arrow'>
+        <NavLink onClick={closeMenu} to='/locations'className='link location-link' >Locations</NavLink>
+        <i onClick={()=>setIsdrop3(!isdrop3)} className='fa-solid fa-angle-down'></i>
+        </div>
+        <div className={`location-mobile-menu ${isdrop3===true? 'showmenu': ''}`}>
+        <NavLink to='/it-managed-napearville' className='link' >Napearville</NavLink>
+        <NavLink to='/it-managed-chicago' className='link' >Chicago</NavLink>
+        <NavLink to='/it-managed-jiolet' className='link' >Jiolet</NavLink>
+        <NavLink to='/it-managed-boilingbrook' className='link' >Boilingbrook</NavLink>
+        </div>
+        </div>
+        <div className='resource-mobile-wrapper'>
+        <div className='resource-link-arrow'>
+        <NavLink onClick={closeMenu} to='/resources' className='link resource-link' >Resources</NavLink>
+        <i onClick={()=>setIsdrop4(!isdrop4)} className='fa-solid fa-angle-down'></i>
+        </div>
+        <div className={`resource-mobile-menu ${isdrop4===true? 'showmenu': ''}`}>
+        <NavLink to='/blogs' className='link' >Blogs</NavLink>
+        <NavLink to='/news' className='link' >News</NavLink>
+        </div>
+        </div>
         <NavLink onClick={closeMenu} to='/contact' className='link' >Contact Us</NavLink>
         </div>
         </div>
-        
-     
-
 )}
 
 </div>
