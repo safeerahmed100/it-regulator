@@ -78,3 +78,7 @@ background: red;
     margin: 0;
     text-align: center;
 }
+
+.Contact textarea{
+    outline: 1px solid black;
+}

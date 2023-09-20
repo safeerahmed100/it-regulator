@@ -13,7 +13,7 @@ import Img2 from '../Sections/CSS/Assets/ChicagoImg1.png'
 function BoilingbrookPage() {
   return (  
     <div>
-        <HeaderComponent componentClass='BoilingbrookHeader' highlightedText='IT SERVICES' Text='Boilingbrook'/>
+        <HeaderComponent componentClass='BoilingbrookHeader' highlightedText='IT SERVICES ' Text='Boilingbrook'/>
         <InfoComponent heading='Our mission is to ensure that your IT is efficient and dependable'
         paraText='Are you encountering difficulties in streamlining and optimizing your IT systems? This is a common problem, especially if your IT infrastructure was assembled piecemeal and is powered by different brands and vendors. Large enterprises deal with this by hiring a certified and highly experienced IT team to accurately assess the state of their business’s IT systems. However, for SMBs like yours, this may not be feasible due to limited resources, as hiring extra IT staff could hurt your budget and your plans. Luckily, there is a solution available to you. Instead of hiring more IT staff, partner with ITRegulators today to benefit from comprehensive technical support and assistance, as well as optimized IT that promotes growth and scalability.We offer a broad range of technology solutions, including IT consulting, cloud solutions, cybersecurity, and disaster recovery, to support your business goals. We provide both co-managed and fully managed IT setups tailored to your unique business requirements. Contact us today to schedule an appointment. Our friendly IT experts are always available to help simplify your IT so you can focus on growing your business.'
         componentImage={Img1}
