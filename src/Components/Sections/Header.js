@@ -10,17 +10,15 @@ import headerImg2 from './CSS/Assets/headerimg2.png'
 import headerImg3 from './CSS/Assets/headerimg3.png'
 
 function Header({isHover,setIsHover}) {
-  const [isStop,setIsStop]=useState(false)
   return (
-    <div onMouseEnter={()=>setIsStop(true)} on onMouseLeave={()=>{setIsStop(false)}} className='HeaderSlider'>
+    <div  className='HeaderSlider'>
        <Swiper
        slidesPerView={1}
         grabCursor={true}
         navigation={true}
         autoplay={{
           delay: 4500,
-          disableOnInteraction: isStop ? true : false
-
+          disableOnInteraction:true
         }}
         modules={[Autoplay,Navigation]}
         className={`mySwiper ${isHover===true? 'stacking': ''}`}
