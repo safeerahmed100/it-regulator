@@ -73,8 +73,44 @@ function closeMenu(){
           <NavLink to='./vpn'   className='link'>VPN</NavLink> 
           </div>
         </div>
-        <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink> 
-        <NavLink to='/industries'className='link' >Industries</NavLink>
+        <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink>
+        <div className='ind-menu-wrapper'> 
+        <NavLink to='/industries'className='link indus' >Industries</NavLink>
+        <div className='ind-menu'>
+          <div className='left'>
+            <h2>Flexible solutions for competitive industries.</h2>
+            <p>Whether your business operates in Chicago, Woodstock, Manteno, or anywhere else in the Chicagoland area and Wisconsin, ITRegulators can provide valuable assistance. Partnering with ITRegulators will give your business a competitive
+edge.</p>
+            </div>
+          <div className='right'>
+            <div className='icon-item'>
+            <i className='fa-solid fa-landmark'></i>
+            <p>Goverment</p>
+            </div>
+
+            <div className='icon-item'>
+            <i className='fa-solid fa-landmark'></i>
+            <p>Goverment</p>
+            </div>
+            <div className='icon-item'>
+            <i className='fa-solid fa-landmark'></i>
+            <p>Goverment</p>
+            </div>
+            <div className='icon-item'>
+            <i className='fa-solid fa-landmark'></i>
+            <p>Goverment</p>
+            </div>
+            <div className='icon-item'>
+            <i className='fa-solid fa-landmark'></i>
+            <p>Goverment</p>
+            </div>
+            <div className='icon-item'>
+            <i className='fa-solid fa-landmark'></i>
+            <p>Goverment</p>
+            </div>
+          </div>
+        </div>
+        </div>
         <NavLink to='/' className='link locationDrop' >Locations</NavLink>
          <div className='location-menu'>
         <NavLink to='/it-managed-napearville' className='link' >Napearville</NavLink>
@@ -148,6 +184,7 @@ function closeMenu(){
         </div>
         <NavLink onClick={closeMenu} to='/it-staffing-services' className='link'>IT Staffing Services</NavLink>
         <NavLink onClick={closeMenu} to='/industries'className='link' >Industries</NavLink>
+        
         <NavLink onClick={closeMenu} to='/locations'className='link' >Locations</NavLink>
         <NavLink onClick={closeMenu} to='/resources' className='link' >Resources</NavLink>
         <NavLink onClick={closeMenu} to='/contact' className='link' >Contact Us</NavLink>

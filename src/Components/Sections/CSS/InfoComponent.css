@@ -120,3 +120,12 @@ font-size: 16px!important;
 .Industries .BoldHeadingList{
   display: flex;
 }
+
+.InfoComponent ul{
+  margin:0 20px;
+}
+
+.InfoText h3{
+  border-bottom: 1px solid red;
+  max-width: max-content;
+}

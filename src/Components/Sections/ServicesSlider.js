@@ -46,7 +46,7 @@ function ServicesSlider({isHover,componentClass}) {
         }}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         }}
         coverflowEffect={{
           rotate: 0,
