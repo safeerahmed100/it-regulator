@@ -521,7 +521,8 @@ align-items: center;
 .AssessmentSliderContainer {
     flex-direction: column;
     padding: 15px!important;
-    height: 80vh;
+    height: 100vh;
+    justify-content: center;
 }
 .AssessmentSliderImg{
     width: 100%!important;
