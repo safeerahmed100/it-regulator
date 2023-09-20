@@ -52,7 +52,7 @@ function Testimonials() {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={`${isSmallScreen===true?'1':'3'}`}
-       
+       loop={true}
 
         pagination={{
           clickable: true,

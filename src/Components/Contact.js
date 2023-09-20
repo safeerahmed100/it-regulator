@@ -36,10 +36,10 @@ function Contact({ componentClass }) {
                   <option value='App Development'>App Development</option>
                   <option value='SEO Development'>SEO Development</option>
                 </select>
-                <input className='inputName' name='Name' type='text' placeholder='Full Name' required />
+                <input className='inputName' name='Name' type='text' placeholder='Full Name' required  />
                 <ValidationError prefix='Name' field='Name' errors={state.errors} />
-                <input className='inputEmail' name='Email' type='email' placeholder='Email' required />
-                <ValidationError prefix='Email' field='Email' errors={state.errors} />
+                <input className='inputEmail' name='Email' type='email' placeholder='Email' required  />
+                <ValidationError prefix='Email' field='Email' errors={state.errors}  />
                 <input className='inputPhone' name='Phone' type='tel' placeholder='Phone' required />
                 <ValidationError prefix='Phone' field='Phone' errors={state.errors} />
                 <input className='inputBusiness' type='text' name='Business' placeholder='Business Name' />
