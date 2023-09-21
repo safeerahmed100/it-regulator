@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './CSS/Header.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -8,8 +8,19 @@ import { Fade} from 'react-awesome-reveal';
 import headerImg1 from './CSS/Assets/headerimg1.png'
 import headerImg2 from './CSS/Assets/headerimg2.png'
 import headerImg3 from './CSS/Assets/headerimg3.png'
+import axios from 'axios';
 
 function Header({isHover,setIsHover}) {
+  const [isData,setIsData]=useState([])
+  useEffect(()=>{
+    let url = 'https://celebraldesign.com/itregulators/wp-json/wp/v2/homepage/'
+    axios.get(url).then((res)=>{
+      setIsData(res.data)
+    })
+  },[]);
+  console.log('post',isData)
+  
+
   return (
     <div  className='HeaderSlider'>
        <Swiper
@@ -87,6 +98,10 @@ function Header({isHover,setIsHover}) {
       </SwiperSlide>
  
  </Swiper>
+
+ {isData.map((content) => (
+  <div key={content.id}>{content.title.rendered}</div>
+))}
  </div>
   )
 }
