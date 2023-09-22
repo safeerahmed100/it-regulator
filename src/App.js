@@ -38,6 +38,9 @@ import BlogPage from './Components/Pages/BlogPage';
 import BlogItems from './Components/Sections/BlogItems';
 import NewsPage from './Components/Pages/NewsPage';
 import ContactPage from './Components/Pages/ContactPage';
+import OnlineMarketing from './Components/Pages/OnlineMarketing';
+import CloudStorage from './Components/Pages/CloudStorage';
+import ComputerRepair from './Components/Pages/ComputerRepair';
 
 
 
@@ -85,6 +88,9 @@ function App() {
     <Route path='/blogs/office/unleash-the-power' element={<BlogItems/>}></Route>
     <Route path='/news' element={<NewsPage/>}></Route>
     <Route path='/contact' element={<ContactPage/>}></Route>
+    <Route path='online-marketing' element={<OnlineMarketing/>}></Route>
+    <Route path='cloud-solution' element={<CloudStorage/>}></Route>
+    <Route path='computer-repair' element={<ComputerRepair/>}></Route>
     </Routes>
     <Footer />
 

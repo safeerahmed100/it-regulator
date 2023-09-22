@@ -103,3 +103,14 @@
     .NewsHeader{
         background: url(./Assets/NewsHeaderImg.png);
     }
+
+    .OnlineMarketingHeader{
+        background: url(./Assets/onlineMarketingHeader.jpg);
+    }
+
+    .CloudStorageHeader{
+        background: url(./Assets/CloudStorageHeader.jpg);
+    }
+    .ComputerRepairHeader{
+        background: url(./Assets/ComputerBanner.jpg);
+    }

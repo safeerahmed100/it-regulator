@@ -68,7 +68,7 @@ function ServicesSlider({isHover,componentClass}) {
           <div className='ServiceSlideText'>
           <h2>Cloud Solution</h2>
           <p>You’ve probably heard of ‘the Cloud’ but if you’re not exactly sure what it means for you and your business, don’t worry, because we do! When you migrate your technology to the Cloud, you’re essentially transferring your technology and the way you use it on the Internet.</p>
-          <NavLink to='./it-managed-services' className='link'>Read More</NavLink> 
+          <NavLink to='/cloud-solution' className='link'>Read More</NavLink> 
 
         </div>
         </div>
@@ -104,7 +104,7 @@ function ServicesSlider({isHover,componentClass}) {
         <div className='ServiceSlideText'>
           <h2>Online Marketing</h2>
           <p>ITRegulators have the online marketing expertise you need to ensure your goods, services or brand are creating more business for your company, not getting lost in a sea of mediocre websites.</p>
-          <NavLink to='./it-consultancy-services' className='link'>Read More</NavLink> 
+          <NavLink to='/online-marketing' className='link'>Read More</NavLink> 
 
         </div>
         </div>
@@ -119,7 +119,7 @@ function ServicesSlider({isHover,componentClass}) {
           <p>With our experts taking responsibility for IT recruitment functions, such as candidate sourcing, screening, tracking and interview scheduling, HR teams and hiring managers can focus on finding the best matches for their jobs and improving the quality of every hire.
 
 </p>
-          <NavLink to='/it-security-services' className='link'>Read More</NavLink> 
+          <NavLink to='/it-staffing-services' className='link'>Read More</NavLink> 
 
         </div>
         </div>
@@ -143,7 +143,7 @@ function ServicesSlider({isHover,componentClass}) {
         <div className='ServiceSlideText'>
           <h2>Computer Repair</h2>
           <p>We understand that when your computer is down, you want it fixed now! We are here to help you get over the hurdles of unpleasant and unwelcome computer surprises. When you enlist the professional services of ITRegulators, we get the job done OR you don’t owe us a dime.</p>
-<NavLink to='./it-assessment-audit-services' className='link'>Read More</NavLink> 
+<NavLink to='/it-assessment-audit-services' className='link'>Read More</NavLink> 
 
         </div>
         </div>
@@ -155,7 +155,7 @@ function ServicesSlider({isHover,componentClass}) {
         <div className='ServiceSlideText'>
           <h2>IT Emergency Support</h2>
           <p>Our experience in resolving IT issues for businesses of all sizes and industries has enabled us to develop thorough yet swift processes to find the root cause of your IT problems, fix it promptly and effectively, and recommend best practices to avoid such disruptions in the future.</p>
-          <NavLink to='./security-systems' className='link'>Read More</NavLink> 
+          <NavLink to='/security-systems' className='link'>Read More</NavLink> 
 
         </div>
         </div>
