@@ -90,7 +90,7 @@ function Services({isHover}) {
           <div className='ServiceSlideText'>
           <h2>Managed ITServices</h2>
           <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-          <a href='/'>Read More</a>
+          <NavLink to='./it-managed-services' className='link'>Read More</NavLink> 
 
         </div>
         </div>
@@ -100,9 +100,9 @@ function Services({isHover}) {
         <div className='ServiceSlideOverlay'></div>
 
         <div className='ServiceSlideText'>
-          <h2>Managed ITServices</h2>
-          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-          <a href='/'>Read More</a>
+          <h2>IT Help Desk</h2>
+          <p>Our outsourced IT help desk solutions allow your organization to benefit from the most highly qualified and certified technical staff anywhere – without having to worry about recruiting, training, fulfillment and other costly and time consuming tasks.</p>
+          <NavLink to='./it-help-desk' className='link'>Read More</NavLink> 
 
         </div>
         </div>
@@ -112,9 +112,9 @@ function Services({isHover}) {
         <div className='ServiceSlideOverlay'></div>
 
         <div className='ServiceSlideText'>
-          <h2>Managed ITServices</h2>
-          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-          <a href='/'>Read More</a>
+          <h2>Low Voltage Cabling</h2>
+          <p>Our skilled technicians will thoroughly study your needs, walk you through different possibilities of how your low voltage cabling can be structured, and wire it in the most suitable way, ensuring all your systems are fully integrated and performing optimally. With an infrastructure designed to serve you now and in the future, you’ll be on the right path to success.</p>
+          <NavLink to='./low-voltage-cabling' className='link'>Read More</NavLink> 
 
         </div>
         </div>
@@ -124,9 +124,10 @@ function Services({isHover}) {
         <div className='ServiceSlideOverlay'></div>
 
         <div className='ServiceSlideText'>
-          <h2>Managed ITServices</h2>
-          <p>We proactively monitor and support your network 24/7, keeping your systems available and your people productive.</p>
-        <a href='/'>Read More</a>
+          <h2>IT Consultancy</h2>
+          <p>Combining our trademark comprehensive IT services, broad expertise, and unyielding customer service, ITRegulators’ consulting services provide you with the agility you need to balance varying workload demands with the staff, strategic direction, and skills you need to move your technology ahead—effortlessly and quickly.</p>
+          <NavLink to='./it-consultancy-services' className='link'>Read More</NavLink> 
+
         </div>
         </div>
         </SwiperSlide>

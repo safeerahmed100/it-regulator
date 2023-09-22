@@ -85,13 +85,8 @@ function App() {
     <Route path='/blogs/office/unleash-the-power' element={<BlogItems/>}></Route>
     <Route path='/news' element={<NewsPage/>}></Route>
     <Route path='/contact' element={<ContactPage/>}></Route>
-    
-    
-
-    
-
-  </Routes>
-  <Footer />
+    </Routes>
+    <Footer />
 
 </>
   );

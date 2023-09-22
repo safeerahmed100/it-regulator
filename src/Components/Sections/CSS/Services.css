@@ -36,22 +36,57 @@
 }
 
 .ss1{
-    background-image: url(./Assets/serviceImg1.png);
+    background-image: url(./Assets/ManageService.png);
 }
 
 .ss2{
-    background-image: url(./Assets/serviceImg2.jpg);
-   
+    background-image: url(./Assets/HelpDeskGuy.png);
 }
 .ss3{
-    background-image: url(./Assets/serviceImg3.jpg);
+    background-image: url(./Assets/LowVoltageImg.png);
 
 }
 
 .ss4{
-    background-image: url(./Assets/serviceImg4.jpg);
+    background-image: url(./Assets/Consultancy2.png);
 }
 
+.ss5{
+background:url(./Assets/NetworkServiceLock.png);
+}
+.ss6{
+background:url(./Assets/EmailImg2.png);
+}
+.ss7{
+background:url(./Assets/AssessmenCont1.png);
+}
+.ss8{
+  background:url(./Assets/SecurityImg.png);  
+}
+/* .ss9{
+    background: url(./Assets/);
+} */
+.ss10{
+    background: url(./Assets/Deployment2.png);
+}
+.ss11{
+    background: url(./Assets/VirtualizationImg.png);
+}
+/* .ss12{
+    background: url(./Assets/);
+} */
+.ss13{
+    background: url(./Assets/Staffing1.png);
+}
+.ss14{
+    background: url(./Assets/OfficeImg.png);
+}
+/* .ss15{
+    background: url(./Assets/);
+} */
+.ss16{
+    background: url(./Assets/EmegencyImg1.png);
+}
 .ServiceContainer{
     display: flex;
     align-items: center;
