@@ -50,7 +50,7 @@ function App() {
   return (
    <>
   <Navbar isHover={isHover} setIsHover={setIsHover}/>
-  <Routes>
+  <Routes onUpdate={() => window.scrollTo(0, 0)}>
     <Route path='/' element={<Home isHover={isHover} setIsHover={setIsHover}/>}></Route>
     <Route path='/About' element={<AboutPage />}></Route>
     <Route path='/Service' element={<ServicePage />}></Route>

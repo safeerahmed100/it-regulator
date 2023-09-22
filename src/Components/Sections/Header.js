@@ -12,12 +12,32 @@ import axios from 'axios';
 
 function Header({isHover,setIsHover}) {
   const [isData,setIsData]=useState([])
-  useEffect(()=>{
-    let url = 'https://celebraldesign.com/itregulators/wp-json/wp/v2/homepage/'
-    axios.get(url).then((res)=>{
-      setIsData(res.data)
-    })
-  },[]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          'https://celebraldesign.com/itregulators/wp-json/wp/v2/posts/'
+        );
+        setIsData(response.data);
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    };
+
+    // Fetch data immediately when the component mounts
+    fetchData();
+
+    // Set up an interval to refresh the data every 10 minutes (600000 milliseconds)
+    const interval = setInterval(() => {
+      fetchData();
+    }, 600000); // Adjust the interval time as needed
+
+    // Clean up the interval when the component unmounts
+    return () => {
+      clearInterval(interval);
+    };
+  }, []); // 
+
   console.log('post',isData)
   
 
@@ -99,9 +119,7 @@ function Header({isHover,setIsHover}) {
  
  </Swiper>
 
- {isData.map((content) => (
-  <div key={content.id}>{content.title.rendered}</div>
-))}
+
  </div>
   )
 }
