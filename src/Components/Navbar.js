@@ -4,7 +4,7 @@ import './css/Navbar.css'
 import {Link,NavLink} from "react-router-dom";
 
 
-function Navbar({isHover,setIsHover}) {
+function Navbar({isHover,setIsHover,ScrollTop}) {
   const [isActive,setIsActive] = useState(false)
   const [isShow,setIsShow]=useState(false)
   const [isdrop,setIsdrop]=useState(false)
@@ -39,54 +39,54 @@ function closeMenu(){
     /*Desktop Navbar */
     <div className={`Navbar ${isShow && 'nav_black'}`}>
       <div className='logoSide'>
-        <Link to='/'>
+        <Link  onClick={()=>{window.scroll(0,0)}} to='/'>
     <img src={Logo} alt='logo'/>
     </Link>
       </div>
       <div className='NavLinks'>
-        <NavLink to='/about' className='link' end>About</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/about' className='link' end>About</NavLink>
         <div className='service-wrapper wrapper'>
-        <NavLink to='/service' className='link'>Services</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/service' className='link'>Services</NavLink>
         <i className='fa-solid fa-angle-down'></i>
        
         <div className='service-drop-menu'>
         <div className='service-drop-wrapper'>
         <span className='it-service-btn'>IT Services & Solution</span>
         <div className='service-solution'>
-        <NavLink to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
-        <NavLink to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
-        <NavLink to='./it-assessment-audit-services' className='link'>IT Assessments & Audits</NavLink> 
-        <NavLink to='./it-deployement-services' className='link'>IT Deployement</NavLink> 
-        <NavLink to='./it-emergency-support' className='link'>IT Emergency Support</NavLink> 
-        <NavLink to='./it-help-desk' className='link'>IT Help Desk</NavLink> 
-        <NavLink to='./it-security-services' className='link'>IT Security Services</NavLink> 
-        <NavLink to='./office-365' className='link'>Office 365</NavLink> 
-        <NavLink to='./low-voltage-cabling' className='link'>IT Low Voltage Cabling</NavLink> 
-        <NavLink to='./email-spam-protection' className='link'>Email & Spam Protection</NavLink> 
-        <NavLink to='./security-systems' className='link'>Security Systems</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}}  to='./it-managed-services' className='link'>IT Managed Services</NavLink> 
+        <NavLink onClick={()=>{window.scroll(0,0)}} to='./it-consultancy-services' className='link'>IT Consulting Services</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./it-assessment-audit-services' className='link'>IT Assessments & Audits</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./it-deployement-services' className='link'>IT Deployement</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./it-emergency-support' className='link'>IT Emergency Support</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./it-help-desk' className='link'>IT Help Desk</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./it-security-services' className='link'>IT Security Services</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./office-365' className='link'>Office 365</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./low-voltage-cabling' className='link'>IT Low Voltage Cabling</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./email-spam-protection' className='link'>Email & Spam Protection</NavLink> 
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./security-systems' className='link'>Security Systems</NavLink> 
         </div>
         </div>
         <div className='compi-drop-wrapper'>
         <span className='it-compi-btn'>IT Competencies</span>
         <div className='service-competencies'>
 
-          <NavLink to='./it-competencies' className='link'>IT Competencies</NavLink>
-          <NavLink to='./net-framework'  className='link'>Net Framework</NavLink> 
-          <NavLink to='./active-directory'  className='link'>Active Directory</NavLink> 
-          <NavLink to='./exchange'   className='link'>Exchange Directory</NavLink> 
-          <NavLink to='./lan-wan'   className='link'>LAN / WAN</NavLink> 
-          <NavLink to='./mobility'   className='link'>Mobility</NavLink> 
-          <NavLink to='./sharepoint'   className='link'>Sharepoint</NavLink> 
-          <NavLink to='./virtualization'   className='link'>Virtualization</NavLink> 
-          <NavLink to='./sql-server'   className='link'>Sql Server</NavLink> 
-          <NavLink to='./vpn'   className='link'>VPN</NavLink> 
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./it-competencies' className='link'>IT Competencies</NavLink>
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./net-framework'  className='link'>Net Framework</NavLink> 
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./active-directory'  className='link'>Active Directory</NavLink> 
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./exchange'   className='link'>Exchange Directory</NavLink> 
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./lan-wan'   className='link'>LAN / WAN</NavLink> 
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./mobility'   className='link'>Mobility</NavLink> 
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./sharepoint'   className='link'>Sharepoint</NavLink> 
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./virtualization'   className='link'>Virtualization</NavLink> 
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./sql-server'   className='link'>Sql Server</NavLink> 
+          <NavLink  onClick={()=>{window.scroll(0,0)}} to='./vpn'   className='link'>VPN</NavLink> 
           </div>
           </div>
         </div>
         </div>
-        <NavLink to='./it-staffing-services' className='link'>IT Staffing Services</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='./it-staffing-services' className='link'>IT Staffing Services</NavLink>
         <div className='ind-menu-wrapper wrapper'> 
-        <NavLink to='/industries'className='link' >Industries</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/industries'className='link' >Industries</NavLink>
         <i className='fa-solid fa-angle-down'></i>
         <div className='ind-menu'>
           <div className='left'>
@@ -124,26 +124,26 @@ edge.</p>
         </div>
         </div>
         <div className='location-menu-wrapper wrapper'>
-        <NavLink to='/' className='link loc' >Locations</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/' className='link loc' >Locations</NavLink>
         <i className='fa-solid fa-angle-down'></i>
 
          <div className='location-menu'>
-        <NavLink to='/it-managed-napearville' className='link' >Napearville</NavLink>
-        <NavLink to='/it-managed-chicago' className='link' >Chicago</NavLink>
-        <NavLink to='/it-managed-jiolet' className='link' >Jiolet</NavLink>
-        <NavLink to='/it-managed-boilingbrook' className='link' >Boilingbrook</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/it-managed-napearville' className='link' >Napearville</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/it-managed-chicago' className='link' >Chicago</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/it-managed-jiolet' className='link' >Jiolet</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/it-managed-boilingbrook' className='link' >Boilingbrook</NavLink>
         </div>
         </div>
         <div className='resource-menu-wrapper wrapper'>
-        <NavLink to='/' className='link loc' >Resources</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/' className='link loc' >Resources</NavLink>
         <i className='fa-solid fa-angle-down'></i>
 
         <div className='resource-tab'>
-        <NavLink to='/blogs' className='link' >Blogs</NavLink>
-        <NavLink to='/news' className='link' >News</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/blogs' className='link' >Blogs</NavLink>
+        <NavLink  onClick={()=>{window.scroll(0,0)}} to='/news' className='link' >News</NavLink>
       </div> 
       </div>
-      <NavLink to='/contact' className='link' >Contact</NavLink>
+      <NavLink  onClick={()=>{window.scroll(0,0)}} to='/contact' className='link' >Contact</NavLink>
       </div>
       <div className='buttons'>
         <button className='btn career'>Career</button>

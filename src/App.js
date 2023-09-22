@@ -49,12 +49,17 @@ import ComputerRepair from './Components/Pages/ComputerRepair';
 
 
 function App() {
+  const ScrollTop=()=>{
+    window.scroll(0,0)
+    
+}
+
   const [isHover,setIsHover]=useState(false)
   return (
    <>
   <Navbar isHover={isHover} setIsHover={setIsHover}/>
-  <Routes onUpdate={() => window.scrollTo(0, 0)}>
-    <Route path='/' element={<Home isHover={isHover} setIsHover={setIsHover}/>}></Route>
+  <Routes  >
+    <Route path='/' element={<Home  isHover={isHover} setIsHover={setIsHover}/>}></Route>
     <Route path='/About' element={<AboutPage />}></Route>
     <Route path='/Service' element={<ServicePage />}></Route>
     <Route path='/it-security-services' element={<NetworkSecurity/>}></Route>
@@ -92,7 +97,7 @@ function App() {
     <Route path='cloud-solution' element={<CloudStorage/>}></Route>
     <Route path='computer-repair' element={<ComputerRepair/>}></Route>
     </Routes>
-    <Footer />
+    <Footer ScrollTop={ScrollTop}/>
 
 </>
   );
