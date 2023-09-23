@@ -143,7 +143,7 @@ function Services({isHover}) {
       
       <h4>How we  can help you</h4>
       <p>We are dedicated to providing customized IT solutions that are specifically designed to meet the individual needs and goals of your business. By partnering with us, your Chicago-based company will witness a substantial increase in efficiency, empowering you to deliver exceptional service to your clients and ultimately enhance your bottom line.</p>
-   <NavLink className='btn' to='/service'>View All Services</NavLink>
+   <NavLink onClick={()=>{window.scroll(0,0)}} className='btn' to='/service'>View All Services</NavLink>
  
  
  </Fade>

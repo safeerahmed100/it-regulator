@@ -30,6 +30,7 @@ font-weight: 400;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 30px;
+    align-items: end;
 }
 .BlogsContainer img{
     width: 100%;
